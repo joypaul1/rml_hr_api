@@ -12,20 +12,18 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //**Start data base connection  & status check **//
             include_once('../test_api/inc/connoracle.php');
             if ($isDatabaseConnected !== 1) {
-                $jsonData = ["status" => false, "message" => "Database connection failed."];
+                $jsonData = ["status" => false, "message" => "Database Connection Failed."];
                 echo json_encode($jsonData);
                 die();
             }
-            //**End data base connection  & status check **//
+            //**End data base connection S& status check **//
 
             //**Start Query & Return Data Response **//
             try {
                 $SQL = "SELECT 
-                RML_ID, R_CONCERN, IEMI_NO, DESIGNATION,
-                USER_ROLE,  EMP_NAME,
-                LINE_MANAGER_RML_ID, LINE_MANAGER_MOBILE, DEPT_HEAD_RML_ID, DEPT_HEAD_MOBILE_NO 
+                ID, IMAGE_PATH, POSITION,WEB_LINK, APP_LINK
                 FROM 
-                    DEVELOPERS.RML_HR_APPS_USER
+                    DEVELOPERS.HR_SLIDER_IMAGE
                 WHERE 
                     RML_ID = '$RML_ID' AND IS_ACTIVE = 1";
     
@@ -38,12 +36,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         "RML_ID"                => $objResultFound["RML_ID"],
                         "EMP_NAME"              => $objResultFound["EMP_NAME"],
                         "DESIGNATION"           => $objResultFound["DESIGNATION"],
-                        "USER_ROLE"             => $objResultFound["USER_ROLE"],
                         "R_CONCERN"             => $objResultFound["R_CONCERN"],
-                        "LINE_MANAGER_RML_ID"   => $objResultFound["LINE_MANAGER_RML_ID"],
-                        "LINE_MANAGER_MOBILE"   => $objResultFound["LINE_MANAGER_MOBILE"],
-                        "DEPT_HEAD_RML_ID"      => $objResultFound["DEPT_HEAD_RML_ID"],
-                        "DEPT_HEAD_MOBILE_NO"   => $objResultFound["DEPT_HEAD_MOBILE_NO"],
+                        "PRESENT_TOTAL"         => $objResultFound["PRESENT_TOTAL"],
+                        "LATE_TOTAL"            => $objResultFound["LATE_TOTAL"],
+                        "ABSENT_TOTAL"          => $objResultFound["ABSENT_TOTAL"],
+                        "TOUR_TOTAL"            => $objResultFound["TOUR_TOTAL"],
+                        "LEAVE_TOTAL"           => $objResultFound["LEAVE_TOTAL"],
+                        "HOLIDAY_TOTAL"         => $objResultFound["HOLIDAY_TOTAL"],
+                        "WEEKEND_TOTAL"         => $objResultFound["WEEKEND_TOTAL"],
                     ];
                     $jsonData = ["status" => true,  "data" => $responseData, "message" =>'Successfully Data Found.'];
                     echo json_encode($jsonData);

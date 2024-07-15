@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     include_once('../test_api/inc/connoracle.php');
     // $jsonData =[];
     if ($isDatabaseConnected !== 1) {
-        $jsonData = ["status" => false, "message" => "Database connection failed."];
+        $jsonData = ["status" => false, "message" => "Database Connection Failed."];
         echo json_encode($jsonData);
         die();
     } 

@@ -22,7 +22,6 @@ function validate_jwt_token($jwt_token, $secret_key) {
         die();
         // throw new Exception('Token expired');
     } catch (SignatureInvalidException $e) {
-        
         $jsonData = ["status" => false, "message" => "Invalid Token Signature!"];
         echo json_encode($jsonData); 
         die();
