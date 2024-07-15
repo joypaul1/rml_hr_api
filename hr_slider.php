@@ -20,35 +20,27 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             //**Start Query & Return Data Response **//
             try {
-                $SQL = "SELECT 
-                ID, IMAGE_PATH, POSITION,WEB_LINK, APP_LINK
+                $SQL = "SELECT  IMAGE_PATH, POSITION, WEB_LINK, APP_LINK
                 FROM 
                     DEVELOPERS.HR_SLIDER_IMAGE
-                WHERE 
-                    RML_ID = '$RML_ID' AND IS_ACTIVE = 1";
+                WHERE IS_ACTIVE = 1 ORDER BY POSITION ";
     
                 $strSQL = @oci_parse($objConnect, $SQL);            
                 @oci_execute($strSQL);
-                $objResultFound = @oci_fetch_assoc($strSQL);
-        
-                if ($objResultFound) {
-                    $responseData = [
-                        "RML_ID"                => $objResultFound["RML_ID"],
-                        "EMP_NAME"              => $objResultFound["EMP_NAME"],
-                        "DESIGNATION"           => $objResultFound["DESIGNATION"],
-                        "R_CONCERN"             => $objResultFound["R_CONCERN"],
-                        "PRESENT_TOTAL"         => $objResultFound["PRESENT_TOTAL"],
-                        "LATE_TOTAL"            => $objResultFound["LATE_TOTAL"],
-                        "ABSENT_TOTAL"          => $objResultFound["ABSENT_TOTAL"],
-                        "TOUR_TOTAL"            => $objResultFound["TOUR_TOTAL"],
-                        "LEAVE_TOTAL"           => $objResultFound["LEAVE_TOTAL"],
-                        "HOLIDAY_TOTAL"         => $objResultFound["HOLIDAY_TOTAL"],
-                        "WEEKEND_TOTAL"         => $objResultFound["WEEKEND_TOTAL"],
+                $responseData = [];
+                while ($objResultFound = @oci_fetch_assoc($strSQL)) {
+                    $responseData[] = [
+                        "IMAGE_PATH"         => $objResultFound["IMAGE_PATH"],
+                        "WEB_LINK"           => $objResultFound["WEB_LINK"],
+                        "APP_LINK"           => $objResultFound["APP_LINK"],
                     ];
-                    $jsonData = ["status" => true,  "data" => $responseData, "message" =>'Successfully Data Found.'];
+                }
+                
+                if (!empty($responseData)) {
+                    $jsonData = ["status" => true, "data" => $responseData, "message" => 'Successfully Data Found.'];
                     echo json_encode($jsonData);
                 } else {
-                    $jsonData = ["status" => false, "message" => "Invalid credentials or user not active."];
+                    $jsonData = ["status" => false, "data" => [], "message" => 'No Data Found.'];
                     echo json_encode($jsonData);
                 }
             } catch (Exception $e) {

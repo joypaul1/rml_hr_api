@@ -73,11 +73,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     "EMP_NAME"              => $objResultFound["EMP_NAME"],
                     "DESIGNATION"           => $objResultFound["DESIGNATION"],
                     "USER_ROLE"             => $objResultFound["USER_ROLE"],
-                    "R_CONCERN"             => $objResultFound["R_CONCERN"],
+                    "CONCERN"               => $objResultFound["R_CONCERN"],
                     "LINE_MANAGER_RML_ID"   => $objResultFound["LINE_MANAGER_RML_ID"],
                     "LINE_MANAGER_MOBILE"   => $objResultFound["LINE_MANAGER_MOBILE"],
                     "DEPT_HEAD_RML_ID"      => $objResultFound["DEPT_HEAD_RML_ID"],
                     "DEPT_HEAD_MOBILE_NO"   => $objResultFound["DEPT_HEAD_MOBILE_NO"],
+                    "USER_IMAGE"            => "http://192.168.172.61:8080/test_api/image/user.jpeg",
                 ];
                 //incldue jwt token
                 include_once('createToken.php');

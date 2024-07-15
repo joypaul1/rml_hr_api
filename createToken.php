@@ -8,7 +8,8 @@ $secret_key = $config['jwt_token'];
 function generate_jwt_token($data) {
     global $secret_key;
     $issued_at = time();
-    $expiration_time = $issued_at + (60 * 60); // valid for 1 hour
+    // $expiration_time = $issued_at + (60 * 60); // valid for 1 hour
+    $expiration_time = $issued_at + (24 * 60 * 60); // valid for 1 day
 
     $payload = array(
         'iss' => 'rangsmotors',
