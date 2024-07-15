@@ -91,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         "DESIGNATION"           => $objResultFound["DESIGNATION"],
                         "BRANCH_NAME"           => $objResultFound["BRANCH_NAME"],
                         "USER_ROLE"             => $objResultFound["USER_ROLE"],
-                        "R_CONCERN"             => $objResultFound["R_CONCERN"],
+                        "CONCERN"               => $objResultFound["R_CONCERN"],
                         "GENDER"                => $objResultFound["GENDER"],
                         "BLOOD"                 => $objResultFound["BLOOD"],
                         "LINE_MANAGER_RML_ID"   => $objResultFound["LINE_MANAGER_RML_ID"],
@@ -100,6 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         "DEPT_HEAD_MOBILE_NO"   => $objResultFound["DEPT_HEAD_MOBILE_NO"],
                         "LINE_MANAGER_NAME"     => $objResultFound["LINE_MANAGER_NAME"],
                         "DEPT_HEAD_NAME"        => $objResultFound["DEPT_HEAD_NAME"],
+                        "USER_IMAGE"            => "http://192.168.172.61:8080/test_api/image/user.png",
                     ];
                 }
 

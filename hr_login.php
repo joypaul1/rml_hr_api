@@ -78,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     "LINE_MANAGER_MOBILE"   => $objResultFound["LINE_MANAGER_MOBILE"],
                     "DEPT_HEAD_RML_ID"      => $objResultFound["DEPT_HEAD_RML_ID"],
                     "DEPT_HEAD_MOBILE_NO"   => $objResultFound["DEPT_HEAD_MOBILE_NO"],
-                    "USER_IMAGE"            => "http://192.168.172.61:8080/test_api/image/user.jpeg",
+                    "USER_IMAGE"            => "http://192.168.172.61:8080/test_api/image/user.png",
                 ];
                 //incldue jwt token
                 include_once('createToken.php');

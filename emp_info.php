@@ -23,9 +23,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $SQL = "SELECT 
                 RML_ID, R_CONCERN, IEMI_NO, DESIGNATION,
                 USER_ROLE,  EMP_NAME,
-                LINE_MANAGER_RML_ID, LINE_MANAGER_MOBILE, DEPT_HEAD_RML_ID, DEPT_HEAD_MOBILE_NO 
+                LINE_MANAGER_RML_ID, LINE_MANAGER_MOBILE, DEPT_HEAD_RML_ID, DEPT_HEAD_MOBILE_NO,
+                (SELECT SUBUSER.EMP_NAME
+                FROM DEVELOPERS.RML_HR_APPS_USER SUBUSER
+                WHERE SUBUSER.RML_ID = U.LINE_MANAGER_RML_ID) AS LINE_MANAGER_NAME,
+                (SELECT SUBUSER.EMP_NAME
+                FROM DEVELOPERS.RML_HR_APPS_USER SUBUSER
+                WHERE SUBUSER.RML_ID = U.DEPT_HEAD_RML_ID) AS DEPT_HEAD_NAME
                 FROM 
-                    DEVELOPERS.RML_HR_APPS_USER
+                    DEVELOPERS.RML_HR_APPS_USER U
                 WHERE 
                     RML_ID = '$RML_ID' AND IS_ACTIVE = 1";
     
@@ -39,11 +45,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         "EMP_NAME"              => $objResultFound["EMP_NAME"],
                         "DESIGNATION"           => $objResultFound["DESIGNATION"],
                         "USER_ROLE"             => $objResultFound["USER_ROLE"],
-                        "R_CONCERN"             => $objResultFound["R_CONCERN"],
+                        "CONCERN"               => $objResultFound["R_CONCERN"],
                         "LINE_MANAGER_RML_ID"   => $objResultFound["LINE_MANAGER_RML_ID"],
                         "LINE_MANAGER_MOBILE"   => $objResultFound["LINE_MANAGER_MOBILE"],
                         "DEPT_HEAD_RML_ID"      => $objResultFound["DEPT_HEAD_RML_ID"],
                         "DEPT_HEAD_MOBILE_NO"   => $objResultFound["DEPT_HEAD_MOBILE_NO"],
+                        "USER_IMAGE"            => "http://192.168.172.61:8080/test_api/image/user.png",
                     ];
                     $jsonData = ["status" => true,  "data" => $responseData, "message" =>'Successfully Data Found.'];
                     echo json_encode($jsonData);
