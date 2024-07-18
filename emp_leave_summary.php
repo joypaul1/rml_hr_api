@@ -4,11 +4,11 @@ header("Content-Type: application/json; charset=UTF-8");
 
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    
+
     $checkValidTokenData    =   require_once("checkValidTokenData.php");
-    if($checkValidTokenData['status']){
-        if($checkValidTokenData['data']->data->RML_ID){
-            // $RML_ID = $checkValidTokenData['data']->data->RML_ID; ///set RML Variable Data
+    if ($checkValidTokenData['status']) {
+        if ($checkValidTokenData['data']->data->RML_ID) {
+            $RML_ID = $checkValidTokenData['data']->data->RML_ID; // set RML Variable Data
             //**Start data base connection  & status check **//
             include_once('../test_api/inc/connoracle.php');
             if ($isDatabaseConnected !== 1) {
@@ -16,25 +16,32 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 echo json_encode($jsonData);
                 die();
             }
-            //**End data base connection S& status check **//
+            //**End data base connection  & status check **//
 
             //**Start Query & Return Data Response **//
             try {
-                $SQL = "SELECT  IMAGE_PATH, POSITION, WEB_LINK, APP_LINK
-                FROM  DEVELOPERS.HR_SLIDER_IMAGE
-                WHERE IS_ACTIVE = 1 ORDER BY POSITION ";
-    
-                $strSQL = @oci_parse($objConnect, $SQL);            
+                $SQL = "SELECT RML_ID,LEAVE_TYPE,
+                                LEAVE_PERIOD,
+                                LEAVE_ASSIGN,
+                                LEAVE_TAKEN,
+                                LATE_LEAVE 
+                        FROM LEAVE_DETAILS_INFORMATION
+                        WHERE RML_ID='$RML_ID'
+                        and LEAVE_PERIOD='2024'
+                        AND LEAVE_TYPE in ('CL','EL','SL')";
+
+                $strSQL = @oci_parse($objConnect, $SQL);
                 @oci_execute($strSQL);
                 $responseData = [];
                 while ($objResultFound = @oci_fetch_assoc($strSQL)) {
                     $responseData[] = [
-                        "IMAGE_PATH"         => $objResultFound["IMAGE_PATH"],
-                        "WEB_LINK"           => $objResultFound["WEB_LINK"],
-                        "APP_LINK"           => $objResultFound["APP_LINK"],
+                        "LEAVE_TYPE"    => $objResultFound['LEAVE_TYPE'] . '-' . $objResultFound['LEAVE_PERIOD'],
+                        "LEAVE_PERIOD"  => $objResultFound['LEAVE_PERIOD'],
+                        "LEAVE_ASSIGN"  => $objResultFound['LEAVE_ASSIGN'],
+                        "LEAVE_TAKEN"   => $objResultFound['LEAVE_TAKEN'],
                     ];
                 }
-                
+
                 if (!empty($responseData)) {
                     $jsonData = ["status" => true, "data" => $responseData, "message" => 'Successfully Data Found.'];
                     echo json_encode($jsonData);
@@ -48,17 +55,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 oci_close($objConnect);
             }
             //**End Query & Return Data Response **//
-        }else{
+        } else {
             $jsonData = ["status" => false, "message" => "Missing Token Required Parameters."];
-            echo json_encode($jsonData); 
+            echo json_encode($jsonData);
             die();
         }
-       
     }
 } else {
     $jsonData = ["status" => false, "message" => "Request method not accepted"];
     echo json_encode($jsonData);
 }
 die();
-
-?>

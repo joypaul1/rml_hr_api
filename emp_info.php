@@ -4,10 +4,10 @@ header("Content-Type: application/json; charset=UTF-8");
 
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    
+
     $checkValidTokenData    =   require_once("checkValidTokenData.php");
-    if($checkValidTokenData['status']){
-        if($checkValidTokenData['data']->data->RML_ID){
+    if ($checkValidTokenData['status']) {
+        if ($checkValidTokenData['data']->data->RML_ID) {
             $RML_ID = $checkValidTokenData['data']->data->RML_ID; // set RML Variable Data
             //**Start data base connection  & status check **//
             include_once('../test_api/inc/connoracle.php');
@@ -34,11 +34,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     DEVELOPERS.RML_HR_APPS_USER U
                 WHERE 
                     RML_ID = '$RML_ID' AND IS_ACTIVE = 1";
-    
-                $strSQL = @oci_parse($objConnect, $SQL);            
+
+                $strSQL = @oci_parse($objConnect, $SQL);
                 @oci_execute($strSQL);
                 $objResultFound = @oci_fetch_assoc($strSQL);
-        
+
                 if ($objResultFound) {
                     $responseData = [
                         "RML_ID"                => $objResultFound["RML_ID"],
@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         "DEPT_HEAD_MOBILE_NO"   => $objResultFound["DEPT_HEAD_MOBILE_NO"],
                         "USER_IMAGE"            => "http://192.168.172.61:8080/test_api/image/user.png",
                     ];
-                    $jsonData = ["status" => true,  "data" => $responseData, "message" =>'Successfully Data Found.'];
+                    $jsonData = ["status" => true,  "data" => $responseData, "message" => 'Successfully Data Found.'];
                     echo json_encode($jsonData);
                 } else {
                     $jsonData = ["status" => false, "message" => "Invalid credentials or user not active."];
@@ -64,17 +64,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 oci_close($objConnect);
             }
             //**End Query & Return Data Response **//
-        }else{
+        } else {
             $jsonData = ["status" => false, "message" => "Missing Token Required Parameters."];
-            echo json_encode($jsonData); 
+            echo json_encode($jsonData);
             die();
         }
-       
     }
 } else {
     $jsonData = ["status" => false, "message" => "Request method not accepted"];
     echo json_encode($jsonData);
 }
 die();
-
-?>

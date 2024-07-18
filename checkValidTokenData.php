@@ -12,8 +12,8 @@ $config = require_once('inc/config.php');
 $secret_key = $config['jwt_token'];
 $headers = getallheaders();
 
-if(isset($headers['Authorization'])){
-    $tokenData  = $headers['Authorization'] ;
+if(isset($headers['Authorization']) || isset($headers['authorization'])){
+    $tokenData  = $headers['Authorization']?? $headers['authorization'];
     $statusData =  validate_jwt_token($tokenData ,$secret_key);
     return ["data" => $statusData,"status" => true ];
 }else {
