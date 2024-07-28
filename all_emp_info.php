@@ -86,6 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     $responseData[] = [
                         "RML_ID"                => $objResultFound["RML_ID"],
                         "EMP_NAME"              => $objResultFound["EMP_NAME"],
+                        "MOBILE_NO"             => $objResultFound["MOBILE_NO"],
                         "MAIL"                  => $objResultFound["MAIL"],
                         'DEPT_NAME'             => $objResultFound["DEPT_NAME"],
                         "DESIGNATION"           => $objResultFound["DESIGNATION"],

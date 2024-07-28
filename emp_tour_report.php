@@ -20,32 +20,41 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             //**Start Query & Return Data Response **//
             try {
-                $current_year = date("Y");
-                $SQL = "SELECT RML_ID, START_DATE, END_DATE, ((END_DATE - START_DATE) + 1) LEAVE_DAYS, 
-                        REMARKS, LEAVE_TYPE, 
-                        CASE
-                            WHEN IS_APPROVED = 1  THEN 'APPROVED'
-                            WHEN IS_APPROVED = 0  THEN 'DENIED'
+                $SQL = "SELECT RML_ID,
+                        START_DATE,
+                        END_DATE,
+                        ((END_DATE - START_DATE) + 1) AS TOUR_DAYS,
+                        ENTRY_DATE,
+                        REMARKS,
+                        ENTRY_BY,
+                        LINE_MANAGER_ID,
+                        CASE 
+                            WHEN LINE_MANAGER_APPROVAL_STATUS = 1 THEN 'APPROVED'
+                            WHEN LINE_MANAGER_APPROVAL_STATUS = 0  THEN 'DENIED'
                             ELSE 'PENDING'
-                        END AS IS_APPROVED
-                        FROM RML_HR_EMP_LEAVE
-                        WHERE RML_ID = '$RML_ID'
-                        AND TRUNC(START_DATE) BETWEEN TO_DATE('01/01/" . $current_year . "','dd/mm/yyyy') 
-                        AND TO_DATE('31/12/" . $current_year . "','dd/mm/yyyy')
-                        ORDER BY START_DATE DESC";
+                        END AS LINE_MANAGER_APPROVAL_STATUS,
+                        APPROVAL_DATE,
+                        APPROVAL_REMARKS
+                        FROM RML_HR_EMP_TOUR
+                    WHERE RML_ID='$RML_ID'
+                    ORDER BY START_DATE DESC";
 
                 $strSQL = @oci_parse($objConnect, $SQL);
                 @oci_execute($strSQL);
                 $responseData = [];
                 while ($objResultFound = @oci_fetch_assoc($strSQL)) {
                     $responseData[] = [
-                        "RML_ID"        => $objResultFound['RML_ID'],
-                        "START_DATE"    => $objResultFound['START_DATE'],
-                        "END_DATE"      => $objResultFound['END_DATE'],
-                        "REMARKS"       => $objResultFound['REMARKS'],
-                        "LEAVE_TYPE"    => $objResultFound['LEAVE_TYPE'],
-                        "IS_APPROVED"   => $objResultFound['IS_APPROVED'],
-                        "LEAVE_DAYS"    => $objResultFound['LEAVE_DAYS']
+                        "RML_ID"                        => $objResultFound['RML_ID'],
+                        "START_DATE"                    => $objResultFound['START_DATE'],
+                        "END_DATE"                      => $objResultFound['END_DATE'],
+                        "REMARKS"                       => $objResultFound['REMARKS'],
+                        //"ENTRY_DATE"                    => $objResultFound['ENTRY_DATE'],
+                        //"ENTRY_BY"                      => $objResultFound['ENTRY_BY'],
+                        //"LINE_MANAGER_ID"               => $objResultFound['LINE_MANAGER_ID'],
+                        //"APPROVAL_DATE"                 =>  $objResultFound['APPROVAL_DATE'],
+                        //"APPROVAL_REMARKS"              =>  $objResultFound['APPROVAL_REMARKS'],
+                        "IS_APPROVED"                   => $objResultFound['LINE_MANAGER_APPROVAL_STATUS'],
+                        "TOUR_DAYS"                     => $objResultFound['TOUR_DAYS']
                     ];
                 }
 

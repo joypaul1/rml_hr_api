@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             try {
                 $SQL = "SELECT 
                 RML_ID, R_CONCERN, IEMI_NO, DESIGNATION,
-                USER_ROLE,  EMP_NAME,
+                USER_ROLE,  EMP_NAME,MAIL, MOBILE_NO
                 LINE_MANAGER_RML_ID, LINE_MANAGER_MOBILE, DEPT_HEAD_RML_ID, DEPT_HEAD_MOBILE_NO,
                 (SELECT SUBUSER.EMP_NAME
                 FROM DEVELOPERS.RML_HR_APPS_USER SUBUSER
@@ -43,6 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     $responseData = [
                         "RML_ID"                => $objResultFound["RML_ID"],
                         "EMP_NAME"              => $objResultFound["EMP_NAME"],
+                        "MOBILE_NO"             => $objResultFound["MOBILE_NO"],
                         "DESIGNATION"           => $objResultFound["DESIGNATION"],
                         "USER_ROLE"             => $objResultFound["USER_ROLE"],
                         "CONCERN"               => $objResultFound["R_CONCERN"],
