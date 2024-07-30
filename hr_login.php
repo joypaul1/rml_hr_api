@@ -83,11 +83,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 //incldue jwt token
                 include_once('createToken.php');
                 $jwtData = generate_jwt_token($responseData);
-                http_response_code(200);
+                http_response_code(200); // status successful
                 $jsonData = ["status" => true,  "data" => $jwtData, "message" => 'Successfully Data Found.'];
                 echo json_encode($jsonData);
             } else {
-                http_response_code(401);
+                http_response_code(401); // invalid user or credentials
                 $jsonData = ["status" => false, "message" => "Invalid credentials or user not active."];
                 echo json_encode($jsonData);
                 die();

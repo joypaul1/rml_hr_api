@@ -128,6 +128,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 echo json_encode($jsonData);
             }
         } catch (Exception $e) {
+            http_response_code(500);
             $jsonData = ["status" => false, "message" => $e->getMessage()];
                 echo json_encode($jsonData);
         } finally {
@@ -135,6 +136,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         }
     }
 } else {
+    http_response_code(405);
     $jsonData = ["status" => false, "message" => "Request method not accepted"];
     echo json_encode($jsonData);
 }

@@ -61,13 +61,16 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 }
 
                 if (!empty($responseData)) {
+                    http_response_code(200);
                     $jsonData = ["status" => true, "data" => $responseData, "message" => 'Successfully Data Found.'];
                     echo json_encode($jsonData);
                 } else {
+                    http_response_code(200);
                     $jsonData = ["status" => true, "data" => [], "message" => 'No Data Found.'];
                     echo json_encode($jsonData);
                 }
             } catch (Exception $e) {
+                http_response_code(500);
                 $jsonData = ["status" => false, "message" => $e->getMessage()];
                 echo json_encode($jsonData);
             } finally {
@@ -81,6 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         }
     }
 } else {
+    http_response_code(405);
     $jsonData = ["status" => false, "message" => "Request method not accepted"];
     echo json_encode($jsonData);
 }

@@ -53,13 +53,16 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         "DEPT_HEAD_MOBILE_NO"   => $objResultFound["DEPT_HEAD_MOBILE_NO"],
                         "USER_IMAGE"            => "http://192.168.172.61:8080/test_api/image/user.png",
                     ];
+                    http_response_code(200);
                     $jsonData = ["status" => true,  "data" => $responseData, "message" => 'Successfully Data Found.'];
                     echo json_encode($jsonData);
                 } else {
+                    http_response_code(200);
                     $jsonData = ["status" => false, "message" => "Invalid credentials or user not active."];
                     echo json_encode($jsonData);
                 }
             } catch (Exception $e) {
+                http_response_code(500);
                 $jsonData = ["status" => false, "message" => $e->getMessage()];
                 echo json_encode($jsonData);
             } finally {
@@ -73,6 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         }
     }
 } else {
+    http_response_code(405);
     $jsonData = ["status" => false, "message" => "Request method not accepted"];
     echo json_encode($jsonData);
 }

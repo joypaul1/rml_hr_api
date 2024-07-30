@@ -52,15 +52,17 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         "HOLIDAY_TOTAL"         => $objResultFound["HOLIDAY_TOTAL"],
                         "WEEKEND_TOTAL"         => $objResultFound["WEEKEND_TOTAL"],
                     ];
+                    http_response_code(200);
                     $jsonData = ["status" => true,  "data" => $responseData, "message" =>'Successfully Data Found.'];
                     echo json_encode($jsonData);
                 } else {
+                    http_response_code(200);
                     $jsonData = ["status" => true, "data" => [], "message" => 'No Data Found.'];
-                    // $jsonData = ["status" => false, "message" => "Invalid credentials or user not active."];
                     echo json_encode($jsonData);
                 }
             } catch (Exception $e) {
-                $jsonData = ["status" => false, "message" => $e->getMessage()];
+                http_response_code(500);
+            $jsonData = ["status" => false, "message" => $e->getMessage()];
                 echo json_encode($jsonData);
             } finally {
                 oci_close($objConnect);
@@ -74,6 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
        
     }
 } else {
+    http_response_code(405);
     $jsonData = ["status" => false, "message" => "Request method not accepted"];
     echo json_encode($jsonData);
 }

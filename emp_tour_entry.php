@@ -43,12 +43,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $SQL = "BEGIN RML_HR_TOUR_CREATE('$RML_ID','$START_DATE','$END_DATE','$TOUR_REMARKS','$ENTRY_BY');END;";
                 $strSQL = @oci_parse($objConnect, $SQL);
                 if (@oci_execute($strSQL)) {
+                    http_response_code(200);
                     $jsonData = [
                         "status" => true,
                         "message" => 'Your tour successfully created. It must be approved by your responsible Line Manager or Department Head.'
                     ];
                     echo json_encode($jsonData);
                 } else {
+                    http_response_code(200);
                     @$lastError = error_get_last();
                     @$error = $lastError ? "" . $lastError["message"] . "" : "";
                     // $str_arr_error = preg_split("/\,/", $error);
@@ -56,7 +58,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     echo json_encode($jsonData);
                 }
             } catch (Exception $e) {
-                $jsonData = ["status" => false, "message" => $e->getMessage()];
+                http_response_code(500);
+            $jsonData = ["status" => false, "message" => $e->getMessage()];
                 echo json_encode($jsonData);
             } finally {
                 oci_close($objConnect);
@@ -68,6 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         }
     }
 } else {
+    http_response_code(405);
     $jsonData = ["status" => false, "message" => "Request method not accepted"];
     echo json_encode($jsonData);
 }
