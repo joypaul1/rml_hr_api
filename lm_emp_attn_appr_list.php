@@ -17,44 +17,33 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 die();
             }
             //**End data base connection  & status check **//
-            // Include InputValidator class
-            require_once('InputValidator.php');
-            // Define required fields
-            $requiredFields = ['START_DATE', 'END_DATE'];
 
-            // Initialize input validator with POST data
-            $validator = new InputValidator($_POST);
-
-            if (!$validator->validateRequired($requiredFields)) {
-                $jsonData = ["status" => false, "message" => "Missing required parameters."];
-                echo json_encode($jsonData); 
-                die();
-            }
-            // **Initialize input validator with POST Data**//
-
-            $validator->sanitizeInputs();   // Sanitize Inputs
-            $START_DATE     = $validator->get('START_DATE');   // Retrieve sanitized inputs
-            $END_DATE       = $validator->get('END_DATE');   // Retrieve sanitized inputs
- 
             //**Start Query & Return Data Response **//
             try {
-                $SQL = "SELECT ATTN_DATE,IN_TIME,OUT_TIME,STATUS ATTN_STATUS,DAY_NAME 
-                from RML_HR_ATTN_DAILY_PROC
-                where RML_ID='$RML_ID'
-                and trunc(ATTN_DATE) between to_date('$START_DATE','dd/mm/yyyy')
-                and to_date('$END_DATE','dd/mm/yyyy')
-                order by ATTN_DATE desc";
+                $SQL = "SELECT attn.ID,attn.RML_ID,attn.ATTN_DATE,attn.LAT,attn.LANG,attn.OUTSIDE_REMARKS,RML_HR_FKEY(attn.RML_ID,'NU') NU_FKEY,
+                        (SELECT a.EMP_NAME FROM RML_HR_APPS_USER a WHERE a.RML_ID=attn.RML_ID)EMP_NAME
+                        FROM RML_HR_ATTN_DAILY attn
+                    WHERE attn.LINE_MANAGER_ID='$RML_ID'
+                        AND attn.INSIDE_OR_OUTSIDE='Outside Office'
+                        AND trunc(ATTN.ATTN_DATE) BETWEEN  trunc(SYSDATE)-( select KEY_VALUE FROM HR_GLOBAL_CONFIGARATION
+                        WHERE KEY_TYPE='ATTN_OUTDOOR_APPROVAL') AND  trunc(SYSDATE)
+                        AND attn.LINE_MANAGER_APPROVAL IS NULL
+                        AND attn.IS_ALL_APPROVED=0
+                        ORDER BY ATTN_DATE desc";
 
                 $strSQL = @oci_parse($objConnect, $SQL);
                 @oci_execute($strSQL);
                 $responseData = [];
                 while ($objResultFound = @oci_fetch_assoc($strSQL)) {
                     $responseData[] = [
-                        "ATTN_DATE"     => $objResultFound['ATTN_DATE'],
-                        "IN_TIME"       => $objResultFound['IN_TIME'],
-                        "OUT_TIME"      => $objResultFound['OUT_TIME'],
-                        "ATTN_STATUS"   => $objResultFound['ATTN_STATUS'],
-                        "DAY_NAME"      => $objResultFound['DAY_NAME']
+                        "ID"        => $objResultFound['ID'],
+                        "RML_ID"    => $objResultFound['RML_ID'],
+                        "EMP_NAME"  => $objResultFound['EMP_NAME'],
+                        "ATTN_DATE" =>$objResultFound['ATTN_DATE'],
+                        "LAT"       => $objResultFound['LAT'],
+                        "LANG"      => $objResultFound['LANG'],
+                        "OUTSIDE_REMARKS" => $objResultFound['OUTSIDE_REMARKS'],
+                        "NU_FKEY" => $objResultFound['NU_FKEY']
                     ];
                 }
 

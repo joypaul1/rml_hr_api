@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     $jsonData = ["status" => true, "data" => $responseData, "message" => 'Successfully Data Found.'];
                     echo json_encode($jsonData);
                 } else {
-                    $jsonData = ["status" => false, "data" => [], "message" => 'No Data Found.'];
+                    $jsonData = ["status" => true, "data" => [], "message" => 'No Data Found.'];
                     echo json_encode($jsonData);
                 }
             } catch (Exception $e) {

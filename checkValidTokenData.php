@@ -17,7 +17,7 @@ if(isset($headers['Authorization']) || isset($headers['authorization'])){
     $statusData =  validate_jwt_token($tokenData ,$secret_key);
     return ["data" => $statusData,"status" => true ];
 }else {
-    $jsonData = ["status" => false, "message" => "Authorization Token Not Found!"];
+    $jsonData = ["status" => false, "message" => "Authorization Token Not Found!" , "data" => $_POST,'token' => $headers['authorization'] ];
     echo json_encode($jsonData);
     die();
 }

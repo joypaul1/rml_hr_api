@@ -17,44 +17,34 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 die();
             }
             //**End data base connection  & status check **//
-            // Include InputValidator class
-            require_once('InputValidator.php');
-            // Define required fields
-            $requiredFields = ['START_DATE', 'END_DATE'];
 
-            // Initialize input validator with POST data
-            $validator = new InputValidator($_POST);
-
-            if (!$validator->validateRequired($requiredFields)) {
-                $jsonData = ["status" => false, "message" => "Missing required parameters."];
-                echo json_encode($jsonData); 
-                die();
-            }
-            // **Initialize input validator with POST Data**//
-
-            $validator->sanitizeInputs();   // Sanitize Inputs
-            $START_DATE     = $validator->get('START_DATE');   // Retrieve sanitized inputs
-            $END_DATE       = $validator->get('END_DATE');   // Retrieve sanitized inputs
- 
             //**Start Query & Return Data Response **//
             try {
-                $SQL = "SELECT ATTN_DATE,IN_TIME,OUT_TIME,STATUS ATTN_STATUS,DAY_NAME 
-                from RML_HR_ATTN_DAILY_PROC
-                where RML_ID='$RML_ID'
-                and trunc(ATTN_DATE) between to_date('$START_DATE','dd/mm/yyyy')
-                and to_date('$END_DATE','dd/mm/yyyy')
-                order by ATTN_DATE desc";
+                $SQL = "SELECT a.ID AS ID,
+                        (b.EMP_NAME ||'('||a.RML_ID||')') RML_ID,
+                        START_DATE,
+                        END_DATE,
+                        ((END_DATE-START_DATE)+1) LEAVE_DAYS,
+                        REMARKS,
+                        LEAVE_TYPE
+                    FROM RML_HR_EMP_LEAVE a,RML_HR_APPS_USER b
+                    WHERE A.RML_ID=B.RML_ID
+                    AND trunc(START_DATE)> TO_DATE('01/01/2022','DD/MM/YYYY')
+                    AND  b.LINE_MANAGER_RML_ID='$emp_id'
+                    AND A.IS_APPROVED IS NULL";
 
                 $strSQL = @oci_parse($objConnect, $SQL);
                 @oci_execute($strSQL);
                 $responseData = [];
                 while ($objResultFound = @oci_fetch_assoc($strSQL)) {
                     $responseData[] = [
-                        "ATTN_DATE"     => $objResultFound['ATTN_DATE'],
-                        "IN_TIME"       => $objResultFound['IN_TIME'],
-                        "OUT_TIME"      => $objResultFound['OUT_TIME'],
-                        "ATTN_STATUS"   => $objResultFound['ATTN_STATUS'],
-                        "DAY_NAME"      => $objResultFound['DAY_NAME']
+                        "ID"            => $objResultFound['ID'],
+                        "RML_ID"        => $objResultFound['RML_ID'],
+                        "START_DATE"    => $objResultFound['START_DATE'],
+                        "END_DATE"      => $objResultFound['END_DATE'],
+                        "REMARKS"       => $objResultFound['REMARKS'],
+                        "LEAVE_DAYS"    => $objResultFound['LEAVE_DAYS'],
+                        "LEAVE_TYPE"    => $objResultFound['LEAVE_TYPE']
                     ];
                 }
 
