@@ -20,18 +20,23 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             //**Start Query & Return Data Response **//
             try {
-                $SQL = "SELECT a.ID AS ID,
-                        (b.EMP_NAME ||'('||a.RML_ID||')') RML_ID,
-                        START_DATE,
-                        END_DATE,
-                        ((END_DATE-START_DATE)+1) LEAVE_DAYS,
-                        REMARKS,
-                        LEAVE_TYPE
-                    FROM RML_HR_EMP_LEAVE a,RML_HR_APPS_USER b
-                    WHERE A.RML_ID=B.RML_ID
-                    AND trunc(START_DATE)> TO_DATE('01/01/2022','DD/MM/YYYY')
-                    AND  b.LINE_MANAGER_RML_ID='$RML_ID'
-                    AND A.IS_APPROVED IS NULL";
+                $SQL = "SELECT a.ID,b.EMP_NAME,
+                            (b.EMP_NAME ||'('||a.RML_ID||')') RML_ID,
+                            a.ENTRY_DATE,
+                            a.START_DATE,
+                            a.END_DATE,
+                            a.REMARKS,
+                            a.ENTRY_BY,
+                            a.LINE_MANAGER_ID,
+                            a.LINE_MANAGER_APPROVAL_STATUS,
+                            a.APPROVAL_DATE,
+                            a.APPROVAL_REMARKS
+                        FROM RML_HR_EMP_TOUR a, RML_HR_APPS_USER b
+                        WHERE A.RML_ID=B.RML_ID
+                        and a.LINE_MANAGER_ID='$RML_ID'
+                        AND rownum <= 20
+                        AND a.LINE_MANAGER_APPROVAL_STATUS IS NULL
+                        order by START_DATE";
 
                 $strSQL = @oci_parse($objConnect, $SQL);
                 @oci_execute($strSQL);
