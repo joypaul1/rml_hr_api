@@ -17,46 +17,49 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 die();
             }
             //**End data base connection  & status check **//
+            require_once('InputValidator.php');  // Include InputValidator class
+            $requiredFields = ['START_DATE', 'END_DATE'];  // Define required fields
+
+            // Initialize input validator with POST data **//
+            $validator = new InputValidator($_POST);
+            if (!$validator->validateRequired($requiredFields)) {
+                $jsonData = ["status" => "false", "message" => "Missing Required Parameters."];
+                echo json_encode($jsonData);
+                die();
+            }
+            // **Initialize input validator with POST Data**//
+
+            $validator->sanitizeInputs();   // Sanitize Inputs
+            $START_DATE     = $validator->get('START_DATE');   // Retrieve sanitized inputs
+            $END_DATE       = $validator->get('END_DATE');
 
             //**Start Query & Return Data Response **//
             try {
-                $SQL = "SELECT RML_ID,
-                        START_DATE,
-                        END_DATE,
-                        ((END_DATE - START_DATE) + 1) AS TOUR_DAYS,
-                        ENTRY_DATE,
-                        REMARKS,
-                        ENTRY_BY,
-                        LINE_MANAGER_ID,
-                        CASE 
-                            WHEN LINE_MANAGER_APPROVAL_STATUS = 1 THEN 'APPROVED'
-                            WHEN LINE_MANAGER_APPROVAL_STATUS = 0  THEN 'DENIED'
-                            ELSE 'PENDING'
-                        END AS LINE_MANAGER_APPROVAL_STATUS,
-                        APPROVAL_DATE,
-                        APPROVAL_REMARKS
-                        FROM RML_HR_EMP_TOUR
-                    WHERE RML_ID='$RML_ID'
-                    ORDER BY START_DATE DESC";
+
+                //** @ATTENDANCE PRROCESSING **//
+                $attnSQL  = @oci_parse($objConnect, "DECLARE  start_date VARCHAR2(100):=to_char(sysdate,'dd/mm/yyyy');
+                BEGIN RML_HR_ATTN_PROC('$RML_ID',TO_DATE(start_date,'dd/mm/yyyy') ,TO_DATE(start_date,'dd/mm/yyyy') );END;");
+                @oci_execute($attnSQL);
+                //** @END ATTENDANCE PRROCESSING **//
+
+                $current_year = date("Y");
+                $SQL = "SELECT ATTN_DATE,IN_TIME,OUT_TIME,STATUS AS ATTN_STATUS, DAY_NAME from RML_HR_ATTN_DAILY_PROC
+					WHERE RML_ID='$RML_ID'
+                    and trunc(ATTN_DATE) between to_date('$attn_start_date','dd/mm/yyyy') 
+                    and to_date('$attn_end_date','dd/mm/yyyy')
+                    --AND ATTN_DATE BETWEEN TO_DATE((SELECT TO_CHAR(trunc(SYSDATE) - (to_number(to_char(SYSDATE,'DD')) - 1),'dd/mm/yyyy') FROM dual),'dd/mm/yyyy') AND SYSDATE
+                    ORDER BY ATTN_DATE DESC";
 
                 $strSQL = @oci_parse($objConnect, $SQL);
                 @oci_execute($strSQL);
                 $responseData = [];
                 while ($objResultFound = @oci_fetch_assoc($strSQL)) {
                     $responseData[] = [
-                        "RML_ID"                        => $objResultFound['RML_ID'],
-                        // "START_DATE"                    => $objResultFound['START_DATE'],
-                        // "END_DATE"                      => $objResultFound['END_DATE'],
-                        "START_DATE"                    => date('d M Y', strtotime($objResultFound['START_DATE'])),
-                        "END_DATE"                      => date('d M Y', strtotime($objResultFound['END_DATE'])),
-                        "REMARKS"                       => $objResultFound['REMARKS'],
-                        //"ENTRY_DATE"                    => $objResultFound['ENTRY_DATE'],
-                        //"ENTRY_BY"                      => $objResultFound['ENTRY_BY'],
-                        //"LINE_MANAGER_ID"               => $objResultFound['LINE_MANAGER_ID'],
-                        //"APPROVAL_DATE"                 =>  $objResultFound['APPROVAL_DATE'],
-                        //"APPROVAL_REMARKS"              =>  $objResultFound['APPROVAL_REMARKS'],
-                        "IS_APPROVED"                   => $objResultFound['LINE_MANAGER_APPROVAL_STATUS'],
-                        "TOUR_DAYS"                     => $objResultFound['TOUR_DAYS']
+                        "ATTN_DATE"     => $objResultFound['ATTN_DATE'],
+                        "IN_TIME"       => $objResultFound['IN_TIME'],
+                        "OUT_TIME"      => $objResultFound['OUT_TIME'],
+                        "ATTN_STATUS"   => $objResultFound['ATTN_STATUS'],
+                        "DAY_NAME"      => $objResultFound['DAY_NAME']
                     ];
                 }
 

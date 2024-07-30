@@ -20,35 +20,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             //**Start Query & Return Data Response **//
             try {
-                $current_year = date("Y");
-                $SQL = "SELECT RML_ID, START_DATE, END_DATE, ((END_DATE - START_DATE) + 1) LEAVE_DAYS, 
-                        REMARKS, LEAVE_TYPE, 
-                        CASE
-                            WHEN IS_APPROVED = 1  THEN 'APPROVED'
-                            WHEN IS_APPROVED = 0  THEN 'DENIED'
-                            ELSE 'PENDING'
-                        END AS IS_APPROVED
-                        FROM RML_HR_EMP_LEAVE
-                        WHERE RML_ID = '$RML_ID'
-                        AND TRUNC(START_DATE) BETWEEN TO_DATE('01/01/" . $current_year . "','dd/mm/yyyy')
-                        AND TO_DATE('31/12/" . $current_year . "','dd/mm/yyyy')
-                        ORDER BY START_DATE DESC";
-
-                $strSQL = @oci_parse($objConnect, $SQL);
-                @oci_execute($strSQL);
+                
+                $leave_types = ['CL','EL','SL'];
                 $responseData = [];
-                while ($objResultFound = @oci_fetch_assoc($strSQL)) {
-                    $responseData[] = [
-                        "RML_ID"        => $objResultFound['RML_ID'],
-                        "START_DATE"    => date('d M Y', strtotime($objResultFound['START_DATE'])),
-                        "END_DATE"      => date('d M Y', strtotime($objResultFound['END_DATE'])),
-                        "REMARKSs"      => $objResultFound['REMARKS'],
-                        "LEAVE_TYPE"    => $objResultFound['LEAVE_TYPE'],
-                        "IS_APPROVED"   => $objResultFound['IS_APPROVED'],
-                        "LEAVE_DAYS"    => $objResultFound['LEAVE_DAYS']
-                    ];
+                foreach ($leave_types as $type) {
+                    $responseData[] = $type;
                 }
-
+                
                 if (!empty($responseData)) {
                     $jsonData = ["status" => true, "data" => $responseData, "message" => 'Successfully Data Found.'];
                     echo json_encode($jsonData);

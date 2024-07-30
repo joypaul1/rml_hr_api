@@ -113,7 +113,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     echo json_encode($jsonData);
                 }
             } catch (Exception $e) {
-                echo json_encode($error_log($e->getMessage()));
+                $jsonData = ["status" => false, "message" => $e->getMessage()];
+                echo json_encode($jsonData);
             } finally {
                 oci_close($objConnect);
             }
