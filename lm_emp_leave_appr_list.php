@@ -59,13 +59,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 }
             } catch (Exception $e) {
                 http_response_code(500);
-            $jsonData = ["status" => false, "message" => $e->getMessage()];
+                $jsonData = ["status" => false, "message" => $e->getMessage()];
                 echo json_encode($jsonData);
             } finally {
                 oci_close($objConnect);
             }
             //**End Query & Return Data Response **//
         } else {
+            // Set the HTTP status code to 400 Bad Request
+            http_response_code(400);
             $jsonData = ["status" => false, "message" => "Missing Token Required Parameters."];
             echo json_encode($jsonData);
             die();

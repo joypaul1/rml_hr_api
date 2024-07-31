@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         FROM RML_HR_EMP_TOUR a, RML_HR_APPS_USER b
                         WHERE A.RML_ID=B.RML_ID
                         and a.LINE_MANAGER_ID='$RML_ID'
-                        AND rownum <= 20
+                        AND objResultFoundnum <= 20
                         AND a.LINE_MANAGER_APPROVAL_STATUS IS NULL
                         order by START_DATE";
 
@@ -43,13 +43,17 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $responseData = [];
                 while ($objResultFound = @oci_fetch_assoc($strSQL)) {
                     $responseData[] = [
-                        "ID"            => $objResultFound['ID'],
-                        "RML_ID"        => $objResultFound['RML_ID'],
-                        "START_DATE"    => $objResultFound['START_DATE'],
-                        "END_DATE"      => $objResultFound['END_DATE'],
-                        "REMARKS"       => $objResultFound['REMARKS'],
-                        "LEAVE_DAYS"    => $objResultFound['LEAVE_DAYS'],
-                        "LEAVE_TYPE"    => $objResultFound['LEAVE_TYPE']
+                        "ID"                => $objResultFound['ID'],
+                        "RML_ID"            => $objResultFound['RML_ID'],
+                        "ENTRY_DATE"        => $objResultFound['ENTRY_DATE'],
+                        "START_DATE"        => $objResultFound['START_DATE'],
+                        "END_DATE"          => $objResultFound['END_DATE'],
+                        "REMARKS"           => $objResultFound['REMARKS'],
+                        "ENTRY_BY"          => $objResultFound['ENTRY_BY'],
+                        "LINE_MANAGER_ID"   => $objResultFound['LINE_MANAGER_ID'],
+                        "LINE_MANAGER_APPROVAL_STATUS" => $objResultFound['LINE_MANAGER_APPROVAL_STATUS'],
+                        "APPROVAL_DATE"     =>  $objResultFound['APPROVAL_DATE'],
+                        "APPROVAL_REMARKS"  =>  $objResultFound['APPROVAL_REMARKS']
                     ];
                 }
 
@@ -64,13 +68,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 }
             } catch (Exception $e) {
                 http_response_code(500);
-            $jsonData = ["status" => false, "message" => $e->getMessage()];
+                $jsonData = ["status" => false, "message" => $e->getMessage()];
                 echo json_encode($jsonData);
             } finally {
                 oci_close($objConnect);
             }
             //**End Query & Return Data Response **//
         } else {
+            // Set the HTTP status code to 400 Bad Request
+            http_response_code(400);
             $jsonData = ["status" => false, "message" => "Missing Token Required Parameters."];
             echo json_encode($jsonData);
             die();
