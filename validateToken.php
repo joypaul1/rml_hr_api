@@ -31,7 +31,7 @@ function validate_jwt_token($jwt_token, $secret_key) {
         die();
     } catch (Exception $e) {
         $jsonData = ["status" => false, "message" => "Invalid Token!"];
-        echo json_encode($jsonData); 
+        echo json_encode($jsonData);
         die();
     }
 }

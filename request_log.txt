@@ -1,0 +1,462 @@
+Timestamp: 2024-07-31 08:08:36
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_entry.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: {"START_DATE":"03-09-2024","END_DATE":"03-09-2024","LEAVE_REMARKS":"cff\n","LEAVE_TYPE":"EL"}
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"394","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"multipart\/form-data; boundary=--dio-boundary-0659232774"}
+-------------------------------------
+Timestamp: 2024-07-31 08:08:38
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 08:08:38
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 08:08:38
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 08:42:00
+Request URL: http://192.168.172.61:8080/test_api/handle_request.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjMzMDQxMiwiZXhwIjoxNzIyNDE2ODEyLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.buJyVna4OA_z8tVLjOLXrtutVPWbYUbYsSW-p4KAths","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"194c30bd-be59-480a-91c5-bbe041101fee","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-07-31 08:44:01
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: {"file":"C:\\Users\\Administrator\\Pictures\\Capture_1.PNG"}
+Headers: {"Content-Type":"multipart\/form-data; boundary=--------------------------334802157700072625946315","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjMzMDQxMiwiZXhwIjoxNzIyNDE2ODEyLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.buJyVna4OA_z8tVLjOLXrtutVPWbYUbYsSW-p4KAths","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"486d09c7-4de4-45b9-9c7f-04e1b1f1332a","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"204"}
+-------------------------------------
+Timestamp: 2024-07-31 08:44:59
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: {"file":"C:\\Users\\Administrator\\Pictures\\Capture_1.PNG"}
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"f85c9c99-55b0-4c04-84a3-1eea56d85ed3","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------611808875173489462205946","Content-Length":"204"}
+-------------------------------------
+Timestamp: 2024-07-31 08:45:36
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: {"file":"C:\\Users\\Administrator\\Pictures\\Capture_1.PNG","user_id":"12345","sis_id":"1"}
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"c65ecc88-c8b8-48dd-a22e-177660a403de","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------296465821934875394606953","Content-Length":"421"}
+-------------------------------------
+Timestamp: 2024-07-31 08:47:56
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: {"file":"C:\\Users\\Administrator\\Pictures\\Capture_1.PNG","user_id":"12345","sis_id":"1"}
+Headers: {"file":"some_file_value","sis_id":"1","Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"67c3d664-1974-480e-8dff-33716f5f6d0c","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------128010646586187227036692","Content-Length":"421"}
+-------------------------------------
+Timestamp: 2024-07-31 08:53:07
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"3de2789c-a339-4387-85bc-3cb2c44942d4","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------400612206835895904633739","Content-Length":"172"}
+-------------------------------------
+Timestamp: 2024-07-31 08:54:10
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"36bc87a9-7586-485e-bf0d-3396d8e2e40e","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------943026837990513789767592","Content-Length":"27291"}
+-------------------------------------
+Timestamp: 2024-07-31 08:54:44
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"d8af2fd0-29c7-43dc-a565-52e21c14952a","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------371090686001689111920690","Content-Length":"288346"}
+-------------------------------------
+Timestamp: 2024-07-31 08:55:56
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"95509258-59c6-43d9-b068-a31bd4ef87c5","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------443536064361739165391608","Content-Length":"8019"}
+-------------------------------------
+Timestamp: 2024-07-31 08:56:54
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"42955a54-c03b-41b0-832c-59cec5875b79","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------984481095893170857913149","Content-Length":"8019"}
+-------------------------------------
+Timestamp: 2024-07-31 08:57:20
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"5828cab4-bdc2-421d-a52b-41dcaeb50aeb","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------741821693519363432933258","Content-Length":"845"}
+-------------------------------------
+Timestamp: 2024-07-31 08:58:36
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"85ae4182-d71a-4152-b0e3-50b7daad3690","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------910981443941949055472473","Content-Length":"845"}
+-------------------------------------
+Timestamp: 2024-07-31 08:58:47
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: GET
+GET Parameters: []
+POST Parameters: []
+Headers: {"Host":"192.168.172.61:8080","Connection":"keep-alive","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Accept-Encoding":"gzip, deflate","Accept-Language":"en-US,en;q=0.9,bn;q=0.8"}
+-------------------------------------
+Timestamp: 2024-07-31 08:59:14
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: GET
+GET Parameters: []
+POST Parameters: []
+Headers: {"Host":"192.168.172.61:8080","Connection":"keep-alive","Cache-Control":"max-age=0","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Accept-Encoding":"gzip, deflate","Accept-Language":"en-US,en;q=0.9,bn;q=0.8"}
+-------------------------------------
+Timestamp: 2024-07-31 08:59:14
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: GET
+GET Parameters: []
+POST Parameters: []
+Headers: {"Host":"192.168.172.61:8080","Connection":"keep-alive","Cache-Control":"max-age=0","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Accept-Encoding":"gzip, deflate","Accept-Language":"en-US,en;q=0.9,bn;q=0.8"}
+-------------------------------------
+Timestamp: 2024-07-31 08:59:24
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: GET
+GET Parameters: []
+POST Parameters: []
+Headers: {"Host":"192.168.172.61:8080","Connection":"keep-alive","Cache-Control":"max-age=0","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Accept-Encoding":"gzip, deflate","Accept-Language":"en-US,en;q=0.9,bn;q=0.8"}
+-------------------------------------
+Timestamp: 2024-07-31 08:59:25
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: GET
+GET Parameters: []
+POST Parameters: []
+Headers: {"Host":"192.168.172.61:8080","Connection":"keep-alive","Cache-Control":"max-age=0","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Accept-Encoding":"gzip, deflate","Accept-Language":"en-US,en;q=0.9,bn;q=0.8"}
+-------------------------------------
+Timestamp: 2024-07-31 08:59:25
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: GET
+GET Parameters: []
+POST Parameters: []
+Headers: {"Host":"192.168.172.61:8080","Connection":"keep-alive","Cache-Control":"max-age=0","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Accept-Encoding":"gzip, deflate","Accept-Language":"en-US,en;q=0.9,bn;q=0.8"}
+-------------------------------------
+Timestamp: 2024-07-31 08:59:25
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: GET
+GET Parameters: []
+POST Parameters: []
+Headers: {"Host":"192.168.172.61:8080","Connection":"keep-alive","Cache-Control":"max-age=0","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Accept-Encoding":"gzip, deflate","Accept-Language":"en-US,en;q=0.9,bn;q=0.8"}
+-------------------------------------
+Timestamp: 2024-07-31 08:59:48
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: GET
+GET Parameters: []
+POST Parameters: []
+Headers: {"Host":"192.168.172.61:8080","Connection":"keep-alive","Cache-Control":"max-age=0","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Accept-Encoding":"gzip, deflate","Accept-Language":"en-US,en;q=0.9,bn;q=0.8"}
+-------------------------------------
+Timestamp: 2024-07-31 08:59:51
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: GET
+GET Parameters: []
+POST Parameters: []
+Headers: {"Host":"192.168.172.61:8080","Connection":"keep-alive","Cache-Control":"max-age=0","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Accept-Encoding":"gzip, deflate","Accept-Language":"en-US,en;q=0.9,bn;q=0.8"}
+-------------------------------------
+Timestamp: 2024-07-31 08:59:52
+Request URL: http://192.168.172.61:8080/test_api/upload_user_image.php
+Request Method: GET
+GET Parameters: []
+POST Parameters: []
+Headers: {"Host":"192.168.172.61:8080","Connection":"keep-alive","Cache-Control":"max-age=0","Upgrade-Insecure-Requests":"1","User-Agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/127.0.0.0 Safari\/537.36","Accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.7","Accept-Encoding":"gzip, deflate","Accept-Language":"en-US,en;q=0.9,bn;q=0.8"}
+-------------------------------------
+Timestamp: 2024-07-31 09:13:10
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 09:13:10
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 09:13:10
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 09:22:36
+Request URL: http://192.168.172.61:8080/test_api/upload_user_img.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"d9a3d7bb-d761-4138-ae65-516bc0568a66","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------230609226668382867453367","Content-Length":"851"}
+-------------------------------------
+Timestamp: 2024-07-31 09:25:23
+Request URL: http://192.168.172.61:8080/test_api/upload_user_img.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"62ccce52-4775-49ec-b671-66369c0d38d4","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------026038303377130278326834","Content-Length":"851"}
+-------------------------------------
+Timestamp: 2024-07-31 10:28:38
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 10:28:38
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 10:28:38
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 10:36:30
+Request URL: http://192.168.172.61:8080/test_api/emp_tour_report.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 10:37:11
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_type.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 10:37:11
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_report.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 10:50:59
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 10:50:59
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 10:50:59
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 10:58:51
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 10:58:51
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 10:58:52
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 11:03:19
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 11:03:19
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 11:03:19
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 11:13:16
+Request URL: http://192.168.172.61:8080/test_api/upload_user_img.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"672b2d85-4abc-4e26-98b0-1d5f8b41600f","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------481475610401933978649139","Content-Length":"851"}
+-------------------------------------
+Timestamp: 2024-07-31 11:13:31
+Request URL: http://192.168.172.61:8080/test_api/upload_user_img.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"66c2e2c5-d27b-4e6e-83a5-4d2c4cab2783","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------142624213744451676037524","Content-Length":"851"}
+-------------------------------------
+Timestamp: 2024-07-31 11:13:32
+Request URL: http://192.168.172.61:8080/test_api/upload_user_img.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"12e35763-39f1-4cde-bb88-b9f2bdb27be4","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------418065740368895483488601","Content-Length":"851"}
+-------------------------------------
+Timestamp: 2024-07-31 11:50:20
+Request URL: http://192.168.172.61:8080/test_api/upload_user_img.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"c2b34d18-0957-40a1-a716-0cbf3d7701a1","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------829443680306749274646178","Content-Length":"851"}
+-------------------------------------
+Timestamp: 2024-07-31 11:52:26
+Request URL: http://192.168.172.61:8080/test_api/upload_user_img.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"f5007c47-c998-4c61-8f72-aef335562341","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------342246734117793931276467","Content-Length":"851"}
+-------------------------------------
+Timestamp: 2024-07-31 11:52:46
+Request URL: http://192.168.172.61:8080/test_api/upload_user_img.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"6833771b-a607-42fc-89e2-2fcb25eca1d8","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------494488701047861488021271","Content-Length":"851"}
+-------------------------------------
+Timestamp: 2024-07-31 11:52:51
+Request URL: http://192.168.172.61:8080/test_api/upload_user_img.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"8ffaea6e-11d5-4a74-b1fb-832704d8157a","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------472268901605651726829781","Content-Length":"851"}
+-------------------------------------
+Timestamp: 2024-07-31 11:53:07
+Request URL: http://192.168.172.61:8080/test_api/upload_user_img.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"5ea5d31b-b10f-4b19-9e94-0952cdc41a77","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------097723350230160487019118","Content-Length":"851"}
+-------------------------------------
+Timestamp: 2024-07-31 11:53:08
+Request URL: http://192.168.172.61:8080/test_api/upload_user_img.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"8e3d1ce4-7b43-4210-9ae8-529b6a8d3288","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------442006433584114086213060","Content-Length":"851"}
+-------------------------------------
+Timestamp: 2024-07-31 12:01:07
+Request URL: http://192.168.172.61:8080/test_api/upload_user_img.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"456b07d0-4254-4efd-a361-64db54d7d732","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------612720811250456848483830","Content-Length":"851"}
+-------------------------------------
+Timestamp: 2024-07-31 12:04:57
+Request URL: http://192.168.172.61:8080/test_api/upload_user_img.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"10dc8346-3720-4d93-bac7-b653557a1be7","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------230219377804604642113114","Content-Length":"851"}
+-------------------------------------
+Timestamp: 2024-07-31 12:08:16
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 12:08:16
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 12:08:16
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 12:28:57
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 12:28:57
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 12:28:57
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjM5ODc5NiwiZXhwIjoxNzIyNDg1MTk2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.7_N9ep-3Yg99G9fmq8WuzpdwBuWmCFWeltWBVssEV8I","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-07-31 12:30:37
+Request URL: http://192.168.172.61:8080/test_api/upload_user_img.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"9e0f94f2-2fde-4375-9efe-dae4ba40e597","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------731391646403397791969528","Content-Length":"851"}
+-------------------------------------
+Timestamp: 2024-07-31 12:31:28
+Request URL: http://192.168.172.61:8080/test_api/upload_user_img.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"e03cc485-a23d-4b10-9418-06ac7a697a77","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------449246921477765488705995","Content-Length":"851"}
+-------------------------------------
+Timestamp: 2024-07-31 12:32:32
+Request URL: http://192.168.172.61:8080/test_api/upload_user_img.php
+Request Method: POST
+GET Parameters: []
+POST Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjQwODI1OCwiZXhwIjoxNzIyNDk0NjU4LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.o3flCb9r5NhEIdT-ak47jMTi3ILZwCP53IQe2VOZ5-0","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"f6912bdb-7a2e-464e-baa0-4ecbc1f93f9c","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------902810503632699446782622","Content-Length":"851"}
+-------------------------------------

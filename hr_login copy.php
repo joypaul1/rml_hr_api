@@ -23,7 +23,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     if (!$validator->validateRequired($requiredFields)) {
       
-        $jsonData = ["status" => "false", "message" => "Missing required parameters."];
+        // Set the HTTP status code to 400 Bad Request
+                http_response_code(400);
+                $jsonData = ["status" => false, "message" => "Missing Required Parameters."];
         echo json_encode($jsonData); 
         die();
     }else{

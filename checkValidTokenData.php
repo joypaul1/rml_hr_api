@@ -7,7 +7,7 @@ use Firebase\JWT\BeforeValidException;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 
-// include_once('validateToken.php');
+include_once('handle_request.php');
 $config = require_once('inc/config.php');
 $secret_key = $config['jwt_token'];
 $headers = getallheaders();
@@ -17,11 +17,10 @@ if(isset($headers['Authorization']) || isset($headers['authorization'])){
     $statusData =  validate_jwt_token($tokenData ,$secret_key);
     return ["data" => $statusData,"status" => true ];
 }else {
-    $jsonData = ["status" => false, "message" => "Authorization Token Not Found!" , "data" => $_POST,'token' => $headers['authorization'] ];
+    $jsonData = ["status" => false, "message" => "Authorization Token Not Found!"];
     echo json_encode($jsonData);
     die();
 }
-
 
 
 function validate_jwt_token($jwt_token, $secret_key) {

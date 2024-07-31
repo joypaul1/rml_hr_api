@@ -25,7 +25,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             // Initialize input validator with POST data **//
             $validator = new InputValidator($_POST);
             if (!$validator->validateRequired($requiredFields)) {
-                $jsonData = ["status" => "false", "message" => "Missing Required Parameters."];
+                // Set the HTTP status code to 400 Bad Request
+                http_response_code(400);
+                $jsonData = ["status" => false, "message" => "Missing Required Parameters."];
                 echo json_encode($jsonData);
                 die();
             }
@@ -44,17 +46,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $strSQL = @oci_parse($objConnect, $SQL);
                 if (@oci_execute($strSQL)) {
                     http_response_code(200);
-                    $jsonData = [
-                        "status" => true,
-                        "message" => 'Your tour successfully created. It must be approved by your responsible Line Manager or Department Head.'
-                    ];
+                    $jsonData = ["status" => true,  "message" =>'Your tour successfully created. It must be approved by your responsible Line Manager or Department Head.'];
                     echo json_encode($jsonData);
                 } else {
-                    http_response_code(200);
+                    http_response_code(403);
                     @$lastError = error_get_last();
                     @$error = $lastError ? "" . $lastError["message"] . "" : "";
-                    // $str_arr_error = preg_split("/\,/", $error);
-                    $jsonData = ["status" => false,  "message" => @$error ];
+                    @$str_arr_error = preg_split("/\,/", $error);
+                    $jsonData = ["status" => false,  "message" => @$str_arr_error ];
                     echo json_encode($jsonData);
                 }
             } catch (Exception $e) {
