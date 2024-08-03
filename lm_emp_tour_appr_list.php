@@ -2,7 +2,6 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
-include_once('handle_request.php');
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     $checkValidTokenData    =   require_once("checkValidTokenData.php");
