@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     "LINE_MANAGER_MOBILE"   => $objResultFound["LINE_MANAGER_MOBILE"],
                     "DEPT_HEAD_RML_ID"      => $objResultFound["DEPT_HEAD_RML_ID"],
                     "DEPT_HEAD_MOBILE_NO"   => $objResultFound["DEPT_HEAD_MOBILE_NO"],
-                    "USER_IMAGE"            => $objResultFound["USER_IMAGEUSER_IMAGE"],
+                    "USER_IMAGE"            => $objResultFound["USER_IMAGE"],
                 ];
                 //incldue jwt token
                 include_once ('createToken.php');

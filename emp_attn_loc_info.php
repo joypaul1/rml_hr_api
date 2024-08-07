@@ -20,24 +20,21 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             //**Start Query & Return Data Response **//
             try {
-                $SQL = "SELECT 
-                RML_ID, R_CONCERN, IEMI_NO, DESIGNATION,
-                USER_ROLE,  EMP_NAME,MAIL, MOBILE_NO,
-                LINE_MANAGER_RML_ID, LINE_MANAGER_MOBILE, DEPT_HEAD_RML_ID, DEPT_HEAD_MOBILE_NO,
-                (SELECT SUBUSER.EMP_NAME
-                FROM DEVELOPERS2.RML_HR_APPS_USER SUBUSER
-                WHERE SUBUSER.RML_ID = U.LINE_MANAGER_RML_ID) AS LINE_MANAGER_NAME,
-                (SELECT SUBUSER.EMP_NAME
-                FROM DEVELOPERS2.RML_HR_APPS_USER SUBUSER
-                WHERE SUBUSER.RML_ID = U.DEPT_HEAD_RML_ID) AS DEPT_HEAD_NAME,
-                NVL ((IMAGE.USER_IMAGE),
-                'http://192.168.172.61:8080/test_api/image/user.png')
-                AS USER_IMAGE
-                FROM
-                    DEVELOPERS2.RML_HR_APPS_USER U
-                    LEFT JOIN DEVELOPERS2.RML_HR_APPS_USER_IMAGE IMAGE
-                            ON U.RML_ID = IMAGE.USER_ID
-                WHERE
+                $SQL = "SELECT RML_ID,
+                            LAT,
+                            LANG,
+                            LAT_2,
+                            LANG_2,
+                            LAT_3,
+                            LANG_3,
+                            LAT_4,
+                            LANG_4,
+                            LAT_5,
+                            LANG_5,
+                            LAT_6,
+                            LANG_6
+                        FROM DEVELOPERS2.RML_HR_APPS_USER
+                        WHERE
                     RML_ID = '$RML_ID' AND IS_ACTIVE = 1";
 
                 $strSQL = @oci_parse($objConnect, $SQL);
@@ -46,18 +43,19 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
                 if ($objResultFound) {
                     $responseData = [
-                        "RML_ID" => $objResultFound["RML_ID"],
-                        "EMP_NAME" => $objResultFound["EMP_NAME"],
-                        "MOBILE_NO" => $objResultFound["MOBILE_NO"],
-                        "DESIGNATION" => $objResultFound["DESIGNATION"],
-                        "USER_ROLE" => $objResultFound["USER_ROLE"],
-                        "CONCERN" => $objResultFound["R_CONCERN"],
-                        "LINE_MANAGER_RML_ID" => $objResultFound["LINE_MANAGER_RML_ID"],
-                        "LINE_MANAGER_MOBILE" => $objResultFound["LINE_MANAGER_MOBILE"],
-                        "DEPT_HEAD_RML_ID" => $objResultFound["DEPT_HEAD_RML_ID"],
-                        "DEPT_HEAD_MOBILE_NO" => $objResultFound["DEPT_HEAD_MOBILE_NO"],
-                        "USER_IMAGE" => $objResultFound["USER_IMAGE"],
-                        // "USER_IMAGE" => "http://192.168.172.61:8080/test_api/image/user.png",
+                        "RML_ID"    => $objResultFound["RML_ID"],
+                        "LAT"       => $objResultFound["LAT"],
+                        "LANG"      => $objResultFound["LANG"],
+                        "LAT_2"     => $objResultFound["LAT_2"],
+                        "LANG_2"    => $objResultFound["LANG_2"],
+                        "LAT_3"     => $objResultFound["LAT_3"],
+                        "LANG_3"    => $objResultFound["LANG_3"],
+                        "LAT_4"     => $objResultFound["LAT_4"],
+                        "LANG_4"    => $objResultFound["LANG_4"],
+                        "LAT_5"     => $objResultFound["LAT_5"],
+                        "LANG_5"    => $objResultFound["LANG_5"],
+                        "LAT_6"     => $objResultFound["LAT_6"],
+                        "LANG_6"    => $objResultFound["LANG_6"],
                     ];
                     http_response_code(200);
                     $jsonData = ["status" => true, "data" => $responseData, "message" => 'Successfully Data Found.'];

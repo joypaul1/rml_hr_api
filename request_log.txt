@@ -327,3 +327,38 @@ POST Parameters: []
 File Parameters: []
 Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAwMjQ2MiwiZXhwIjoxNzIzMDg4ODYyLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvdGVzdF9hcGkvaW1hZ2UvdXNlci5wbmcifX0.6SVb_TsM8qh-SgVrenw3olWAETuTgHnqK3b3_nxreHw","content-type":"application\/json"}
 -------------------------------------
+Timestamp: 2024-08-07 07:48:12
+Request URL: http://192.168.172.61:8080/test_api/emp_current_location_entry.php
+Request Method: POST
+POST Parameters: {"LOC_LAT":"222.392619"}
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAwNTAzMCwiZXhwIjoxNzIzMDkxNDMwLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.114vtJxNJFosE3cAv-OH_Fa1etl0EM7-nqv1QODWHL8","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"789699c4-b5c8-4cd1-ad56-bc9437304550","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------213171218563441299714940","Content-Length":"172"}
+-------------------------------------
+Timestamp: 2024-08-07 07:48:19
+Request URL: http://192.168.172.61:8080/test_api/emp_current_location_entry.php
+Request Method: POST
+POST Parameters: {"LOC_LAT":"222.392619","LOC_LANG":"221.392619"}
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAwNTAzMCwiZXhwIjoxNzIzMDkxNDMwLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.114vtJxNJFosE3cAv-OH_Fa1etl0EM7-nqv1QODWHL8","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"e47a059c-af97-45be-8456-7116817a4132","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------076562753123613134686631","Content-Length":"289"}
+-------------------------------------
+Timestamp: 2024-08-07 08:03:39
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMjY3Njk0NCwiZXhwIjoxNzIyNzYzMzQ0LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.q3tzRbMbeMWRySdNFdSqRizFZDpDp8VLBwPolSYYNII","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"93ddc6bd-5912-48f4-87bc-4fcf2fc9a9f4","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-07 08:04:04
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAwOTkwNCwiZXhwIjoxNzIzMDk2MzA0LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STUwtMDAzODRfMTcyMjY3NzIwMy5wbmcifX0.ij7qmNyG3AzfLFE1DRBd8Q0q_ilwnUZq5O3Hpzk1M9I","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"e9dea786-7b08-464d-a7a6-f5334e525b08","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-07 08:04:55
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAwOTkwNCwiZXhwIjoxNzIzMDk2MzA0LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STUwtMDAzODRfMTcyMjY3NzIwMy5wbmcifX0.ij7qmNyG3AzfLFE1DRBd8Q0q_ilwnUZq5O3Hpzk1M9I","User-Agent":"PostmanRuntime\/7.40.0","Accept":"*\/*","Postman-Token":"a8206633-5c36-4c69-8527-533dd286237a","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
