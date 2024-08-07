@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             'http://192.168.172.61:8080/test_api/image/user.png')
                             AS USER_IMAGE
                     FROM DEVELOPERS2.RML_HR_APPS_USER U
-                        LEFT JOIN DEVELOPERS.RML_HR_APPS_USER_IMAGE IMAGE
+                        LEFT JOIN DEVELOPERS2.RML_HR_APPS_USER_IMAGE IMAGE
                             ON U.RML_ID = IMAGE.USER_ID
                     WHERE RML_ID = '$rml_id'
                         AND PASS_MD5 = '$user_password'
@@ -67,30 +67,30 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $Fdatabasekey = $objResultFound["FIRE_BASE_ID"];
 
                 if ($DatabaseiemiNo != $iemiNumber) {
-                    $SQL = "UPDATE DEVELOPERS.RML_HR_APPS_USER SET IEMI_NO = '$iemiNumber' WHERE RML_ID = '$rml_id'";
+                    $SQL = "UPDATE DEVELOPERS2.RML_HR_APPS_USER SET IEMI_NO = '$iemiNumber' WHERE RML_ID = '$rml_id'";
                     $strSQLFkeyUpdate = @oci_parse($objConnect, $SQL);
                     @oci_execute($strSQLFkeyUpdate);
                 }
 
                 if (strlen($firebaseKey) > 0 && $firebaseKey != $Fdatabasekey) {
-                    $strSQLFkeyUpdate = @oci_parse($objConnect, "UPDATE DEVELOPERS.RML_HR_APPS_USER SET FIRE_BASE_ID = '$firebaseKey', FKEY_UPDATED_DATE = SYSDATE WHERE RML_ID = '$rml_id'");
+                    $strSQLFkeyUpdate = @oci_parse($objConnect, "UPDATE DEVELOPERS2.RML_HR_APPS_USER SET FIRE_BASE_ID = '$firebaseKey', FKEY_UPDATED_DATE = SYSDATE WHERE RML_ID = '$rml_id'");
                     @oci_execute($strSQLFkeyUpdate);
                 }
 
-                $SESSTION_SQL = @oci_parse($objConnect, "BEGIN DEVELOPERS.HR_APPS_USER_SESSION_CREATE('$rml_id'); END;");
+                $SESSTION_SQL = @oci_parse($objConnect, "BEGIN DEVELOPERS2.HR_APPS_USER_SESSION_CREATE('$rml_id'); END;");
                 @oci_execute($SESSTION_SQL);
 
                 $responseData = [
-                    "RML_ID" => $objResultFound["RML_ID"],
-                    "EMP_NAME" => $objResultFound["EMP_NAME"],
-                    "DESIGNATION" => $objResultFound["DESIGNATION"],
-                    "USER_ROLE" => $objResultFound["USER_ROLE"],
-                    "CONCERN" => $objResultFound["R_CONCERN"],
-                    "LINE_MANAGER_RML_ID" => $objResultFound["LINE_MANAGER_RML_ID"],
-                    "LINE_MANAGER_MOBILE" => $objResultFound["LINE_MANAGER_MOBILE"],
-                    "DEPT_HEAD_RML_ID" => $objResultFound["DEPT_HEAD_RML_ID"],
-                    "DEPT_HEAD_MOBILE_NO" => $objResultFound["DEPT_HEAD_MOBILE_NO"],
-                    "USER_IMAGE" => "http://192.168.172.61:8080/test_api/image/user.png",
+                    "RML_ID"                => $objResultFound["RML_ID"],
+                    "EMP_NAME"              => $objResultFound["EMP_NAME"],
+                    "DESIGNATION"           => $objResultFound["DESIGNATION"],
+                    "USER_ROLE"             => $objResultFound["USER_ROLE"],
+                    "CONCERN"               => $objResultFound["R_CONCERN"],
+                    "LINE_MANAGER_RML_ID"   => $objResultFound["LINE_MANAGER_RML_ID"],
+                    "LINE_MANAGER_MOBILE"   => $objResultFound["LINE_MANAGER_MOBILE"],
+                    "DEPT_HEAD_RML_ID"      => $objResultFound["DEPT_HEAD_RML_ID"],
+                    "DEPT_HEAD_MOBILE_NO"   => $objResultFound["DEPT_HEAD_MOBILE_NO"],
+                    "USER_IMAGE"            => $objResultFound["USER_IMAGEUSER_IMAGE"],
                 ];
                 //incldue jwt token
                 include_once ('createToken.php');
