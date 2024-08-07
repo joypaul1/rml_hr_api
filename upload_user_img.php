@@ -19,11 +19,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //** ORACLE DATA CONNECTION***//
 
 
-            // require_once('InputValidator.php');  // Include InputValidator class
-            // $requiredFields = ['USER_IMAGE'];  // Define required fields
+            require_once('InputValidator.php');  // Include InputValidator class
+            $requiredFields = ['USER_IMAGE'];  // Define required fields
 
             // Initialize input validator with POST data **//
-            // $validator = new InputValidator($_POST);
+            $validator = new InputValidator($_POST);
             if (!isset($_FILES['USER_IMAGE'])) {
                 // Set the HTTP status code to 400 Bad Request
                 http_response_code(400);

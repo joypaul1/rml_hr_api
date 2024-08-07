@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //**Start Query & Return Data Response **//
             try {
                 $SQL = "SELECT  IMAGE_PATH, POSITION, WEB_LINK, APP_LINK
-                FROM  DEVELOPERS.HR_SLIDER_IMAGE
+                FROM  HR_SLIDER_IMAGE
                 WHERE IS_ACTIVE = 1 ORDER BY POSITION ";
     
                 $strSQL = @oci_parse($objConnect, $SQL);            

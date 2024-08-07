@@ -57,13 +57,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             U.DEPT_HEAD_RML_ID,
                             U.DEPT_HEAD_MOBILE_NO,
                             (SELECT SUBUSER.EMP_NAME
-                            FROM DEVELOPERS.RML_HR_APPS_USER SUBUSER
+                            FROM DEVELOPERS2.RML_HR_APPS_USER SUBUSER
                             WHERE SUBUSER.RML_ID = U.LINE_MANAGER_RML_ID) AS LINE_MANAGER_NAME,
                             (SELECT SUBUSER.EMP_NAME
-                            FROM DEVELOPERS.RML_HR_APPS_USER SUBUSER
+                            FROM DEVELOPERS2.RML_HR_APPS_USER SUBUSER
                             WHERE SUBUSER.RML_ID = U.DEPT_HEAD_RML_ID) AS DEPT_HEAD_NAME
                         FROM 
-                            DEVELOPERS.RML_HR_APPS_USER U
+                            DEVELOPERS2.RML_HR_APPS_USER U
                         WHERE   
                             U.IS_ACTIVE = 1";
 

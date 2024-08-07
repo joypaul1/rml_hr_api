@@ -5,7 +5,7 @@ header("Content-Type: application/json; charset=UTF-8");
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
-    include_once('../test_api/inc/connoracle.php');
+    include_once ('../test_api/inc/connoracle.php');
 
     if ($isDatabaseConnected !== 1) {
         $jsonData = ["status" => false, "message" => "Database Connection Failed."];
@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     }
 
     // Include InputValidator class
-    require_once('InputValidator.php');
+    require_once ('InputValidator.php');
     // Define required fields
     $requiredFields = ['rml_id', 'user_password', 'iemiNumber', 'fkey'];
 
@@ -31,19 +31,31 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $validator->sanitizeInputs();
 
         // Retrieve sanitized inputs
-        $rml_id         = $validator->get('rml_id');
-        $user_password  = strtoupper(md5($validator->get('user_password')));
-        $iemiNumber     = $validator->get('iemiNumber');
-        $firebaseKey    = $validator->get('fkey');
+        $rml_id = $validator->get('rml_id');
+        $user_password = strtoupper(md5($validator->get('user_password')));
+        $iemiNumber = $validator->get('iemiNumber');
+        $firebaseKey = $validator->get('fkey');
         try {
-            $SQL = "SELECT 
-            RML_ID, R_CONCERN, IEMI_NO, DESIGNATION, FIRE_BASE_ID,
-            USER_ROLE, EMP_NAME,
-            LINE_MANAGER_RML_ID, LINE_MANAGER_MOBILE, DEPT_HEAD_RML_ID, DEPT_HEAD_MOBILE_NO
-            FROM 
-                DEVELOPERS.RML_HR_APPS_USER
-            WHERE 
-                RML_ID = '$rml_id' AND PASS_MD5 = '$user_password' AND IS_ACTIVE = 1";
+            $SQL = "SELECT RML_ID,
+                        R_CONCERN,
+                        IEMI_NO,
+                        DESIGNATION,
+                        FIRE_BASE_ID,
+                        USER_ROLE,
+                        EMP_NAME,
+                        LINE_MANAGER_RML_ID,
+                        LINE_MANAGER_MOBILE,
+                        DEPT_HEAD_RML_ID,
+                        DEPT_HEAD_MOBILE_NO,
+                        NVL ((IMAGE.USER_IMAGE),
+                            'http://192.168.172.61:8080/test_api/image/user.png')
+                            AS USER_IMAGE
+                    FROM DEVELOPERS2.RML_HR_APPS_USER U
+                        LEFT JOIN DEVELOPERS.RML_HR_APPS_USER_IMAGE IMAGE
+                            ON U.RML_ID = IMAGE.USER_ID
+                    WHERE RML_ID = '$rml_id'
+                        AND PASS_MD5 = '$user_password'
+                        AND IS_ACTIVE = 1";
 
             $strSQL = @oci_parse($objConnect, $SQL);
             @oci_execute($strSQL);
@@ -69,22 +81,22 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 @oci_execute($SESSTION_SQL);
 
                 $responseData = [
-                    "RML_ID"                => $objResultFound["RML_ID"],
-                    "EMP_NAME"              => $objResultFound["EMP_NAME"],
-                    "DESIGNATION"           => $objResultFound["DESIGNATION"],
-                    "USER_ROLE"             => $objResultFound["USER_ROLE"],
-                    "CONCERN"               => $objResultFound["R_CONCERN"],
-                    "LINE_MANAGER_RML_ID"   => $objResultFound["LINE_MANAGER_RML_ID"],
-                    "LINE_MANAGER_MOBILE"   => $objResultFound["LINE_MANAGER_MOBILE"],
-                    "DEPT_HEAD_RML_ID"      => $objResultFound["DEPT_HEAD_RML_ID"],
-                    "DEPT_HEAD_MOBILE_NO"   => $objResultFound["DEPT_HEAD_MOBILE_NO"],
-                    "USER_IMAGE"            => "http://192.168.172.61:8080/test_api/image/user.png",
+                    "RML_ID" => $objResultFound["RML_ID"],
+                    "EMP_NAME" => $objResultFound["EMP_NAME"],
+                    "DESIGNATION" => $objResultFound["DESIGNATION"],
+                    "USER_ROLE" => $objResultFound["USER_ROLE"],
+                    "CONCERN" => $objResultFound["R_CONCERN"],
+                    "LINE_MANAGER_RML_ID" => $objResultFound["LINE_MANAGER_RML_ID"],
+                    "LINE_MANAGER_MOBILE" => $objResultFound["LINE_MANAGER_MOBILE"],
+                    "DEPT_HEAD_RML_ID" => $objResultFound["DEPT_HEAD_RML_ID"],
+                    "DEPT_HEAD_MOBILE_NO" => $objResultFound["DEPT_HEAD_MOBILE_NO"],
+                    "USER_IMAGE" => "http://192.168.172.61:8080/test_api/image/user.png",
                 ];
                 //incldue jwt token
-                include_once('createToken.php');
+                include_once ('createToken.php');
                 $jwtData = generate_jwt_token($responseData);
                 http_response_code(200); // status successful
-                $jsonData = ["status" => true,  "data" => $jwtData, "message" => 'Successfully Data Found.'];
+                $jsonData = ["status" => true, "data" => $jwtData, "message" => 'Successfully Data Found.'];
                 echo json_encode($jsonData);
             } else {
                 http_response_code(401); // invalid user or credentials

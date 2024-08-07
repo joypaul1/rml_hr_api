@@ -22,15 +22,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             try {
                 $SQL = "SELECT 
                 RML_ID, R_CONCERN, DESIGNATION, USER_ROLE,  EMP_NAME,
-                DEVELOPERS.RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'P') PRESENT_TOTAL,
-                DEVELOPERS.RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'L') LATE_TOTAL,
-                DEVELOPERS.RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'A') ABSENT_TOTAL,
-                DEVELOPERS.RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'H') HOLIDAY_TOTAL,
-                DEVELOPERS.RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'W') WEEKEND_TOTAL,
-                DEVELOPERS.RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'T') TOUR_TOTAL,
-                DEVELOPERS.RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'LV') LEAVE_TOTAL
+                RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'P') PRESENT_TOTAL,
+                RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'L') LATE_TOTAL,
+                RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'A') ABSENT_TOTAL,
+                RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'H') HOLIDAY_TOTAL,
+                RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'W') WEEKEND_TOTAL,
+                RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'T') TOUR_TOTAL,
+                RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'LV') LEAVE_TOTAL
                 FROM 
-                    DEVELOPERS.RML_HR_APPS_USER
+                    RML_HR_APPS_USER
                 WHERE 
                     RML_ID = '$RML_ID' AND IS_ACTIVE = 1";
     

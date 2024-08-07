@@ -41,23 +41,23 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         try {
             $SQL = "SELECT 
             RML_ID, R_CONCERN, IEMI_NO, DESIGNATION, FIRE_BASE_ID,
-            DEVELOPERS.RML_HR_FKEY(RML_ID, 'LINE_MANAGER') LINE_MANAGER_FKEY,
-            DEVELOPERS.RML_HR_FKEY(RML_ID, 'DEPT_HEAD') DEPT_MANAGER_FKEY,
+            RML_HR_FKEY(RML_ID, 'LINE_MANAGER') LINE_MANAGER_FKEY,
+            RML_HR_FKEY(RML_ID, 'DEPT_HEAD') DEPT_MANAGER_FKEY,
             USER_ROLE, APPS_UPDATE_VERSION, LAT, LANG, LAT_2, LANG_2,
             LAT_3, LANG_3, LAT_4, LANG_4, LAT_5, LANG_5, LAT_6, LANG_6,
             ATTN_RANGE_M, IS_ACTIVE_LAT_LANG, EMP_NAME,
             LINE_MANAGER_RML_ID, LINE_MANAGER_MOBILE, DEPT_HEAD_RML_ID, DEPT_HEAD_MOBILE_NO, PUNCH_DATA_SYN,
-            DEVELOPERS.RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'P') PRESENT_TOTAL,
-            DEVELOPERS.RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'L') LATE_TOTAL,
-            DEVELOPERS.RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'A') ABSENT_TOTAL,
-            DEVELOPERS.RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'H') HOLIDAY_TOTAL,
-            DEVELOPERS.RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'W') WEEKEND_TOTAL,
-            DEVELOPERS.RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'T') TOUR_TOTAL,
-            DEVELOPERS.RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'LV') LEAVE_TOTAL,
-            (SELECT MESSAGE FROM DEVELOPERS.RML_HR_NOTIFICATION WHERE IS_ACTIVE = 1 AND CONCERN = R_CONCERN AND KEY_WORD = 'WELCOME_MESSAGE') USER_NOTIFICATION,
+            RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'P') PRESENT_TOTAL,
+            RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'L') LATE_TOTAL,
+            RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'A') ABSENT_TOTAL,
+            RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'H') HOLIDAY_TOTAL,
+            RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'W') WEEKEND_TOTAL,
+            RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'T') TOUR_TOTAL,
+            RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'LV') LEAVE_TOTAL,
+            (SELECT MESSAGE FROM RML_HR_NOTIFICATION WHERE IS_ACTIVE = 1 AND CONCERN = R_CONCERN AND KEY_WORD = 'WELCOME_MESSAGE') USER_NOTIFICATION,
             TRACE_LOCATION
             FROM 
-                DEVELOPERS.RML_HR_APPS_USER
+                RML_HR_APPS_USER
             WHERE 
                 RML_ID = '$rml_id' AND PASS_MD5 = '$user_password' AND IS_ACTIVE = 1";
 
@@ -71,17 +71,17 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $Fdatabasekey = $objResultFound["FIRE_BASE_ID"];
     
                 if ($DatabaseiemiNo != $iemiNumber) {
-                    $SQL = "UPDATE DEVELOPERS.RML_HR_APPS_USER SET IEMI_NO = '$iemiNumber' WHERE RML_ID = '$rml_id'";
+                    $SQL = "UPDATE RML_HR_APPS_USER SET IEMI_NO = '$iemiNumber' WHERE RML_ID = '$rml_id'";
                     $strSQLFkeyUpdate = @oci_parse($objConnect, $SQL);
                     @oci_execute($strSQLFkeyUpdate);
                 }
 
                 if (strlen($firebaseKey) > 0 && $firebaseKey != $Fdatabasekey) {
-                    $strSQLFkeyUpdate = @oci_parse($objConnect, "UPDATE DEVELOPERS.RML_HR_APPS_USER SET FIRE_BASE_ID = '$firebaseKey', FKEY_UPDATED_DATE = SYSDATE WHERE RML_ID = '$rml_id'");
+                    $strSQLFkeyUpdate = @oci_parse($objConnect, "UPDATE RML_HR_APPS_USER SET FIRE_BASE_ID = '$firebaseKey', FKEY_UPDATED_DATE = SYSDATE WHERE RML_ID = '$rml_id'");
                     @oci_execute($strSQLFkeyUpdate);
                 }
     
-                $SESSTION_SQL = @oci_parse($objConnect, "BEGIN DEVELOPERS.HR_APPS_USER_SESSION_CREATE('$rml_id'); END;");
+                $SESSTION_SQL = @oci_parse($objConnect, "BEGIN HR_APPS_USER_SESSION_CREATE('$rml_id'); END;");
                 @oci_execute($SESSTION_SQL);
     
                 $responseData = [

@@ -16,12 +16,13 @@ function get_all_headers() {
 }
 
 // Function to log request details
-function log_request($logFile, $requestMethod, $requestUrl, $getParams, $postParams, $headers) {
+function log_request($logFile, $requestMethod, $requestUrl, $getParams, $postParams, $fileParams, $headers) {
     $logData = "Timestamp: " . date('Y-m-d H:i:s') . "\n";
     $logData .= "Request URL: " . $requestUrl . "\n";
     $logData .= "Request Method: " . $requestMethod . "\n";
-    $logData .= "GET Parameters: " . json_encode($getParams) . "\n";
+    //$logData .= "GET Parameters: " . json_encode($getParams) . "\n";
     $logData .= "POST Parameters: " . json_encode($postParams) . "\n";
+    $logData .= "File Parameters: " . json_encode($fileParams) . "\n";
     $logData .= "Headers: " . json_encode($headers) . "\n";
     $logData .= "-------------------------------------\n";
 
@@ -37,16 +38,19 @@ $getParams = $_GET;
 // Retrieve POST parameters
 $postParams = $_POST;
 
+// Retrieve file parameters
+$fileParams = $_FILES;
+
 // Retrieve headers
 $headers = get_all_headers();
 
 // Construct the request URL
-$requestUrl = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+$requestUrl = (isset($_SERVER['REQUEST_SCHEME']) ? $_SERVER['REQUEST_SCHEME'] : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
 // Define log file
 $logFile = 'request_log.txt';
 
 // Log the request details
-log_request($logFile, $requestMethod, $requestUrl, $getParams, $postParams, $headers);
+log_request($logFile, $requestMethod, $requestUrl, $getParams, $postParams, $fileParams, $headers);
 
 ?>
