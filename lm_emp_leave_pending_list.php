@@ -5,18 +5,35 @@ header("Content-Type: application/json; charset=UTF-8");
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
-    $checkValidTokenData    =   require_once("checkValidTokenData.php");
+    $checkValidTokenData = require_once ("checkValidTokenData.php");
     if ($checkValidTokenData['status']) {
         if ($checkValidTokenData['data']->data->RML_ID) {
             $RML_ID = $checkValidTokenData['data']->data->RML_ID; // set RML Variable Data
             //**Start data base connection  & status check **//
-            include_once('../test_api/inc/connoracle.php');
+            include_once ('../test_api/inc/connoracle.php');
             if ($isDatabaseConnected !== 1) {
                 $jsonData = ["status" => false, "message" => "Database Connection Failed."];
                 echo json_encode($jsonData);
                 die();
             }
             //**End data base connection  & status check **//
+            require_once ('InputValidator.php');  // Include InputValidator class
+            $requiredFields = ['START_ROW', 'LIMIT_ROW'];  // Define required fields
+
+            // Initialize input validator with POST data **//
+            $validator = new InputValidator($_POST);
+            if (!$validator->validateRequired($requiredFields)) {
+                // Set the HTTP status code to 400 Bad Request
+                http_response_code(400);
+                $jsonData = ["status" => false, "message" => "Missing Required Parameters."];
+                echo json_encode($jsonData);
+                die();
+            }
+            // **Initialize input validator with POST Data**//
+
+            $validator->sanitizeInputs();   // Sanitize Inputs
+            $START_ROW = $validator->get('START_ROW');   // Retrieve sanitized inputs
+            $LIMIT_ROW = $validator->get('LIMIT_ROW');   // Retrieve sanitized inputs
 
             //**Start Query & Return Data Response **//
             try {
@@ -32,19 +49,20 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     AND trunc(START_DATE)> TO_DATE('01/01/2022','DD/MM/YYYY')
                     AND  b.LINE_MANAGER_RML_ID='$RML_ID'
                     AND A.IS_APPROVED IS NULL";
+                $SQL .= " OFFSET $START_ROW ROWS FETCH NEXT $LIMIT_ROW ROWS ONLY";
 
                 $strSQL = @oci_parse($objConnect, $SQL);
                 @oci_execute($strSQL);
                 $responseData = [];
                 while ($objResultFound = @oci_fetch_assoc($strSQL)) {
                     $responseData[] = [
-                        "ID"            => $objResultFound['ID'],
-                        "RML_ID"        => $objResultFound['RML_ID'],
-                        "START_DATE"    => $objResultFound['START_DATE'],
-                        "END_DATE"      => $objResultFound['END_DATE'],
-                        "REMARKS"       => $objResultFound['REMARKS'],
-                        "LEAVE_DAYS"    => $objResultFound['LEAVE_DAYS'],
-                        "LEAVE_TYPE"    => $objResultFound['LEAVE_TYPE']
+                        "ID" => $objResultFound['ID'],
+                        "RML_ID" => $objResultFound['RML_ID'],
+                        "START_DATE" => $objResultFound['START_DATE'],
+                        "END_DATE" => $objResultFound['END_DATE'],
+                        "REMARKS" => $objResultFound['REMARKS'],
+                        "LEAVE_DAYS" => $objResultFound['LEAVE_DAYS'],
+                        "LEAVE_TYPE" => $objResultFound['LEAVE_TYPE']
                     ];
                 }
 

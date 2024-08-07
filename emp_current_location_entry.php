@@ -78,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $jsonData = ["status" => false, "message" => $e->getMessage()];
                 echo json_encode($jsonData);
             } finally {
-                oci_close($objConnect);
+                @oci_close($objConnect);
             }
             //*** End Query & Return Data Response ***//
         } else {
