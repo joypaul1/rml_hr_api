@@ -58,7 +58,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 } else {
                     http_response_code(401);
                     $jsonData = ["status" => true, "data" => [], "message" => 'No Data Found.'];
-                    // $jsonData = ["status" => false, "message" => "Invalid credentials or user not active."];
                     echo json_encode($jsonData);
                 }
             } catch (Exception $e) {

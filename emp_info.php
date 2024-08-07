@@ -57,7 +57,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         "DEPT_HEAD_RML_ID" => $objResultFound["DEPT_HEAD_RML_ID"],
                         "DEPT_HEAD_MOBILE_NO" => $objResultFound["DEPT_HEAD_MOBILE_NO"],
                         "USER_IMAGE" => $objResultFound["USER_IMAGE"],
-                        // "USER_IMAGE" => "http://192.168.172.61:8080/test_api/image/user.png",
                     ];
                     http_response_code(200);
                     $jsonData = ["status" => true, "data" => $responseData, "message" => 'Successfully Data Found.'];
