@@ -2,6 +2,7 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
+
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     $checkValidTokenData    =   require_once("checkValidTokenData.php");
@@ -17,25 +18,37 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             }
             //**End data base connection  & status check **//
 
+            require_once ('InputValidator.php');  // Include InputValidator class
+            $requiredFields = ['START_ROW', 'LIMIT_ROW'];  // Define required fields
+
+            // Initialize input validator with POST data **//
+            $validator = new InputValidator($_POST);
+            if (!$validator->validateRequired($requiredFields)) {
+                // Set the HTTP status code to 400 Bad Request
+                http_response_code(400);
+                $jsonData = ["status" => false, "message" => "Missing Required Parameters."];
+                echo json_encode($jsonData);
+                die();
+            }
+            // **Initialize input validator with POST Data**//
+
+            $validator->sanitizeInputs();   // Sanitize Inputs
+            $START_ROW = $validator->get('START_ROW');   // Retrieve sanitized inputs
+            $LIMIT_ROW = $validator->get('LIMIT_ROW');   // Retrieve sanitized inputs
+
             //**Start Query & Return Data Response **//
             try {
-                $SQL = "SELECT a.ID,b.EMP_NAME,
-                            (b.EMP_NAME ||'('||a.RML_ID||')') RML_ID,
-                            a.ENTRY_DATE,
-                            a.START_DATE,
-                            a.END_DATE,
-                            a.REMARKS,
-                            a.ENTRY_BY,
-                            a.LINE_MANAGER_ID,
-                            a.LINE_MANAGER_APPROVAL_STATUS,
-                            a.APPROVAL_DATE,
-                            a.APPROVAL_REMARKS
-                        FROM RML_HR_EMP_TOUR a, RML_HR_APPS_USER b
-                        WHERE A.RML_ID=B.RML_ID
-                        and a.LINE_MANAGER_ID='$RML_ID'
-                        AND a.LINE_MANAGER_APPROVAL_STATUS IS NULL
-                        order by START_DATE";
-
+                $SQL = "SELECT attn.ID,attn.RML_ID,attn.ATTN_DATE,attn.LAT,attn.LANG,attn.OUTSIDE_REMARKS,RML_HR_FKEY(attn.RML_ID,'NU') NU_FKEY,
+                        (SELECT a.EMP_NAME FROM RML_HR_APPS_USER a WHERE a.RML_ID=attn.RML_ID)EMP_NAME
+                        FROM RML_HR_ATTN_DAILY attn
+                    WHERE attn.LINE_MANAGER_ID='$RML_ID'
+                        AND attn.INSIDE_OR_OUTSIDE='Outside Office'
+                        AND trunc(ATTN.ATTN_DATE) BETWEEN  trunc(SYSDATE)-( select KEY_VALUE FROM HR_GLOBAL_CONFIGARATION
+                        WHERE KEY_TYPE='ATTN_OUTDOOR_APPROVAL') AND  trunc(SYSDATE)
+                        AND attn.LINE_MANAGER_APPROVAL = 0
+                        ORDER BY ATTN_DATE desc";
+                $SQL .= " OFFSET $START_ROW ROWS FETCH NEXT $LIMIT_ROW ROWS ONLY";
+                // AND attn.IS_ALL_APPROVED= 1
                 $strSQL = @oci_parse($objConnect, $SQL);
                 @oci_execute($strSQL);
                 $responseData = [];
@@ -43,30 +56,25 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     $responseData[] = [
                         "ID"                => $objResultFound['ID'],
                         "RML_ID"            => $objResultFound['RML_ID'],
-                        "ENTRY_DATE"        => $objResultFound['ENTRY_DATE'],
-                        "START_DATE"        => $objResultFound['START_DATE'],
-                        "END_DATE"          => $objResultFound['END_DATE'],
-                        "REMARKS"           => $objResultFound['REMARKS'],
-                        "ENTRY_BY"          => $objResultFound['ENTRY_BY'],
-                        "LINE_MANAGER_ID"   => $objResultFound['LINE_MANAGER_ID'],
-                        "LINE_MANAGER_APPROVAL_STATUS" => $objResultFound['LINE_MANAGER_APPROVAL_STATUS'],
-                        "APPROVAL_DATE"     =>  $objResultFound['APPROVAL_DATE'],
-                        "APPROVAL_REMARKS"  =>  $objResultFound['APPROVAL_REMARKS']
+                        "EMP_NAME"          => $objResultFound['EMP_NAME'],
+                        "ATTN_DATE"         =>$objResultFound['ATTN_DATE'],
+                        "LAT"               => $objResultFound['LAT'],
+                        "LANG"              => $objResultFound['LANG'],
+                        "OUTSIDE_REMARKS"   => $objResultFound['OUTSIDE_REMARKS'],
+                        "NU_FKEY"           => $objResultFound['NU_FKEY']
                     ];
                 }
 
                 if (!empty($responseData)) {
-                    http_response_code(200);
                     $jsonData = ["status" => true, "data" => $responseData, "message" => 'Successfully Data Found.'];
                     echo json_encode($jsonData);
                 } else {
-                    http_response_code(200);
                     $jsonData = ["status" => true, "data" => [], "message" => 'No Data Found.'];
                     echo json_encode($jsonData);
                 }
             } catch (Exception $e) {
                 http_response_code(500);
-                $jsonData = ["status" => false, "message" => $e->getMessage()];
+            $jsonData = ["status" => false, "message" => $e->getMessage()];
                 echo json_encode($jsonData);
             } finally {
                 oci_close($objConnect);

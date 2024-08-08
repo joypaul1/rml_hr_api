@@ -327,3 +327,1053 @@ POST Parameters: []
 File Parameters: []
 Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAyNzIwMywiZXhwIjoxNzIzMTEzNjAzLCJkYXRhIjp7IlJNTF9JRCI6IlJNV0wtMDk0MiIsIkVNUF9OQU1FIjoiSm95IFBhdWwiLCJERVNJR05BVElPTiI6Ikp1bmlvciBFeGVjdXRpdmUgIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1XTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDAzODQiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE5OTMzMzg0MjUiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAwMzg0IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxOTkzMzM4NDI1IiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STVdMLTA5NDJfMTcyMjY3NzM2Ni5wbmcifX0.v0GGU_Mw69NBhR2RUPL70yhyKpu7ZS1xyWXheNVethA","content-type":"application\/json"}
 -------------------------------------
+Timestamp: 2024-08-07 13:53:06
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAyNzIwMywiZXhwIjoxNzIzMTEzNjAzLCJkYXRhIjp7IlJNTF9JRCI6IlJNV0wtMDk0MiIsIkVNUF9OQU1FIjoiSm95IFBhdWwiLCJERVNJR05BVElPTiI6Ikp1bmlvciBFeGVjdXRpdmUgIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1XTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDAzODQiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE5OTMzMzg0MjUiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAwMzg0IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxOTkzMzM4NDI1IiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STVdMLTA5NDJfMTcyMjY3NzM2Ni5wbmcifX0.v0GGU_Mw69NBhR2RUPL70yhyKpu7ZS1xyWXheNVethA","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-07 13:53:06
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAyNzIwMywiZXhwIjoxNzIzMTEzNjAzLCJkYXRhIjp7IlJNTF9JRCI6IlJNV0wtMDk0MiIsIkVNUF9OQU1FIjoiSm95IFBhdWwiLCJERVNJR05BVElPTiI6Ikp1bmlvciBFeGVjdXRpdmUgIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1XTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDAzODQiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE5OTMzMzg0MjUiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAwMzg0IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxOTkzMzM4NDI1IiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STVdMLTA5NDJfMTcyMjY3NzM2Ni5wbmcifX0.v0GGU_Mw69NBhR2RUPL70yhyKpu7ZS1xyWXheNVethA","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-07 13:53:06
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAyNzIwMywiZXhwIjoxNzIzMTEzNjAzLCJkYXRhIjp7IlJNTF9JRCI6IlJNV0wtMDk0MiIsIkVNUF9OQU1FIjoiSm95IFBhdWwiLCJERVNJR05BVElPTiI6Ikp1bmlvciBFeGVjdXRpdmUgIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1XTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDAzODQiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE5OTMzMzg0MjUiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAwMzg0IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxOTkzMzM4NDI1IiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STVdMLTA5NDJfMTcyMjY3NzM2Ni5wbmcifX0.v0GGU_Mw69NBhR2RUPL70yhyKpu7ZS1xyWXheNVethA","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-07 13:53:06
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAyNzIwMywiZXhwIjoxNzIzMTEzNjAzLCJkYXRhIjp7IlJNTF9JRCI6IlJNV0wtMDk0MiIsIkVNUF9OQU1FIjoiSm95IFBhdWwiLCJERVNJR05BVElPTiI6Ikp1bmlvciBFeGVjdXRpdmUgIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1XTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDAzODQiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE5OTMzMzg0MjUiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAwMzg0IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxOTkzMzM4NDI1IiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STVdMLTA5NDJfMTcyMjY3NzM2Ni5wbmcifX0.v0GGU_Mw69NBhR2RUPL70yhyKpu7ZS1xyWXheNVethA","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-07 13:53:06
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAyNzIwMywiZXhwIjoxNzIzMTEzNjAzLCJkYXRhIjp7IlJNTF9JRCI6IlJNV0wtMDk0MiIsIkVNUF9OQU1FIjoiSm95IFBhdWwiLCJERVNJR05BVElPTiI6Ikp1bmlvciBFeGVjdXRpdmUgIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1XTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDAzODQiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE5OTMzMzg0MjUiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAwMzg0IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxOTkzMzM4NDI1IiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STVdMLTA5NDJfMTcyMjY3NzM2Ni5wbmcifX0.v0GGU_Mw69NBhR2RUPL70yhyKpu7ZS1xyWXheNVethA","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-07 13:53:06
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAyNzIwMywiZXhwIjoxNzIzMTEzNjAzLCJkYXRhIjp7IlJNTF9JRCI6IlJNV0wtMDk0MiIsIkVNUF9OQU1FIjoiSm95IFBhdWwiLCJERVNJR05BVElPTiI6Ikp1bmlvciBFeGVjdXRpdmUgIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1XTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDAzODQiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE5OTMzMzg0MjUiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAwMzg0IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxOTkzMzM4NDI1IiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STVdMLTA5NDJfMTcyMjY3NzM2Ni5wbmcifX0.v0GGU_Mw69NBhR2RUPL70yhyKpu7ZS1xyWXheNVethA","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-07 13:53:08
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAyNzIwMywiZXhwIjoxNzIzMTEzNjAzLCJkYXRhIjp7IlJNTF9JRCI6IlJNV0wtMDk0MiIsIkVNUF9OQU1FIjoiSm95IFBhdWwiLCJERVNJR05BVElPTiI6Ikp1bmlvciBFeGVjdXRpdmUgIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1XTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDAzODQiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE5OTMzMzg0MjUiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAwMzg0IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxOTkzMzM4NDI1IiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STVdMLTA5NDJfMTcyMjY3NzM2Ni5wbmcifX0.v0GGU_Mw69NBhR2RUPL70yhyKpu7ZS1xyWXheNVethA","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-07 13:53:08
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAyNzIwMywiZXhwIjoxNzIzMTEzNjAzLCJkYXRhIjp7IlJNTF9JRCI6IlJNV0wtMDk0MiIsIkVNUF9OQU1FIjoiSm95IFBhdWwiLCJERVNJR05BVElPTiI6Ikp1bmlvciBFeGVjdXRpdmUgIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1XTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDAzODQiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE5OTMzMzg0MjUiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAwMzg0IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxOTkzMzM4NDI1IiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STVdMLTA5NDJfMTcyMjY3NzM2Ni5wbmcifX0.v0GGU_Mw69NBhR2RUPL70yhyKpu7ZS1xyWXheNVethA","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-07 13:53:08
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAyNzIwMywiZXhwIjoxNzIzMTEzNjAzLCJkYXRhIjp7IlJNTF9JRCI6IlJNV0wtMDk0MiIsIkVNUF9OQU1FIjoiSm95IFBhdWwiLCJERVNJR05BVElPTiI6Ikp1bmlvciBFeGVjdXRpdmUgIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1XTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDAzODQiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE5OTMzMzg0MjUiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAwMzg0IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxOTkzMzM4NDI1IiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STVdMLTA5NDJfMTcyMjY3NzM2Ni5wbmcifX0.v0GGU_Mw69NBhR2RUPL70yhyKpu7ZS1xyWXheNVethA","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-07 13:53:10
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_report.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAyNzIwMywiZXhwIjoxNzIzMTEzNjAzLCJkYXRhIjp7IlJNTF9JRCI6IlJNV0wtMDk0MiIsIkVNUF9OQU1FIjoiSm95IFBhdWwiLCJERVNJR05BVElPTiI6Ikp1bmlvciBFeGVjdXRpdmUgIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1XTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDAzODQiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE5OTMzMzg0MjUiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAwMzg0IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxOTkzMzM4NDI1IiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STVdMLTA5NDJfMTcyMjY3NzM2Ni5wbmcifX0.v0GGU_Mw69NBhR2RUPL70yhyKpu7ZS1xyWXheNVethA","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-07 13:53:10
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_type.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAyNzIwMywiZXhwIjoxNzIzMTEzNjAzLCJkYXRhIjp7IlJNTF9JRCI6IlJNV0wtMDk0MiIsIkVNUF9OQU1FIjoiSm95IFBhdWwiLCJERVNJR05BVElPTiI6Ikp1bmlvciBFeGVjdXRpdmUgIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1XTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDAzODQiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE5OTMzMzg0MjUiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAwMzg0IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxOTkzMzM4NDI1IiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STVdMLTA5NDJfMTcyMjY3NzM2Ni5wbmcifX0.v0GGU_Mw69NBhR2RUPL70yhyKpu7ZS1xyWXheNVethA","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-07 13:53:29
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAyNzIwMywiZXhwIjoxNzIzMTEzNjAzLCJkYXRhIjp7IlJNTF9JRCI6IlJNV0wtMDk0MiIsIkVNUF9OQU1FIjoiSm95IFBhdWwiLCJERVNJR05BVElPTiI6Ikp1bmlvciBFeGVjdXRpdmUgIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1XTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDAzODQiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE5OTMzMzg0MjUiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAwMzg0IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxOTkzMzM4NDI1IiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STVdMLTA5NDJfMTcyMjY3NzM2Ni5wbmcifX0.v0GGU_Mw69NBhR2RUPL70yhyKpu7ZS1xyWXheNVethA","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-07 13:53:29
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAyNzIwMywiZXhwIjoxNzIzMTEzNjAzLCJkYXRhIjp7IlJNTF9JRCI6IlJNV0wtMDk0MiIsIkVNUF9OQU1FIjoiSm95IFBhdWwiLCJERVNJR05BVElPTiI6Ikp1bmlvciBFeGVjdXRpdmUgIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1XTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDAzODQiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE5OTMzMzg0MjUiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAwMzg0IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxOTkzMzM4NDI1IiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STVdMLTA5NDJfMTcyMjY3NzM2Ni5wbmcifX0.v0GGU_Mw69NBhR2RUPL70yhyKpu7ZS1xyWXheNVethA","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-07 13:53:29
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAyNzIwMywiZXhwIjoxNzIzMTEzNjAzLCJkYXRhIjp7IlJNTF9JRCI6IlJNV0wtMDk0MiIsIkVNUF9OQU1FIjoiSm95IFBhdWwiLCJERVNJR05BVElPTiI6Ikp1bmlvciBFeGVjdXRpdmUgIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1XTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDAzODQiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE5OTMzMzg0MjUiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAwMzg0IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxOTkzMzM4NDI1IiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STVdMLTA5NDJfMTcyMjY3NzM2Ni5wbmcifX0.v0GGU_Mw69NBhR2RUPL70yhyKpu7ZS1xyWXheNVethA","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 05:51:06
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAyOTY5MSwiZXhwIjoxNzIzMTE2MDkxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.fKQIU9kzcvGDvCWarH8PEfYwnYqNBeoCohMkgISdsfI","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 05:51:06
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAyOTY5MSwiZXhwIjoxNzIzMTE2MDkxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.fKQIU9kzcvGDvCWarH8PEfYwnYqNBeoCohMkgISdsfI","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 05:51:06
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.4 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAyOTY5MSwiZXhwIjoxNzIzMTE2MDkxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.fKQIU9kzcvGDvCWarH8PEfYwnYqNBeoCohMkgISdsfI","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 06:13:33
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MDQwMCwiZXhwIjoxNzIzMTc2ODAwLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.Jfp6WcFr6RaN3dFAyRmVHTDclyP0RP0EipGeBwL8Yl0","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"9efbba6c-7c0f-4e4e-93ca-e96909f5be52","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 06:24:21
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAwOTkwNCwiZXhwIjoxNzIzMDk2MzA0LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STUwtMDAzODRfMTcyMjY3NzIwMy5wbmcifX0.ij7qmNyG3AzfLFE1DRBd8Q0q_ilwnUZq5O3Hpzk1M9I","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"eead47e7-de45-481a-ac29-fc9af3c22b08","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 06:35:33
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 06:35:33
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 06:35:33
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 06:36:33
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 06:36:33
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 06:36:33
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 06:36:59
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 06:37:11
+Request URL: http://192.168.172.61:8080/test_api/upload_user_img.php
+Request Method: POST
+POST Parameters: []
+File Parameters: {"USER_IMAGE":{"name":"scaled_1000000277.jpg","full_path":"scaled_1000000277.jpg","type":"application\/octet-stream","tmp_name":"C:\\xampp\\tmp\\phpEB3E.tmp","error":0,"size":174083}}
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"174272","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"multipart\/form-data; boundary=--dio-boundary-3605768523"}
+-------------------------------------
+Timestamp: 2024-08-08 06:37:21
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 06:37:21
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 06:37:28
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 06:37:48
+Request URL: http://192.168.172.61:8080/test_api/emp_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MDQwMCwiZXhwIjoxNzIzMTc2ODAwLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.Jfp6WcFr6RaN3dFAyRmVHTDclyP0RP0EipGeBwL8Yl0","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"15c3556e-74ca-4e0f-8013-32aafcefebd5","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 06:55:09
+Request URL: http://192.168.172.61:8080/test_api/emp_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MDQwMCwiZXhwIjoxNzIzMTc2ODAwLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.Jfp6WcFr6RaN3dFAyRmVHTDclyP0RP0EipGeBwL8Yl0","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"b50a8d5b-2544-467c-8048-a4647774427b","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 06:55:15
+Request URL: http://192.168.172.61:8080/test_api/emp_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MDQwMCwiZXhwIjoxNzIzMTc2ODAwLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.Jfp6WcFr6RaN3dFAyRmVHTDclyP0RP0EipGeBwL8Yl0","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"7398cd5a-ce02-4f33-a72a-aaf91cb12d3a","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 06:55:23
+Request URL: http://192.168.172.61:8080/test_api/emp_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MDQwMCwiZXhwIjoxNzIzMTc2ODAwLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.Jfp6WcFr6RaN3dFAyRmVHTDclyP0RP0EipGeBwL8Yl0","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"15d1c0ef-c35a-4df5-b312-9c369c78ba6f","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 06:55:34
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 06:55:41
+Request URL: http://192.168.172.61:8080/test_api/upload_user_img.php
+Request Method: POST
+POST Parameters: []
+File Parameters: {"USER_IMAGE":{"name":"scaled_1000000277.jpg","full_path":"scaled_1000000277.jpg","type":"application\/octet-stream","tmp_name":"C:\\xampp\\tmp\\phpD850.tmp","error":0,"size":174083}}
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"174272","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"multipart\/form-data; boundary=--dio-boundary-4022039730"}
+-------------------------------------
+Timestamp: 2024-08-08 06:55:46
+Request URL: http://192.168.172.61:8080/test_api/emp_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MDQwMCwiZXhwIjoxNzIzMTc2ODAwLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.Jfp6WcFr6RaN3dFAyRmVHTDclyP0RP0EipGeBwL8Yl0","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"d9f1109b-0e16-47dc-a577-470ac80af056","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 06:56:56
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 06:56:56
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 06:56:56
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:00:18
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:00:18
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:00:18
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MTczMSwiZXhwIjoxNzIzMTc4MTMxLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.WdtfuVe-FAV9bI9NJkGxMyWL7qj8HSXJpUZR6KkSyYc","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:00:36
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MzIzNiwiZXhwIjoxNzIzMTc5NjM2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.EpnO-Io_cRYWwSqkYgrREp9J1naXwYOcweOoEsJEi6g","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:00:36
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MzIzNiwiZXhwIjoxNzIzMTc5NjM2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.EpnO-Io_cRYWwSqkYgrREp9J1naXwYOcweOoEsJEi6g","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:00:36
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MzIzNiwiZXhwIjoxNzIzMTc5NjM2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.EpnO-Io_cRYWwSqkYgrREp9J1naXwYOcweOoEsJEi6g","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:04:42
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MzIzNiwiZXhwIjoxNzIzMTc5NjM2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.EpnO-Io_cRYWwSqkYgrREp9J1naXwYOcweOoEsJEi6g","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:04:42
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MzIzNiwiZXhwIjoxNzIzMTc5NjM2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.EpnO-Io_cRYWwSqkYgrREp9J1naXwYOcweOoEsJEi6g","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:04:42
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MzIzNiwiZXhwIjoxNzIzMTc5NjM2LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.EpnO-Io_cRYWwSqkYgrREp9J1naXwYOcweOoEsJEi6g","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:35:13
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:35:13
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:35:13
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:35:59
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:35:59
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:35:59
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:37:42
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:37:42
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:37:42
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:43:22
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:43:22
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:43:22
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 07:43:49
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: {"LATITUDE":"23.7648244","LONGITUDE":"90.3896702","INSIDE_OR_OUTSIDE":"Inside Office","OUTSIDE_REMAKRKS":"no remarks","EMP_DISTANCE":"29"}
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"508","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"multipart\/form-data; boundary=--dio-boundary-2521166296"}
+-------------------------------------
+Timestamp: 2024-08-08 07:43:53
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: {"LATITUDE":"23.7648244","LONGITUDE":"90.3896702","INSIDE_OR_OUTSIDE":"Inside Office","OUTSIDE_REMAKRKS":"no remarks","EMP_DISTANCE":"29"}
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"508","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"multipart\/form-data; boundary=--dio-boundary-0521371705"}
+-------------------------------------
+Timestamp: 2024-08-08 08:03:51
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:03:52
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:03:52
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:04:44
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: {"LATITUDE":"23.7648256","LONGITUDE":"90.3896702","INSIDE_OR_OUTSIDE":"Inside Office","OUTSIDE_REMAKRKS":"no remarks","EMP_DISTANCE":"29"}
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"508","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"multipart\/form-data; boundary=--dio-boundary-1270017655"}
+-------------------------------------
+Timestamp: 2024-08-08 08:04:56
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: {"LATITUDE":"23.7648122","LONGITUDE":"90.3896744","INSIDE_OR_OUTSIDE":"Inside Office","OUTSIDE_REMAKRKS":"no remarks","EMP_DISTANCE":"29"}
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"508","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"multipart\/form-data; boundary=--dio-boundary-1264939175"}
+-------------------------------------
+Timestamp: 2024-08-08 08:05:16
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: {"LATITUDE":"23.76482","LONGITUDE":"90.3896721","INSIDE_OR_OUTSIDE":"Inside Office","OUTSIDE_REMAKRKS":"no remarks","EMP_DISTANCE":"29"}
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"506","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"multipart\/form-data; boundary=--dio-boundary-3463039134"}
+-------------------------------------
+Timestamp: 2024-08-08 08:08:08
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:08:08
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:08:08
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:08:46
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:08:46
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:08:46
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:12:59
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:12:59
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:12:59
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:14:47
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:14:47
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:14:47
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:16:19
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:16:19
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:16:19
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:17:00
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:17:00
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:17:00
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:25:41
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:25:41
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:25:41
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:31:23
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:31:23
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:31:23
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:38:43
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:38:43
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:38:43
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:38:54
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: {"LATITUDE":"90.3896758","LONGITUDE":"0.0","INSIDE_OR_OUTSIDE":"Inside Office","OUTSIDE_REMAKRKS":"no remarks","EMP_DISTANCE":"29"}
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"501","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"multipart\/form-data; boundary=--dio-boundary-1530741866"}
+-------------------------------------
+Timestamp: 2024-08-08 08:48:33
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:48:33
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:48:34
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:49:03
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: {"LATITUDE":"23.7648368","LONGITUDE":"90.3896665","INSIDE_OR_OUTSIDE":"Inside Office","OUTSIDE_REMARKS":"no remarks","EMP_DISTANCE":"29"}
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"507","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"multipart\/form-data; boundary=--dio-boundary-2247329384"}
+-------------------------------------
+Timestamp: 2024-08-08 08:50:58
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:50:58
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:50:59
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:56:48
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: {"LATITUDE":"23.7648416","LONGITUDE":"90.3896635","INSIDE_OR_OUTSIDE":"Inside Office","OUTSIDE_REMARKS":"no remarks","EMP_DISTANCE":"29"}
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"507","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"multipart\/form-data; boundary=--dio-boundary-3721445738"}
+-------------------------------------
+Timestamp: 2024-08-08 08:58:13
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:58:13
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 08:58:14
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 09:01:10
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 09:01:10
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 09:01:10
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 09:03:17
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 09:03:17
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 09:03:17
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 09:04:55
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 09:04:55
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 09:04:55
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 09:06:22
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 09:06:23
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 09:06:23
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 09:06:31
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: {"LATITUDE":"23.7648296","LONGITUDE":"90.3896694","INSIDE_OR_OUTSIDE":"Inside Office","OUTSIDE_REMARKS":"no remarks","EMP_DISTANCE":"29"}
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"507","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"multipart\/form-data; boundary=--dio-boundary-2137628099"}
+-------------------------------------
+Timestamp: 2024-08-08 09:07:29
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 09:07:29
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 09:07:29
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 09:08:36
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: {"LATITUDE":"23.7648298","LONGITUDE":"90.3896719","INSIDE_OR_OUTSIDE":"Inside Office","OUTSIDE_REMARKS":"no remarks","EMP_DISTANCE":"29"}
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"507","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"multipart\/form-data; boundary=--dio-boundary-1177536954"}
+-------------------------------------
+Timestamp: 2024-08-08 10:37:15
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 10:37:15
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 10:37:16
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 10:38:43
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MDQwMCwiZXhwIjoxNzIzMTc2ODAwLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.Jfp6WcFr6RaN3dFAyRmVHTDclyP0RP0EipGeBwL8Yl0","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"33ef7135-dc52-4bec-ad58-c7b2f7614c6f","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 10:39:42
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzAwOTkwNCwiZXhwIjoxNzIzMDk2MzA0LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6InJIUlQvdXBsb2Fkcy91c2VyX2ltZ19STUwtMDAzODRfMTcyMjY3NzIwMy5wbmcifX0.ij7qmNyG3AzfLFE1DRBd8Q0q_ilwnUZq5O3Hpzk1M9I","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"527da62e-0843-4e70-b1f1-573f3a623568","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 10:39:58
+Request URL: http://192.168.172.61:8080/test_api/hr_slider.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 10:39:59
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 10:39:59
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_summary.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"0","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"application\/json"}
+-------------------------------------
+Timestamp: 2024-08-08 10:40:06
+Request URL: http://192.168.172.61:8080/test_api/emp_leave_info.php
+Request Method: POST
+POST Parameters: {"LATITUDE":"23.7648474","LONGITUDE":"90.389669","INSIDE_OR_OUTSIDE":"Inside Office","OUTSIDE_REMARKS":"no remarks","EMP_DISTANCE":"29"}
+File Parameters: []
+Headers: {"user-agent":"Dart\/3.5 (dart:io)","accept":"application\/json","accept-encoding":"gzip","content-length":"506","host":"192.168.172.61:8080","authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5NTMxMSwiZXhwIjoxNzIzMTgxNzExLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoiaHR0cDovLzE5Mi4xNjguMTcyLjYxOjgwODAvckhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIzMDkyOTQxLmpwZyJ9fQ.m75giO_rkMRWwpriNRN_5Mr_bB2KuIibjaxCpRiQThg","content-type":"multipart\/form-data; boundary=--dio-boundary-1546806126"}
+-------------------------------------
+Timestamp: 2024-08-08 10:41:06
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"dbdb4e08-7fe1-4d1f-ba96-b8d56dadbae4","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 10:41:07
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"ae246751-21ae-476c-8764-9d2190798422","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 10:41:26
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzEwNjM5NCwiZXhwIjoxNzIzMTkyNzk0LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.7xNnhSreEWDWqEkDN9IWl82W9KJ3r26jxQTaThz6Kag","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"45e47762-30af-4cf7-9256-931bad67de3f","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 10:41:45
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzEwNjM5NCwiZXhwIjoxNzIzMTkyNzk0LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.7xNnhSreEWDWqEkDN9IWl82W9KJ3r26jxQTaThz6Kag","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"b907d41a-aa63-4b73-a576-95207870c025","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 10:42:11
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzEwNjM5NCwiZXhwIjoxNzIzMTkyNzk0LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.7xNnhSreEWDWqEkDN9IWl82W9KJ3r26jxQTaThz6Kag","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"b20486be-0578-44cc-8121-970ac1b9ef5b","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 10:42:12
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzEwNjM5NCwiZXhwIjoxNzIzMTkyNzk0LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.7xNnhSreEWDWqEkDN9IWl82W9KJ3r26jxQTaThz6Kag","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"30a9f894-b4f4-458a-8276-cfb2a791960a","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 10:42:15
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzEwNjM5NCwiZXhwIjoxNzIzMTkyNzk0LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.7xNnhSreEWDWqEkDN9IWl82W9KJ3r26jxQTaThz6Kag","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"8a7d7a0f-eb2a-45e2-b23a-94f3a67948cf","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 10:42:22
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzEwNjM5NCwiZXhwIjoxNzIzMTkyNzk0LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.7xNnhSreEWDWqEkDN9IWl82W9KJ3r26jxQTaThz6Kag","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"99e3a2bf-3f36-4fef-8173-aaf5ca45779b","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 10:42:23
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzEwNjM5NCwiZXhwIjoxNzIzMTkyNzk0LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.7xNnhSreEWDWqEkDN9IWl82W9KJ3r26jxQTaThz6Kag","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"d50b4f34-1d24-487d-b79f-e6e4d7522b6f","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 10:42:38
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzEwNjM5NCwiZXhwIjoxNzIzMTkyNzk0LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.7xNnhSreEWDWqEkDN9IWl82W9KJ3r26jxQTaThz6Kag","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"2825ba86-eaac-4c26-8129-2968bbf793e5","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 10:44:53
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzEwNjM5NCwiZXhwIjoxNzIzMTkyNzk0LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.7xNnhSreEWDWqEkDN9IWl82W9KJ3r26jxQTaThz6Kag","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"f87adcc3-1684-4c41-88ac-41ad2c27af6f","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 10:45:26
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzEwNjM5NCwiZXhwIjoxNzIzMTkyNzk0LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.7xNnhSreEWDWqEkDN9IWl82W9KJ3r26jxQTaThz6Kag","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"b6e894b9-939b-467c-af68-a22b16984d2e","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 10:45:33
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzEwNjM5NCwiZXhwIjoxNzIzMTkyNzk0LCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMDM4NCIsIkVNUF9OQU1FIjoiTWQuUmFmaXF1bCBJc2xhbSIsIkRFU0lHTkFUSU9OIjoiTWFuYWdlciIsIlVTRVJfUk9MRSI6IkxNIiwiQ09OQ0VSTiI6IlJNTCIsIkxJTkVfTUFOQUdFUl9STUxfSUQiOiJSTUwtMDEyNDgiLCJMSU5FX01BTkFHRVJfTU9CSUxFIjoiMDE4OTQ5NTM2NDIiLCJERVBUX0hFQURfUk1MX0lEIjoiUk1MLTAxMjQ4IiwiREVQVF9IRUFEX01PQklMRV9OTyI6IjAxODk0OTUzNjQyIiwiVVNFUl9JTUFHRSI6Imh0dHA6Ly8xOTIuMTY4LjE3Mi42MTo4MDgwL3Rlc3RfYXBpL2ltYWdlL3VzZXIucG5nIn19.7xNnhSreEWDWqEkDN9IWl82W9KJ3r26jxQTaThz6Kag","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"6b4de5b6-8595-4755-9a69-3b38673a482c","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 10:45:50
+Request URL: http://192.168.172.61:8080/test_api/emp_current_location_entry.php
+Request Method: POST
+POST Parameters: {"LOC_LAT":"222.392619","LOC_LANG":"221.392619","ENTRY_TIME":"07\/08\/2024 12:13:18 PM"}
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MDQwMCwiZXhwIjoxNzIzMTc2ODAwLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.Jfp6WcFr6RaN3dFAyRmVHTDclyP0RP0EipGeBwL8Yl0","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"2f14df7f-c41b-4866-a7e0-e06756dcaf5c","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Type":"multipart\/form-data; boundary=--------------------------774335678868629254005826","Content-Length":"420"}
+-------------------------------------
+Timestamp: 2024-08-08 10:45:58
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MDQwMCwiZXhwIjoxNzIzMTc2ODAwLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.Jfp6WcFr6RaN3dFAyRmVHTDclyP0RP0EipGeBwL8Yl0","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"454c72bc-719a-4ec7-a397-df62b0c1905d","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------
+Timestamp: 2024-08-08 10:55:10
+Request URL: http://192.168.172.61:8080/test_api/emp_attn_loc_info.php
+Request Method: POST
+POST Parameters: []
+File Parameters: []
+Headers: {"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyYW5nc21vdG9ycyIsImlhdCI6MTcyMzA5MDQwMCwiZXhwIjoxNzIzMTc2ODAwLCJkYXRhIjp7IlJNTF9JRCI6IlJNTC0wMTMzNyIsIkVNUF9OQU1FIjoiTWQuIEFiaXIgQWhzYW4gVGFobWltIiwiREVTSUdOQVRJT04iOiJTZW5pb3IgRXhlY3V0aXZlIiwiVVNFUl9ST0xFIjoiTlUiLCJDT05DRVJOIjoiUk1MIiwiTElORV9NQU5BR0VSX1JNTF9JRCI6IlJNTC0wMDM4NCIsIkxJTkVfTUFOQUdFUl9NT0JJTEUiOiIwMTk2MzYyNjY2OSIsIkRFUFRfSEVBRF9STUxfSUQiOiJSTUwtMDAzODQiLCJERVBUX0hFQURfTU9CSUxFX05PIjoiMDE5NjM2MjY2NjkiLCJVU0VSX0lNQUdFIjoickhSVC91cGxvYWRzL3VzZXJfaW1nX1JNTC0wMTMzN18xNzIyNjgyNDEzLnBuZyJ9fQ.Jfp6WcFr6RaN3dFAyRmVHTDclyP0RP0EipGeBwL8Yl0","User-Agent":"PostmanRuntime\/7.41.0","Accept":"*\/*","Postman-Token":"15940469-20b4-4eae-8a1b-02af725999dd","Host":"192.168.172.61:8080","Accept-Encoding":"gzip, deflate, br","Connection":"keep-alive","Content-Length":"0"}
+-------------------------------------

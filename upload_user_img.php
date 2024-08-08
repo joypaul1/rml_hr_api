@@ -81,9 +81,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $SQL = "MERGE INTO RML_HR_APPS_USER_IMAGE USING dual
                 ON (USER_ID = '$RML_ID')
                 WHEN MATCHED THEN
-                    UPDATE SET USER_IMAGE =  '$imageFinalName', UPLOAD_DATE_TIME = SYSDATE
+                    UPDATE SET USER_IMAGE =  '$imageURL', UPLOAD_DATE_TIME = SYSDATE
                 WHEN NOT MATCHED THEN
-                    INSERT (USER_ID, USER_IMAGE,UPLOAD_DATE_TIME) VALUES ('$RML_ID', '$imageFinalName', SYSDATE)";
+                    INSERT (USER_ID, USER_IMAGE,UPLOAD_DATE_TIME) VALUES ('$RML_ID', '$imageURL', SYSDATE)";
 
                 $strSQL = @oci_parse($objConnect, $SQL);
 

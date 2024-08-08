@@ -20,42 +20,47 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             //**Start Query & Return Data Response **//
             try {
-                $SQL = "SELECT RML_ID,
-                            LAT,
-                            LANG,
-                            LAT_2,
-                            LANG_2,
-                            LAT_3,
-                            LANG_3,
-                            LAT_4,
-                            LANG_4,
-                            LAT_5,
-                            LANG_5,
-                            LAT_6,
-                            LANG_6
-                        FROM DEVELOPERS2.RML_HR_APPS_USER
-                        WHERE
-                    RML_ID = '$RML_ID' AND IS_ACTIVE = 1";
-
+                $TODAY = date('d/m/Y');
+                $SQL = "SELECT a.RML_ID,
+                                a.LAT,
+                                a.LANG,
+                                a.LAT_2,
+                                a.LANG_2,
+                                a.LAT_3,
+                                a.LANG_3,
+                                a.LAT_4,
+                                a.LANG_4,
+                                a.LAT_5,
+                                a.LANG_5,
+                                a.LAT_6,
+                                a.LANG_6,
+                                NVL(b.STATUS, 'A') AS ATTN_STATUS
+                            FROM DEVELOPERS2.RML_HR_APPS_USER a
+                            LEFT JOIN DEVELOPERS2.RML_HR_ATTN_DAILY_PROC b
+                                ON a.RML_ID = b.RML_ID
+                                AND TRUNC(b.ATTN_DATE) = TO_DATE('$TODAY', 'DD/MM/YYYY')
+                            WHERE a.RML_ID = '$RML_ID' AND IS_ACTIVE = 1";
+                            
                 $strSQL = @oci_parse($objConnect, $SQL);
                 @oci_execute($strSQL);
                 $objResultFound = @oci_fetch_assoc($strSQL);
 
                 if ($objResultFound) {
                     $responseData = [
-                        "RML_ID"    => $objResultFound["RML_ID"],
-                        "LAT"       => $objResultFound["LAT"],
-                        "LANG"      => $objResultFound["LANG"],
-                        "LAT_2"     => $objResultFound["LAT_2"],
-                        "LANG_2"    => $objResultFound["LANG_2"],
-                        "LAT_3"     => $objResultFound["LAT_3"],
-                        "LANG_3"    => $objResultFound["LANG_3"],
-                        "LAT_4"     => $objResultFound["LAT_4"],
-                        "LANG_4"    => $objResultFound["LANG_4"],
-                        "LAT_5"     => $objResultFound["LAT_5"],
-                        "LANG_5"    => $objResultFound["LANG_5"],
-                        "LAT_6"     => $objResultFound["LAT_6"],
-                        "LANG_6"    => $objResultFound["LANG_6"],
+                        "RML_ID"        => $objResultFound["RML_ID"],
+                        "LAT"           => $objResultFound["LAT"],
+                        "LANG"          => $objResultFound["LANG"],
+                        "LAT_2"         => $objResultFound["LAT_2"],
+                        "LANG_2"        => $objResultFound["LANG_2"],
+                        "LAT_3"         => $objResultFound["LAT_3"],
+                        "LANG_3"        => $objResultFound["LANG_3"],
+                        "LAT_4"         => $objResultFound["LAT_4"],
+                        "LANG_4"        => $objResultFound["LANG_4"],
+                        "LAT_5"         => $objResultFound["LAT_5"],
+                        "LANG_5"        => $objResultFound["LANG_5"],
+                        "LAT_6"         => $objResultFound["LAT_6"],
+                        "LANG_6"        => $objResultFound["LANG_6"],
+                        "ATTN_STATUS"   => $objResultFound["ATTN_STATUS"],
                     ];
                     http_response_code(200);
                     $jsonData = ["status" => true, "data" => $responseData, "message" => 'Successfully Data Found.'];
