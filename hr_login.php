@@ -66,12 +66,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $DatabaseiemiNo = $objResultFound["IEMI_NO"];
                 $Fdatabasekey = $objResultFound["FIRE_BASE_ID"];
 
+                // IEMI_NO update or create
                 if ($DatabaseiemiNo != $iemiNumber) {
                     $SQL = "UPDATE DEVELOPERS2.RML_HR_APPS_USER SET IEMI_NO = '$iemiNumber' WHERE RML_ID = '$rml_id'";
                     $strSQLFkeyUpdate = @oci_parse($objConnect, $SQL);
                     @oci_execute($strSQLFkeyUpdate);
                 }
-
+                // firebase update or create
                 if (strlen($firebaseKey) > 0 && $firebaseKey != $Fdatabasekey) {
                     $strSQLFkeyUpdate = @oci_parse($objConnect, "UPDATE DEVELOPERS2.RML_HR_APPS_USER SET FIRE_BASE_ID = '$firebaseKey', FKEY_UPDATED_DATE = SYSDATE WHERE RML_ID = '$rml_id'");
                     @oci_execute($strSQLFkeyUpdate);
@@ -93,7 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     "USER_IMAGE"            => $objResultFound["USER_IMAGE"],
                 ];
                 //incldue jwt token
-                include_once ('createToken.php');
+                include_once ('./tokenGen/createToken.php');
                 $jwtData = generate_jwt_token($responseData);
                 http_response_code(200); // status successful
                 $jsonData = ["status" => true, "data" => $jwtData, "message" => 'Successfully Data Found.'];
