@@ -33,33 +33,39 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             // **Initialize input validator with POST Data**//
 
             $validator->sanitizeInputs();   // Sanitize Inputs
-            $LATITUDE           = $validator->get('LATITUDE');   // Retrieve sanitized inputs
-            $LONGITUDE          = $validator->get('LONGITUDE');   // Retrieve sanitized inputs
-            $INSIDE_OR_OUTSIDE  = $validator->get('INSIDE_OR_OUTSIDE');   // Retrieve sanitized inputs
-            $OUTSIDE_REMAKRKS   = $validator->get('OUTSIDE_REMAKRKS');   // Retrieve sanitized inputs
-            $EMP_DISTANCE       = $validator->get('EMP_DISTANCE');   // Retrieve sanitized inputs
-            $RML_ID             = $checkValidTokenData['data']->data->RML_ID;
-            $ENTRY_BY           = $RML_ID;
+            $LATITUDE = $validator->get('LATITUDE');   // Retrieve sanitized inputs
+            $LONGITUDE = $validator->get('LONGITUDE');   // Retrieve sanitized inputs
+            $INSIDE_OR_OUTSIDE = $validator->get('INSIDE_OR_OUTSIDE');   // Retrieve sanitized inputs
+            $OUTSIDE_REMAKRKS = $validator->get('OUTSIDE_REMAKRKS');   // Retrieve sanitized inputs
+            $EMP_DISTANCE = $validator->get('EMP_DISTANCE');   // Retrieve sanitized inputs
+            $RML_ID = $checkValidTokenData['data']->data->RML_ID;
+            $ENTRY_BY = $RML_ID;
 
             //*** Start Query & Return Data Response ***//
             try {
                 $SQL = "BEGIN RML_HR_ATTN_CREATE('$RML_ID','$LATITUDE','$LONGITUDE','$INSIDE_OR_OUTSIDE','$OUTSIDE_REMAKRKS', '$EMP_DISTANCE', '$ENTRY_BY');END;";
                 $strSQL = @oci_parse($objConnect, $SQL);
-                if (@oci_execute($strSQL)) {
+                
+                //** @ATTENDANCE PRROCESSING **//
+                $attnSQL = @oci_parse($objConnect, "DECLARE  start_date VARCHAR2(100):=to_char(SYSDATE,'dd/mm/yyyy');
+                BEGIN RML_HR_ATTN_PROC('$RML_ID',TO_DATE(start_date,'dd/mm/yyyy') ,TO_DATE(start_date,'dd/mm/yyyy') );END;");
+                //** @END ATTENDANCE PRROCESSING **//
+
+                if (@oci_execute($strSQL)&& @oci_execute($attnSQL)) {
                     http_response_code(200);
                     if ($INSIDE_OR_OUTSIDE == 'Inside Office') {
                         $jsonData = array(
-                            "status"        => true,
-                            "message"       => "Your office attendance successfully saved.",
-                            "push_message"  => '',
-                            'push_id'       => ''
+                            "status" => true,
+                            "message" => "Your office attendance successfully saved.",
+                            "push_message" => '',
+                            'push_id' => ''
                         );
                     } else {
                         $jsonData = array(
-                            "status"        => true,
-                            'push_id'       => $checkValidTokenData['data']->LINE_MANAGER_RML_ID,
-                            "message"       => "Your office attendance successfully saved. It must be approved by your responsible line manager.",
-                            "push_message"  => "Your concern $RML_ID, have given outside acctendance. You should approved/denied this attendance."
+                            "status" => true,
+                            'push_id' => $checkValidTokenData['data']->LINE_MANAGER_RML_ID,
+                            "message" => "Your office attendance successfully saved. It must be approved by your responsible line manager.",
+                            "push_message" => "Your concern $RML_ID, have given outside acctendance. You should approved/denied this attendance."
                         );
                     }
                     echo json_encode($jsonData);

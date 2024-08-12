@@ -16,6 +16,23 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 die();
             }
             //**End data base connection  & status check **//
+            require_once ('InputValidator.php');  // Include InputValidator class
+            $requiredFields = ['START_ROW', 'LIMIT_ROW'];  // Define required fields
+
+            // Initialize input validator with POST data **//
+            $validator = new InputValidator($_POST);
+            if (!$validator->validateRequired($requiredFields)) {
+                // Set the HTTP status code to 400 Bad Request
+                http_response_code(400);
+                $jsonData = ["status" => false, "message" => "Missing Required Parameters."];
+                echo json_encode($jsonData);
+                die();
+            }
+            // **Initialize input validator with POST Data**//
+
+            $validator->sanitizeInputs();   // Sanitize Inputs
+            $START_ROW = $validator->get('START_ROW');   // Retrieve sanitized inputs
+            $LIMIT_ROW = $validator->get('LIMIT_ROW');   // Retrieve sanitized inputs
 
             //**Start Query & Return Data Response **//
             try {
@@ -35,6 +52,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         and a.LINE_MANAGER_ID='$RML_ID'
                         AND a.LINE_MANAGER_APPROVAL_STATUS = 1
                         order by START_DATE";
+                $SQL .= " OFFSET $START_ROW ROWS FETCH NEXT $LIMIT_ROW ROWS ONLY";
+
 
                 $strSQL = @oci_parse($objConnect, $SQL);
                 @oci_execute($strSQL);

@@ -17,6 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 die();
             }
             //**End data base connection  & status check **//
+            
             require_once ('InputValidator.php');  // Include InputValidator class
             $requiredFields = ['START_ROW', 'LIMIT_ROW'];  // Define required fields
 

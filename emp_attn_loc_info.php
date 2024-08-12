@@ -40,30 +40,26 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                 ON a.RML_ID = b.RML_ID
                                 AND TRUNC(b.ATTN_DATE) = TO_DATE('$TODAY', 'DD/MM/YYYY')
                             WHERE a.RML_ID = '$RML_ID' AND IS_ACTIVE = 1";
-                            
                 $strSQL = @oci_parse($objConnect, $SQL);
                 @oci_execute($strSQL);
                 $objResultFound = @oci_fetch_assoc($strSQL);
 
                 if ($objResultFound) {
-                    $responseData = [
-                        "RML_ID"        => $objResultFound["RML_ID"],
-                        "LAT"           => $objResultFound["LAT"],
-                        "LANG"          => $objResultFound["LANG"],
-                        "LAT_2"         => $objResultFound["LAT_2"],
-                        "LANG_2"        => $objResultFound["LANG_2"],
-                        "LAT_3"         => $objResultFound["LAT_3"],
-                        "LANG_3"        => $objResultFound["LANG_3"],
-                        "LAT_4"         => $objResultFound["LAT_4"],
-                        "LANG_4"        => $objResultFound["LANG_4"],
-                        "LAT_5"         => $objResultFound["LAT_5"],
-                        "LANG_5"        => $objResultFound["LANG_5"],
-                        "LAT_6"         => $objResultFound["LAT_6"],
-                        "LANG_6"        => $objResultFound["LANG_6"],
-                        "ATTN_STATUS"   => $objResultFound["ATTN_STATUS"],
+                    // $responseData = [];
+                    $obj = new stdClass();
+                    $obj->RML_ID = $objResultFound["RML_ID"];
+                    $obj->coordinates = [
+                        (object) ["LAT" => $objResultFound["LAT"], "LANG" => $objResultFound["LANG"]],
+                        (object) ["LAT" => $objResultFound["LAT_2"], "LANG" => $objResultFound["LANG_2"]],
+                        (object) ["LAT" => $objResultFound["LAT_3"], "LANG" => $objResultFound["LANG_3"]],
+                        (object) ["LAT" => $objResultFound["LAT_4"], "LANG" => $objResultFound["LANG_4"]],
+                        (object) ["LAT" => $objResultFound["LAT_5"], "LANG" => $objResultFound["LANG_5"]],
+                        (object) ["LAT" => $objResultFound["LAT_6"], "LANG" => $objResultFound["LANG_6"]]
                     ];
+                    $obj->ATTN_STATUS = $objResultFound["ATTN_STATUS"];
+                    // $responseData[] = $obj;
                     http_response_code(200);
-                    $jsonData = ["status" => true, "data" => $responseData, "message" => 'Successfully Data Found.'];
+                    $jsonData = ["status" => true, "data" => $obj, "message" => 'Successfully Data Found.'];
                     echo json_encode($jsonData);
                 } else {
                     http_response_code(401);
