@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
  
             //**Start Query & Return Data Response **//
             try {
-                $SQL = "SELECT ATTN_DATE,IN_TIME,OUT_TIME,STATUS ATTN_STATUS,DAY_NAME 
+                $SQL = "SELECT ATTN_DATE,IN_TIME,OUT_TIME,STATUS ATTN_STATUS,DAY_NAME
                 from RML_HR_ATTN_DAILY_PROC
                 where RML_ID='$RML_ID'
                 and trunc(ATTN_DATE) between to_date('$START_DATE','dd/mm/yyyy')

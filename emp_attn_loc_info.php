@@ -35,8 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                 a.LAT_6,
                                 a.LANG_6,
                                 NVL(b.STATUS, 'A') AS ATTN_STATUS
-                            FROM DEVELOPERS2.RML_HR_APPS_USER a
-                            LEFT JOIN DEVELOPERS2.RML_HR_ATTN_DAILY_PROC b
+                            FROM RML_HR_APPS_USER a
+                            LEFT JOIN RML_HR_ATTN_DAILY_PROC b
                                 ON a.RML_ID = b.RML_ID
                                 AND TRUNC(b.ATTN_DATE) = TO_DATE('$TODAY', 'DD/MM/YYYY')
                             WHERE a.RML_ID = '$RML_ID' AND IS_ACTIVE = 1";

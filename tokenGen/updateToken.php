@@ -16,8 +16,8 @@ try {
                 NVL ((IMAGE.USER_IMAGE),
                     'http://192.168.172.61:8080/test_api/image/user.png')
                     AS USER_IMAGE
-            FROM DEVELOPERS2.RML_HR_APPS_USER U
-                LEFT JOIN DEVELOPERS2.RML_HR_APPS_USER_IMAGE IMAGE
+            FROM RML_HR_APPS_USER U
+                LEFT JOIN RML_HR_APPS_USER_IMAGE IMAGE
                     ON U.RML_ID = IMAGE.USER_ID
             WHERE RML_ID = '$RML_ID'";
 

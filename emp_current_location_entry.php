@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             }
             //*** Start Query & Return Data Response ***//
             try {
-                $SQL = "INSERT INTO DEVELOPERS2.RML_HR_APPS_USER_LOCATION
+                $SQL = "INSERT INTO RML_HR_APPS_USER_LOCATION
                         (RML_ID, LOC_LAT, LOC_LANG, ENTRY_TIME)
                         VALUES ('$RML_ID', '$LOC_LAT', '$LOC_LANG',
                         TO_DATE('$ENTRY_TIME', 'DD/MM/YYYY HH:MI:SS AM'))";

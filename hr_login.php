@@ -50,8 +50,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         NVL ((IMAGE.USER_IMAGE),
                             'http://192.168.172.61:8080/test_api/image/user.png')
                             AS USER_IMAGE
-                    FROM DEVELOPERS2.RML_HR_APPS_USER U
-                        LEFT JOIN DEVELOPERS2.RML_HR_APPS_USER_IMAGE IMAGE
+                    FROM RML_HR_APPS_USER U
+                        LEFT JOIN RML_HR_APPS_USER_IMAGE IMAGE
                             ON U.RML_ID = IMAGE.USER_ID
                     WHERE RML_ID = '$rml_id'
                         AND PASS_MD5 = '$user_password'
@@ -68,17 +68,17 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
                 // IEMI_NO update or create
                 if ($DatabaseiemiNo != $iemiNumber) {
-                    $SQL = "UPDATE DEVELOPERS2.RML_HR_APPS_USER SET IEMI_NO = '$iemiNumber' WHERE RML_ID = '$rml_id'";
+                    $SQL = "UPDATE RML_HR_APPS_USER SET IEMI_NO = '$iemiNumber' WHERE RML_ID = '$rml_id'";
                     $strSQLFkeyUpdate = @oci_parse($objConnect, $SQL);
                     @oci_execute($strSQLFkeyUpdate);
                 }
                 // firebase update or create
                 if (strlen($firebaseKey) > 0 && $firebaseKey != $Fdatabasekey) {
-                    $strSQLFkeyUpdate = @oci_parse($objConnect, "UPDATE DEVELOPERS2.RML_HR_APPS_USER SET FIRE_BASE_ID = '$firebaseKey', FKEY_UPDATED_DATE = SYSDATE WHERE RML_ID = '$rml_id'");
+                    $strSQLFkeyUpdate = @oci_parse($objConnect, "UPDATE RML_HR_APPS_USER SET FIRE_BASE_ID = '$firebaseKey', FKEY_UPDATED_DATE = SYSDATE WHERE RML_ID = '$rml_id'");
                     @oci_execute($strSQLFkeyUpdate);
                 }
 
-                $SESSTION_SQL = @oci_parse($objConnect, "BEGIN DEVELOPERS2.HR_APPS_USER_SESSION_CREATE('$rml_id'); END;");
+                $SESSTION_SQL = @oci_parse($objConnect, "BEGIN HR_APPS_USER_SESSION_CREATE('$rml_id'); END;");
                 @oci_execute($SESSTION_SQL);
 
                 $responseData = [

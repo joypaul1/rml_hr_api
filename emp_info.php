@@ -25,17 +25,17 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 USER_ROLE,  EMP_NAME,MAIL, MOBILE_NO,
                 LINE_MANAGER_RML_ID, LINE_MANAGER_MOBILE, DEPT_HEAD_RML_ID, DEPT_HEAD_MOBILE_NO,
                 (SELECT SUBUSER.EMP_NAME
-                FROM DEVELOPERS2.RML_HR_APPS_USER SUBUSER
+                FROM RML_HR_APPS_USER SUBUSER
                 WHERE SUBUSER.RML_ID = U.LINE_MANAGER_RML_ID) AS LINE_MANAGER_NAME,
                 (SELECT SUBUSER.EMP_NAME
-                FROM DEVELOPERS2.RML_HR_APPS_USER SUBUSER
+                FROM RML_HR_APPS_USER SUBUSER
                 WHERE SUBUSER.RML_ID = U.DEPT_HEAD_RML_ID) AS DEPT_HEAD_NAME,
                 NVL ((IMAGE.USER_IMAGE),
                 'http://192.168.172.61:8080/test_api/image/user.png')
                 AS USER_IMAGE
                 FROM
-                    DEVELOPERS2.RML_HR_APPS_USER U
-                    LEFT JOIN DEVELOPERS2.RML_HR_APPS_USER_IMAGE IMAGE
+                    RML_HR_APPS_USER U
+                    LEFT JOIN RML_HR_APPS_USER_IMAGE IMAGE
                             ON U.RML_ID = IMAGE.USER_ID
                 WHERE
                     RML_ID = '$RML_ID' AND IS_ACTIVE = 1";
