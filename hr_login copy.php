@@ -5,7 +5,7 @@ header("Content-Type: application/json; charset=UTF-8");
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
         
-    include_once('../test_api/inc/connoracle.php');
+    include_once('../rml_hr_api/inc/connoracle.php');
     // $jsonData =[];
     if ($isDatabaseConnected !== 1) {
         $jsonData = ["status" => false, "message" => "Database Connection Failed."];

@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         if ($checkValidTokenData['data']->data->RML_ID) {
 
             //** ORACLE DATA CONNECTION***//
-            include_once ('../test_api/inc/connoracle.php');
+            include_once ('../rml_hr_api/inc/connoracle.php');
             if ($isDatabaseConnected !== 1) {
                 $jsonData = ["status" => false, "message" => "Database Connection Failed."];
                 echo json_encode($jsonData);

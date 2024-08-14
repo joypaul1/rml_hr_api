@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         if ($checkValidTokenData['data']->data->RML_ID) {
 
             //** ORACLE DATA CONNECTION***//
-            include_once ('../test_api/inc/connoracle.php');
+            include_once ('../rml_hr_api/inc/connoracle.php');
             if ($isDatabaseConnected !== 1) {
                 $jsonData = ["status" => false, "message" => "Database Connection Failed."];
                 echo json_encode($jsonData);
@@ -119,7 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         DEPT_HEAD_RML_ID,
                         DEPT_HEAD_MOBILE_NO,
                         NVL ((IMAGE.USER_IMAGE),
-                            'http://192.168.172.61:8080/test_api/image/user.png')
+                            'http://192.168.172.61:8080/rml_hr_api/image/user.png')
                             AS USER_IMAGE
                     FROM RML_HR_APPS_USER U
                         LEFT JOIN RML_HR_APPS_USER_IMAGE IMAGE
