@@ -66,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     ];
                     echo json_encode($jsonData);
                 } else {
-                    http_response_code(200);
+                    http_response_code(500);
                     @$lastError = error_get_last();
                     @$error = $lastError ? "" . $lastError["message"] . "" : "";
                     $str_arr_error = preg_split("/\,/", $error);

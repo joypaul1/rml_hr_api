@@ -5,7 +5,7 @@ header("Content-Type: application/json; charset=UTF-8");
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
-    $checkValidTokenData    =   require_once("checkValidTokenData.php");
+    $checkValidTokenData = require_once("checkValidTokenData.php");
     if ($checkValidTokenData['status']) {
         if ($checkValidTokenData['data']->data->RML_ID) {
             $RML_ID = $checkValidTokenData['data']->data->RML_ID; // set RML Variable Data
@@ -26,17 +26,17 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $validator = new InputValidator($_POST);
 
             if (!$validator->validateRequired($requiredFields)) {
-                 http_response_code(400);
-        $jsonData = ["status" => false, "message" => "Missing required parameters."];
-                echo json_encode($jsonData); 
+                http_response_code(400);
+                $jsonData = ["status" => false, "message" => "Missing required parameters."];
+                echo json_encode($jsonData);
                 die();
             }
             // **Initialize input validator with POST Data**//
 
             $validator->sanitizeInputs();   // Sanitize Inputs
-            $START_DATE     = $validator->get('START_DATE');   // Retrieve sanitized inputs
-            $END_DATE       = $validator->get('END_DATE');   // Retrieve sanitized inputs
- 
+            $START_DATE = $validator->get('START_DATE');   // Retrieve sanitized inputs
+            $END_DATE = $validator->get('END_DATE');   // Retrieve sanitized inputs
+
             //**Start Query & Return Data Response **//
             try {
                 $SQL = "SELECT ATTN_DATE,IN_TIME,OUT_TIME,STATUS ATTN_STATUS,DAY_NAME
@@ -51,11 +51,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $responseData = [];
                 while ($objResultFound = @oci_fetch_assoc($strSQL)) {
                     $responseData[] = [
-                        "ATTN_DATE"     => $objResultFound['ATTN_DATE'],
-                        "IN_TIME"       => $objResultFound['IN_TIME'],
-                        "OUT_TIME"      => $objResultFound['OUT_TIME'],
-                        "ATTN_STATUS"   => $objResultFound['ATTN_STATUS'],
-                        "DAY_NAME"      => $objResultFound['DAY_NAME']
+                        "ATTN_DATE" => $objResultFound['ATTN_DATE'],
+                        "IN_TIME" => $objResultFound['IN_TIME'],
+                        "OUT_TIME" => $objResultFound['OUT_TIME'],
+                        "ATTN_STATUS" => $objResultFound['ATTN_STATUS'],
+                        "DAY_NAME" => $objResultFound['DAY_NAME']
                     ];
                 }
 
@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 }
             } catch (Exception $e) {
                 http_response_code(500);
-            $jsonData = ["status" => false, "message" => $e->getMessage()];
+                $jsonData = ["status" => false, "message" => $e->getMessage()];
                 echo json_encode($jsonData);
             } finally {
                 oci_close($objConnect);
