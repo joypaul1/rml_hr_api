@@ -21,8 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //**Start Query & Return Data Response **//
             try {
                 $SQL = "SELECT 
-                RML_ID, R_CONCERN, IEMI_NO, DESIGNATION,
-                USER_ROLE,  EMP_NAME,MAIL, MOBILE_NO,
+                RML_ID, R_CONCERN, IEMI_NO, DESIGNATION,BRANCH_NAME,
+                USER_ROLE,  EMP_NAME,MAIL, MOBILE_NO,BLOOD,
                 LINE_MANAGER_RML_ID, LINE_MANAGER_MOBILE, DEPT_HEAD_RML_ID, DEPT_HEAD_MOBILE_NO,
                 (SELECT SUBUSER.EMP_NAME
                 FROM RML_HR_APPS_USER SUBUSER
@@ -57,6 +57,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         "DEPT_HEAD_RML_ID" => $objResultFound["DEPT_HEAD_RML_ID"],
                         "DEPT_HEAD_MOBILE_NO" => $objResultFound["DEPT_HEAD_MOBILE_NO"],
                         "USER_IMAGE" => $objResultFound["USER_IMAGE"],
+                        "BLOOD" => $objResultFound["BLOOD"],
+                        "BRANCH_NAME" => $objResultFound["BRANCH_NAME"],
                     ];
                     http_response_code(200);
                     $jsonData = ["status" => true, "data" => $responseData, "message" => 'Successfully Data Found.'];
