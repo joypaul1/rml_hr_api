@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             //**Start Query & Return Data Response **//
             try {
-                $SQL = "SELECT 
+                $SQL = "SELECT
                 RML_ID, R_CONCERN, IEMI_NO, DESIGNATION,BRANCH_NAME,
                 USER_ROLE,  EMP_NAME,MAIL, MOBILE_NO,BLOOD,
                 LINE_MANAGER_RML_ID, LINE_MANAGER_MOBILE, DEPT_HEAD_RML_ID, DEPT_HEAD_MOBILE_NO,
