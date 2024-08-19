@@ -46,19 +46,19 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
                 if ($objResultFound) {
                     $responseData = [
-                        "RML_ID" => $objResultFound["RML_ID"],
-                        "EMP_NAME" => $objResultFound["EMP_NAME"],
-                        "MOBILE_NO" => $objResultFound["MOBILE_NO"],
-                        "DESIGNATION" => $objResultFound["DESIGNATION"],
-                        "USER_ROLE" => $objResultFound["USER_ROLE"],
-                        "CONCERN" => $objResultFound["R_CONCERN"],
-                        "LINE_MANAGER_RML_ID" => $objResultFound["LINE_MANAGER_RML_ID"],
-                        "LINE_MANAGER_MOBILE" => $objResultFound["LINE_MANAGER_MOBILE"],
-                        "DEPT_HEAD_RML_ID" => $objResultFound["DEPT_HEAD_RML_ID"],
-                        "DEPT_HEAD_MOBILE_NO" => $objResultFound["DEPT_HEAD_MOBILE_NO"],
-                        "USER_IMAGE" => $objResultFound["USER_IMAGE"],
-                        "BLOOD" => $objResultFound["BLOOD"],
-                        "BRANCH_NAME" => $objResultFound["BRANCH_NAME"],
+                        "RML_ID"                => $objResultFound["RML_ID"],
+                        "EMP_NAME"              => $objResultFound["EMP_NAME"],
+                        "MOBILE_NO"             => $objResultFound["MOBILE_NO"],
+                        "DESIGNATION"           => $objResultFound["DESIGNATION"],
+                        "USER_ROLE"             => $objResultFound["USER_ROLE"],
+                        "CONCERN"               => $objResultFound["R_CONCERN"],
+                        "LINE_MANAGER_RML_ID"   => $objResultFound["LINE_MANAGER_RML_ID"],
+                        "LINE_MANAGER_MOBILE"   => $objResultFound["LINE_MANAGER_MOBILE"],
+                        "DEPT_HEAD_RML_ID"      => $objResultFound["DEPT_HEAD_RML_ID"],
+                        "DEPT_HEAD_MOBILE_NO"   => $objResultFound["DEPT_HEAD_MOBILE_NO"],
+                        "USER_IMAGE"    => $objResultFound["USER_IMAGE"],
+                        "BLOOD"         => $objResultFound["BLOOD"],
+                        "BRANCH_NAME"   => $objResultFound["BRANCH_NAME"],
                     ];
                     http_response_code(200);
                     $jsonData = ["status" => true, "data" => $responseData, "message" => 'Successfully Data Found.'];
