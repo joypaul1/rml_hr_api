@@ -2,8 +2,9 @@
 require_once 'vendor/autoload.php';
 use Firebase\JWT\JWT;
 
-$config = require_once('./inc/config.php');
-$secret_key = $config['jwt_token'];
+// $config = require_once('inc/config.php');
+// print_r($config );
+$secret_key = '$_RMLIT2024@#_$';
 
 
 function generate_jwt_token($data)
