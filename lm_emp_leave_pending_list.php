@@ -39,12 +39,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //**Start Query & Return Data Response **//
             try {
                 $SQL = "SELECT a.ID AS ID,
-                        (b.EMP_NAME ||'('||a.RML_ID||')') RML_ID,
+                        b.EMP_NAME,
+                        a.RML_ID,
                         START_DATE,
                         END_DATE,
                         ((END_DATE-START_DATE)+1) LEAVE_DAYS,
                         REMARKS,
-                        LEAVE_TYPE
+                        LEAVE_TYPE,
+                        NVL ((SELECT B.EMP_IMAGE FROM RML_HR_APPS_USER_IMAGE USERIMG WHERE USERIMG.USER_ID=a.RML_ID),
+                            'http://192.168.127.12:9050/rml_hr_api/image/user.png') AS USER_IMAGE
                     FROM RML_HR_EMP_LEAVE a,RML_HR_APPS_USER b
                     WHERE A.RML_ID=B.RML_ID
                     AND trunc(START_DATE)> TO_DATE('01/01/2022','DD/MM/YYYY')
@@ -63,7 +66,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         "END_DATE" => $objResultFound['END_DATE'],
                         "REMARKS" => $objResultFound['REMARKS'],
                         "LEAVE_DAYS" => $objResultFound['LEAVE_DAYS'],
-                        "LEAVE_TYPE" => $objResultFound['LEAVE_TYPE']
+                        "LEAVE_TYPE" => $objResultFound['LEAVE_TYPE'],
+                        "EMP_IMAGE" => $objResultFound['USER_IMAGE']
                     ];
                 }
 

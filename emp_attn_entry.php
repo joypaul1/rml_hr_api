@@ -39,16 +39,19 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $OUTSIDE_REMAKRKS = $validator->get('OUTSIDE_REMAKRKS');   // Retrieve sanitized inputs
             $EMP_DISTANCE = $validator->get('EMP_DISTANCE');   // Retrieve sanitized inputs
             $RML_ID = $checkValidTokenData['data']->data->RML_ID;
+            $LINE_MANAGER_RML_ID = $checkValidTokenData['data']->data->LINE_MANAGER_RML_ID;
             $ENTRY_BY = $RML_ID;
 
             //*** Start Query & Return Data Response ***//
             try {
                 $SQL = "BEGIN RML_HR_ATTN_CREATE('$RML_ID','$LATITUDE','$LONGITUDE','$INSIDE_OR_OUTSIDE','$OUTSIDE_REMAKRKS', '$EMP_DISTANCE', '$ENTRY_BY');END;";
                 $strSQL = @oci_parse($objConnect, $SQL);
-                
+                // $today_date = date('d/m/Y');
                 //** @ATTENDANCE PRROCESSING **//
                 $attnSQL = @oci_parse($objConnect, "DECLARE  start_date VARCHAR2(100):=to_char(SYSDATE,'dd/mm/yyyy');
                 BEGIN RML_HR_ATTN_PROC('$RML_ID',TO_DATE(start_date,'dd/mm/yyyy') ,TO_DATE(start_date,'dd/mm/yyyy') );END;");
+                // ECHO  "DECLARE  start_date VARCHAR2(100):=to_char(SYSDATE,'dd/mm/yyyy');
+                // BEGIN RML_HR_ATTN_PROC('$RML_ID',TO_DATE(start_date,'dd/mm/yyyy') ,TO_DATE(start_date,'dd/mm/yyyy') );END;";
                 //** @END ATTENDANCE PRROCESSING **//
 
                 if (@oci_execute($strSQL)&& @oci_execute($attnSQL)) {
@@ -63,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     } else {
                         $jsonData = array(
                             "status" => true,
-                            'push_id' => $checkValidTokenData['data']->LINE_MANAGER_RML_ID,
+                            'push_id' => $LINE_MANAGER_RML_ID,
                             "message" => "Your office attendance successfully saved. It must be approved by your responsible line manager.",
                             "push_message" => "Your concern $RML_ID, have given outside acctendance. You should approved/denied this attendance."
                         );

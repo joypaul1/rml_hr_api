@@ -57,7 +57,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         (object) ["LAT" => $objResultFound["LAT_6"], "LANG" => $objResultFound["LANG_6"]]
                     ];
                     $obj->ATTN_STATUS = $objResultFound["ATTN_STATUS"];
-                    // $responseData[] = $obj;
                     http_response_code(200);
                     $jsonData = ["status" => true, "data" => $obj, "message" => 'Successfully Data Found.'];
                     echo json_encode($jsonData);

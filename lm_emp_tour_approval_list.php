@@ -35,8 +35,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $LIMIT_ROW = $validator->get('LIMIT_ROW');   // Retrieve sanitized inputs
             //**Start Query & Return Data Response **//
             try {
-                $SQL = "SELECT a.ID,b.EMP_NAME,
-                            (b.EMP_NAME ||'('||a.RML_ID||')') RML_ID,
+                $SQL = "SELECT a.ID,
+                            b.EMP_NAME,
+                            a.RML_ID,
                             a.ENTRY_DATE,
                             a.START_DATE,
                             a.END_DATE,
@@ -45,7 +46,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             a.LINE_MANAGER_ID,
                             a.LINE_MANAGER_APPROVAL_STATUS,
                             a.APPROVAL_DATE,
-                            a.APPROVAL_REMARKS
+                            a.APPROVAL_REMARKS,
+                            NVL ((SELECT B.EMP_IMAGE FROM RML_HR_APPS_USER_IMAGE USERIMG WHERE USERIMG.USER_ID=a.RML_ID),
+                            'http://192.168.127.12:9050/rml_hr_api/image/user.png') AS USER_IMAGE
                         FROM RML_HR_EMP_TOUR a, RML_HR_APPS_USER b
                         WHERE A.RML_ID=B.RML_ID
                         and a.LINE_MANAGER_ID='$RML_ID'
@@ -68,8 +71,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         "ENTRY_BY"                      => $objResultFound['ENTRY_BY'],
                         "LINE_MANAGER_ID"               => $objResultFound['LINE_MANAGER_ID'],
                         "LINE_MANAGER_APPROVAL_STATUS"  => $objResultFound['LINE_MANAGER_APPROVAL_STATUS'],
-                        "APPROVAL_DATE"                 =>  $objResultFound['APPROVAL_DATE'],
-                        "APPROVAL_REMARKS"              =>  $objResultFound['APPROVAL_REMARKS']
+                        "APPROVAL_DATE"                 => $objResultFound['APPROVAL_DATE'],
+                        "APPROVAL_REMARKS"              => $objResultFound['APPROVAL_REMARKS'],
+                        "EMP_NAME"                      => $objResultFound['EMP_NAME'],
+                        "EMP_IMAGE"                     => $objResultFound['USER_IMAGE']
                     ];
                 }
 
