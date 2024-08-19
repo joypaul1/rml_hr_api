@@ -5,12 +5,12 @@ header("Content-Type: application/json; charset=UTF-8");
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
-    $checkValidTokenData = require_once ("checkValidTokenData.php");
+    $checkValidTokenData = require_once("checkValidTokenData.php");
     if ($checkValidTokenData['status']) {
         if ($checkValidTokenData['data']->data->RML_ID) {
             $RML_ID = $checkValidTokenData['data']->data->RML_ID; // set RML Variable Data
             //**Start data base connection  & status check **//
-            include_once ('../rml_hr_api/inc/connoracle.php');
+            include_once('../rml_hr_api/inc/connoracle.php');
             if ($isDatabaseConnected !== 1) {
                 $jsonData = ["status" => false, "message" => "Database Connection Failed."];
                 echo json_encode($jsonData);
@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             }
             //**End data base connection  & status check **//
 
-            require_once ('InputValidator.php');  // Include InputValidator class
+            require_once('InputValidator.php');  // Include InputValidator class
             $requiredFields = ['START_ROW', 'LIMIT_ROW'];  // Define required fields
 
             // Initialize input validator with POST data **//
@@ -39,12 +39,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //**Start Query & Return Data Response **//
             try {
                 $SQL = "SELECT a.ID AS ID,
-                        (b.EMP_NAME ||'('||a.RML_ID||')') RML_ID,
+                        b.EMP_NAME,
+                        a.RML_ID,
                         START_DATE,
                         END_DATE,
                         ((END_DATE-START_DATE)+1) LEAVE_DAYS,
                         REMARKS,
-                        LEAVE_TYPE
+                        LEAVE_TYPE,
+                        NVL ((SELECT B.EMP_IMAGE FROM RML_HR_APPS_USER_IMAGE USERIMG WHERE USERIMG.USER_ID=a.RML_ID),
+                            'http://192.168.127.12:9050/rml_hr_api/image/user.png') AS USER_IMAGE
                     FROM RML_HR_EMP_LEAVE a,RML_HR_APPS_USER b
                     WHERE A.RML_ID=B.RML_ID
                     AND trunc(START_DATE)> TO_DATE('01/01/2022','DD/MM/YYYY')
@@ -59,11 +62,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     $responseData[] = [
                         "ID" => $objResultFound['ID'],
                         "RML_ID" => $objResultFound['RML_ID'],
+                        "EMP_NAME" => $objResultFound['EMP_NAME'],
                         "START_DATE" => $objResultFound['START_DATE'],
                         "END_DATE" => $objResultFound['END_DATE'],
                         "REMARKS" => $objResultFound['REMARKS'],
                         "LEAVE_DAYS" => $objResultFound['LEAVE_DAYS'],
-                        "LEAVE_TYPE" => $objResultFound['LEAVE_TYPE']
+                        "LEAVE_TYPE" => $objResultFound['LEAVE_TYPE'],
+                        "EMP_IMAGE" => $objResultFound['USER_IMAGE']
                     ];
                 }
 

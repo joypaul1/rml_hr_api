@@ -5,12 +5,12 @@ header("Content-Type: application/json; charset=UTF-8");
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
-    $checkValidTokenData = require_once ("checkValidTokenData.php");
+    $checkValidTokenData = require_once("checkValidTokenData.php");
     if ($checkValidTokenData['status']) {
         if ($checkValidTokenData['data']->data->RML_ID) {
             $RML_ID = $checkValidTokenData['data']->data->RML_ID; // set RML Variable Data
             //**Start data base connection  & status check **//
-            include_once ('../rml_hr_api/inc/connoracle.php');
+            include_once('../rml_hr_api/inc/connoracle.php');
             if ($isDatabaseConnected !== 1) {
                 $jsonData = ["status" => false, "message" => "Database Connection Failed."];
                 echo json_encode($jsonData);
@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             }
             //**End data base connection  & status check **//
 
-            require_once ('InputValidator.php');  // Include InputValidator class
+            require_once('InputValidator.php');  // Include InputValidator class
             $requiredFields = ['START_ROW', 'LIMIT_ROW'];  // Define required fields
 
             // Initialize input validator with POST data **//
@@ -37,16 +37,35 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $LIMIT_ROW = $validator->get('LIMIT_ROW');   // Retrieve sanitized inputs
             //**Start Query & Return Data Response **//
             try {
-                $SQL = "SELECT attn.ID,attn.RML_ID,attn.ATTN_DATE,attn.LAT,attn.LANG,attn.OUTSIDE_REMARKS,RML_HR_FKEY(attn.RML_ID,'NU') NU_FKEY,
-                        (SELECT a.EMP_NAME FROM RML_HR_APPS_USER a WHERE a.RML_ID=attn.RML_ID)EMP_NAME
-                        FROM RML_HR_ATTN_DAILY attn
-                    WHERE attn.LINE_MANAGER_ID='$RML_ID'
-                        AND attn.INSIDE_OR_OUTSIDE='Outside Office'
-                        AND trunc(ATTN.ATTN_DATE) BETWEEN  trunc(SYSDATE)-( select KEY_VALUE FROM HR_GLOBAL_CONFIGARATION
-                        WHERE KEY_TYPE='ATTN_OUTDOOR_APPROVAL') AND  trunc(SYSDATE)
-                        AND attn.LINE_MANAGER_APPROVAL IS NULL
-                        AND attn.IS_ALL_APPROVED=0
-                        ORDER BY ATTN_DATE desc";
+                $SQL = "SELECT
+                            attn.ID,
+                            attn.RML_ID,
+                            attn.ATTN_DATE,
+                            attn.LAT,
+                            attn.LANG,
+                            attn.OUTSIDE_REMARKS,
+                            RML_HR_FKEY(attn.RML_ID, 'NU') AS NU_FKEY,
+                            (SELECT a.EMP_NAME
+                            FROM RML_HR_APPS_USER a
+                            WHERE a.RML_ID = attn.RML_ID) AS EMP_NAME,
+                            NVL((SELECT B.USER_IMAGE
+                                FROM RML_HR_APPS_USER_IMAGE B
+                                WHERE B.USER_ID = attn.RML_ID),
+                                'http://202.40.181.98:9050/rml_hr_api/image/user.png') AS USER_IMAGE
+                        FROM
+                            RML_HR_ATTN_DAILY attn
+                        WHERE
+                            attn.LINE_MANAGER_ID = '$RML_ID'
+                            AND attn.INSIDE_OR_OUTSIDE = 'Outside Office'
+                            AND TRUNC(attn.ATTN_DATE) BETWEEN TRUNC(SYSDATE) -
+                                (SELECT KEY_VALUE
+                                FROM HR_GLOBAL_CONFIGARATION
+                                WHERE KEY_TYPE = 'ATTN_OUTDOOR_APPROVAL')
+                                AND TRUNC(SYSDATE)
+                            AND attn.LINE_MANAGER_APPROVAL IS NULL
+                            AND attn.IS_ALL_APPROVED = 0
+                        ORDER BY
+                            attn.ATTN_DATE DESC";
                 $SQL .= " OFFSET $START_ROW ROWS FETCH NEXT $LIMIT_ROW ROWS ONLY";
 
                 $strSQL = @oci_parse($objConnect, $SQL);
@@ -61,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         "LAT" => $objResultFound['LAT'],
                         "LANG" => $objResultFound['LANG'],
                         "OUTSIDE_REMARKS" => $objResultFound['OUTSIDE_REMARKS'],
-                        "NU_FKEY" => $objResultFound['NU_FKEY']
+                        "EMP_IMAGE" => $objResultFound['USER_IMAGE']
                     ];
                 }
 

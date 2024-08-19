@@ -119,7 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         DEPT_HEAD_RML_ID,
                         DEPT_HEAD_MOBILE_NO,
                         NVL ((IMAGE.USER_IMAGE),
-                            'http://192.168.172.61:8080/rml_hr_api/image/user.png')
+                            'http://202.40.181.98:9050/rml_hr_api/image/user.png')
                             AS USER_IMAGE
                     FROM RML_HR_APPS_USER U
                         LEFT JOIN RML_HR_APPS_USER_IMAGE IMAGE

@@ -39,32 +39,50 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $OUTSIDE_REMAKRKS = $validator->get('OUTSIDE_REMAKRKS');   // Retrieve sanitized inputs
             $EMP_DISTANCE = $validator->get('EMP_DISTANCE');   // Retrieve sanitized inputs
             $RML_ID = $checkValidTokenData['data']->data->RML_ID;
+            $LINE_MANAGER_RML_ID = $checkValidTokenData['data']->data->LINE_MANAGER_RML_ID;
             $ENTRY_BY = $RML_ID;
 
             //*** Start Query & Return Data Response ***//
             try {
                 $SQL = "BEGIN RML_HR_ATTN_CREATE('$RML_ID','$LATITUDE','$LONGITUDE','$INSIDE_OR_OUTSIDE','$OUTSIDE_REMAKRKS', '$EMP_DISTANCE', '$ENTRY_BY');END;";
                 $strSQL = @oci_parse($objConnect, $SQL);
-                
+                // $today_date = date('d/m/Y');
                 //** @ATTENDANCE PRROCESSING **//
                 $attnSQL = @oci_parse($objConnect, "DECLARE  start_date VARCHAR2(100):=to_char(SYSDATE,'dd/mm/yyyy');
                 BEGIN RML_HR_ATTN_PROC('$RML_ID',TO_DATE(start_date,'dd/mm/yyyy') ,TO_DATE(start_date,'dd/mm/yyyy') );END;");
+                // ECHO  "DECLARE  start_date VARCHAR2(100):=to_char(SYSDATE,'dd/mm/yyyy');
+                // BEGIN RML_HR_ATTN_PROC('$RML_ID',TO_DATE(start_date,'dd/mm/yyyy') ,TO_DATE(start_date,'dd/mm/yyyy') );END;";
                 //** @END ATTENDANCE PRROCESSING **//
 
-                if (@oci_execute($strSQL)&& @oci_execute($attnSQL)) {
+                $TODAY = date('d/m/Y');
+                $SQL2 = "SELECT a.RML_ID,
+                                NVL(b.STATUS, 'A') AS ATTN_STATUS
+                            FROM RML_HR_APPS_USER a
+                            LEFT JOIN RML_HR_ATTN_DAILY_PROC b
+                                ON a.RML_ID = b.RML_ID
+                                AND TRUNC(b.ATTN_DATE) = TO_DATE('$TODAY', 'DD/MM/YYYY')
+                            WHERE a.RML_ID = '$RML_ID' AND IS_ACTIVE = 1";
+                $strSQL2 = @oci_parse($objConnect, $SQL2);
+                // @oci_execute($strSQL2);
+                // 
+
+                if (@oci_execute($strSQL)&& @oci_execute($attnSQL) && @oci_execute($strSQL2)) {
                     http_response_code(200);
+                    $objResultFound = @oci_fetch_assoc($strSQL2);
                     if ($INSIDE_OR_OUTSIDE == 'Inside Office') {
                         $jsonData = array(
                             "status" => true,
                             "message" => "Your office attendance successfully saved.",
                             "push_message" => '',
-                            'push_id' => ''
+                            'push_id' => '',
+                            "ATTN_STATUS" => $objResultFound["ATTN_STATUS"]
                         );
                     } else {
                         $jsonData = array(
                             "status" => true,
-                            'push_id' => $checkValidTokenData['data']->LINE_MANAGER_RML_ID,
-                            "message" => "Your office attendance successfully saved. It must be approved by your responsible line manager.",
+                            "ATTN_STATUS" => $objResultFound["ATTN_STATUS"],
+                            'push_id' => $LINE_MANAGER_RML_ID,
+                            "message" => "Attendance logged! Awaiting your line manager's approval to make it visible in the report. 👍",
                             "push_message" => "Your concern $RML_ID, have given outside acctendance. You should approved/denied this attendance."
                         );
                     }
