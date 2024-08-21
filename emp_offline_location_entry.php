@@ -43,9 +43,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $dataArray = json_decode($_POST['LIST_LOCATION'], true);// Accessing data in PHP
 
                 foreach ($dataArray as $key => $item) {
-                    $LOC_LAT = $item['LAT'];
-                    $LOC_LANG = $item['LANG'];
-                    $ENTRY_TIME = $item['ENTRY_TIME'];
+                    $LOC_LAT        = $item['LAT'];
+                    $LOC_LANG       = $item['LANG'];
+                    $ENTRY_TIME     = $item['ENTRY_TIME'];
+                    $BATTERY_LEVEL  = $item['BATTERY_LEVEL']??'';
                     // Regular expression for date format validation: DD/MM/YYYY HH:MI:SS AM/PM
                     $pattern = '/^\d{2}\/\d{2}\/\d{4} \d{2}:\d{2}:\d{2} (AM|PM)$/';
                     if (!preg_match($pattern, $ENTRY_TIME)) {
@@ -55,8 +56,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         die();
                     }
                     $SQL = "INSERT INTO RML_HR_APPS_USER_LOCATION
-                        (RML_ID, LOC_LAT, LOC_LANG, ENTRY_TIME)
-                        VALUES ('$RML_ID', '$LOC_LAT', '$LOC_LANG',
+                        (RML_ID, LOC_LAT, LOC_LANG, BATTERY_LEVEL,ENTRY_TIME)
+                        VALUES ('$RML_ID', '$LOC_LAT', '$LOC_LANG','$BATTERY_LEVEL',
                         TO_DATE('$ENTRY_TIME', 'DD/MM/YYYY HH:MI:SS AM'))";
 
                     $strSQL = @oci_parse($objConnect, $SQL);

@@ -5,12 +5,12 @@ header("Content-Type: application/json; charset=UTF-8");
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
-    $checkValidTokenData = require_once ("checkValidTokenData.php");
+    $checkValidTokenData = require_once("checkValidTokenData.php");
     if ($checkValidTokenData['status']) {
         if ($checkValidTokenData['data']->data->RML_ID) {
 
             //** ORACLE DATA CONNECTION***//
-            include_once ('../rml_hr_api/inc/connoracle.php');
+            include_once('../rml_hr_api/inc/connoracle.php');
             if ($isDatabaseConnected !== 1) {
                 $jsonData = ["status" => false, "message" => "Database Connection Failed."];
                 echo json_encode($jsonData);
@@ -19,8 +19,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //** ORACLE DATA CONNECTION***//
 
 
-            require_once ('InputValidator.php');  // Include InputValidator class
-            $requiredFields = ['LOC_LAT', 'LOC_LANG', 'ENTRY_TIME'];  // Define required fields
+            require_once('InputValidator.php');  // Include InputValidator class
+            $requiredFields = ['LOC_LAT', 'LOC_LANG', 'ENTRY_TIME', 'BATTERY_LEVEL'];  // Define required fields
 
             // Initialize input validator with POST data **//
             $validator = new InputValidator($_POST);
@@ -39,6 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $LOC_LAT = $validator->get('LOC_LAT');   // Retrieve sanitized inputs
             $LOC_LANG = $validator->get('LOC_LANG');   // Retrieve sanitized inputs
             $ENTRY_TIME = $validator->get('ENTRY_TIME');   // Retrieve sanitized inputs
+            $BATTERY_LEVEL = $validator->get('BATTERY_LEVEL');   // Retrieve sanitized inputs
             $RML_ID = $checkValidTokenData['data']->data->RML_ID;
             $ENTRY_BY = $RML_ID;
 
@@ -53,8 +54,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //*** Start Query & Return Data Response ***//
             try {
                 $SQL = "INSERT INTO RML_HR_APPS_USER_LOCATION
-                        (RML_ID, LOC_LAT, LOC_LANG, ENTRY_TIME)
-                        VALUES ('$RML_ID', '$LOC_LAT', '$LOC_LANG',
+                        (RML_ID, LOC_LAT, LOC_LANG,BATTERY_LEVEL,ENTRY_TIME)
+                        VALUES ('$RML_ID', '$LOC_LAT', '$LOC_LANG','$BATTERY_LEVEL',
                         TO_DATE('$ENTRY_TIME', 'DD/MM/YYYY HH:MI:SS AM'))";
 
                 $strSQL = @oci_parse($objConnect, $SQL);
