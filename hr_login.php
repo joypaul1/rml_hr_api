@@ -67,7 +67,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             if ($objResultFound) {
 
                 if (isset($_POST['sys_mobile'])) {
-                    if ($_POST['sys_mobile'] != $objResultFound['MOBILE_NO']) {
+                    if(empty($_POST['sys_mobile']) || $_POST['sys_mobile'] == ''){
+                        include_once('./smsGen/sendOTP.php');
+                        $otpRES = sendOTP($objResultFound['MOBILE_NO'], $_POST['opt_device_track_code']);
+                        if($otpRES['status']){
+                            $otpCode = $otpRES['OTP'];
+                        }
+                    }else if ($_POST['sys_mobile'] != $objResultFound['MOBILE_NO']) {
                         http_response_code(401); // invalid user or credentials
                         $jsonData = [
                             "status" => false,
@@ -120,18 +126,20 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $jwtData = generate_jwt_token($responseData);
                 http_response_code(200); // status successful
                 $jsonData = [
-                    "status" => true,
-                    "data" => $jwtData,
-                    "message" => 'Successfully Login.',
-                    "otpCode" => $otpCode,
+                    "status"    => true,
+                    "data"      => $jwtData,
+                    "message"   => 'Successfully Login.',
+                    "otpCode"   => $otpCode,
+                    "mobile"    => $objResultFound['MOBILE_NO'],
                 ];
                 echo json_encode($jsonData);
             } else {
                 http_response_code(401); // invalid user or credentials
                 $jsonData = [
-                    "status" => false,
+                    "status"    => false,
                     "message" => "Invalid credentials or user not active.",
-                    "otpCode" => $otpCode
+                    "otpCode" => $otpCode,
+                    "mobile"   => null,
                 ];
                 echo json_encode($jsonData);
                 die();

@@ -2,13 +2,14 @@
 function sendOTP($mobileNumbers, $deviceTrackCode)
 {
     $mobileNumbers = '88' . $mobileNumbers;
+    // $mobileNumbers = '8801772240238';
     $config = require_once('./inc/config.php');
     $apiKey = $config['API_KEY'];
     $clientId = $config['Client_ID'];
     $senderId = $config['SenderID'];
 
     $otpCode = generateOtp();
-    $message = "<#> NEVER share your HR Apps Verification Code with anyone. Verification Code: " . $otpCode . ". Expiry: 60 seconds." . $deviceTrackCode;
+    $message = "<#> NEVER share your HR Apps Verification Code with anyone. Verification Code: " . $otpCode . ". Expiry: 60 seconds. " . $deviceTrackCode;
 
 
     // Encode parameters
