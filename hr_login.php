@@ -66,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             if ($objResultFound) {
 
-                if (isset($_POST['sys_mobile'])) {
+                if (isset($_POST['sys_mobile']) && $rml_id !='TEST') {
                     if(empty($_POST['sys_mobile']) || $_POST['sys_mobile'] == ''){
                         include_once('./smsGen/sendOTP.php');
                         $otpRES = sendOTP($objResultFound['MOBILE_NO'], $_POST['opt_device_track_code']);
@@ -83,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         echo json_encode($jsonData);
                         die();
                     }
-                } else if (!isset($_POST['sys_mobile']) && isset($_POST['opt_device_track_code'])) {
+                } else if (!isset($_POST['sys_mobile']) && isset($_POST['opt_device_track_code']) && $rml_id !='TEST') {
                     include_once('./smsGen/sendOTP.php');
                     $otpRES = sendOTP($objResultFound['MOBILE_NO'], $_POST['opt_device_track_code']);
                     if($otpRES['status']){
