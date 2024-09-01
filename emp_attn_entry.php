@@ -41,6 +41,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $RML_ID = $checkValidTokenData['data']->data->RML_ID;
             $LINE_MANAGER_RML_ID = $checkValidTokenData['data']->data->LINE_MANAGER_RML_ID;
             $ENTRY_BY = $RML_ID;
+            $BATTERY_LEVEL= $_POST['BATTERY_LEVEL']??'';
+            $APPS_VERSION = $_POST['APPS_VERSION']??'';
 
             //*** Start Query & Return Data Response ***//
             try {
@@ -54,6 +56,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 // BEGIN RML_HR_ATTN_PROC('$RML_ID',TO_DATE(start_date,'dd/mm/yyyy') ,TO_DATE(start_date,'dd/mm/yyyy') );END;";
                 //** @END ATTENDANCE PRROCESSING **//
 
+                //** Location Entry **/
+                $SQL3 = "INSERT INTO RML_HR_APPS_USER_LOCATION
+                (RML_ID, LOC_LAT, LOC_LANG, BATTERY_LEVEL, ENTRY_TIME, APPS_VERSION)
+                VALUES ('$RML_ID', '$LATITUDE', '$LONGITUDE', '$BATTERY_LEVEL', SYSDATE, '$APPS_VERSION')";
+                $strSQL3 = @oci_parse($objConnect, $SQL3);
+                @oci_execute($strSQL3);
+
+                //** Location Entry **/
+
                 $TODAY = date('d/m/Y');
                 $SQL2 = "SELECT a.RML_ID,
                                 NVL(b.STATUS, 'A') AS ATTN_STATUS
@@ -64,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             WHERE a.RML_ID = '$RML_ID' AND IS_ACTIVE = 1";
                 $strSQL2 = @oci_parse($objConnect, $SQL2);
                 // @oci_execute($strSQL2);
-                // 
+                
 
                 if (@oci_execute($strSQL)&& @oci_execute($attnSQL) && @oci_execute($strSQL2)) {
                     http_response_code(200);
