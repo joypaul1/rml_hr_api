@@ -59,6 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     WHERE RML_ID = '$rml_id'
                         AND PASS_MD5 = '$user_password'
                         AND IS_ACTIVE = 1";
+                        
 
             $strSQL = @oci_parse($objConnect, $SQL);
             @oci_execute($strSQL);
