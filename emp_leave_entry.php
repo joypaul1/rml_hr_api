@@ -1,7 +1,7 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
-
+$RML_ID = $START_DATE   =   $END_DATE = null;
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
@@ -44,10 +44,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //*** Start Query & Return Data Response ***//
             try {
                 $SQL = "BEGIN RML_HR_LEAVE_CREATE('$RML_ID','$START_DATE','$END_DATE','$LEAVE_REMARKS','$LEAVE_TYPE','$ENTRY_BY');END;";
-                // echo $SQL;
-                // die();
+
                 $strSQL = @oci_parse($objConnect, $SQL);
-                
                 if (@oci_execute($strSQL)) {
                     http_response_code(200);
                     $jsonData = [
@@ -83,4 +81,26 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $jsonData = ["status" => false, "message" => "Request method not accepted"];
     echo json_encode($jsonData);
 }
+
+// START NOTIFICATION CONFIGURATION
+
+include_once('./firebase_noti/lm_noti.php'); // INCLUDE FIREBASE NOTI FILE
+
+// SQL QUERY //
+$SQL = "SELECT A.RML_ID,A.EMP_NAME, A.MOBILE_NO ,
+(SELECT MOBILE_NO FROM RML_HR_APPS_USER WHERE  RML_ID= A.LINE_MANAGER_RML_ID) AS LM_MOBILE_NO
+(SELECT FIRE_BASE_ID FROM RML_HR_APPS_USER WHERE  RML_ID= A.LINE_MANAGER_RML_ID) AS LM_FKEY
+FROM RML_HR_APPS_USER A
+WHERE A.RML_ID ='$RML_ID'
+AND A.IS_ACTIVE = 1";
+// SQL QUERY  //
+
+$objResultFound=[];
+$strSQL = @oci_parse($objConnect, $SQL);
+if (@oci_execute($strSQL)) {
+    $objResultFound = @oci_fetch_assoc($strSQL);
+    sendNotification($RML_ID, $objResultFound['EMP_NAME'], $objResultFound['LM_FKEY'], 'leave', $START_DATE, $END_DATE);
+}
+// END NOTIFICATION CONFIGURATION
+
 die();
