@@ -36,8 +36,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             //**Start Query & Return Data Response **//
             try {
-                $SQL = "SELECT a.ID,b.EMP_NAME,
-                            RML_ID,
+                $SQL = "SELECT a.ID,
+                            b.EMP_NAME,
+                            a.RML_ID,
                             a.ENTRY_DATE,
                             a.START_DATE,
                             a.END_DATE,
