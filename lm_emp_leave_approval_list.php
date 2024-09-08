@@ -60,15 +60,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $responseData = [];
                 while ($objResultFound = @oci_fetch_assoc($strSQL)) {
                     $responseData[] = [
-                        "ID" => $objResultFound['ID'],
-                        "RML_ID" => $objResultFound['RML_ID'],
-                        "EMP_NAME" => $objResultFound['EMP_NAME'],
-                        "START_DATE" => $objResultFound['START_DATE'],
-                        "END_DATE" => $objResultFound['END_DATE'],
-                        "REMARKS" => $objResultFound['REMARKS'],
-                        "LEAVE_DAYS" => $objResultFound['LEAVE_DAYS'],
-                        "LEAVE_TYPE" => $objResultFound['LEAVE_TYPE'],
-                        "EMP_IMAGE" => $objResultFound['USER_IMAGE']
+                        "ID"            => $objResultFound['ID'],
+                        "RML_ID"        => $objResultFound['RML_ID'],
+                        "EMP_NAME"      => $objResultFound['EMP_NAME'],
+                        "START_DATE"    => $objResultFound['START_DATE'],
+                        "END_DATE"      => $objResultFound['END_DATE'],
+                        "REMARKS"       => $objResultFound['REMARKS'],
+                        "LEAVE_DAYS"    => $objResultFound['LEAVE_DAYS'],
+                        "LEAVE_TYPE"    => $objResultFound['LEAVE_TYPE'],
+                        "EMP_IMAGE"     => $objResultFound['USER_IMAGE']
                     ];
                 }
 

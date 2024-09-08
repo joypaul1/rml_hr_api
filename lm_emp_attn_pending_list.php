@@ -73,14 +73,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $responseData = [];
                 while ($objResultFound = @oci_fetch_assoc($strSQL)) {
                     $responseData[] = [
-                        "ID" => $objResultFound['ID'],
-                        "RML_ID" => $objResultFound['RML_ID'],
-                        "EMP_NAME" => $objResultFound['EMP_NAME'],
-                        "ATTN_DATE" => $objResultFound['ATTN_DATE'],
-                        "LAT" => $objResultFound['LAT'],
-                        "LANG" => $objResultFound['LANG'],
-                        "OUTSIDE_REMARKS" => $objResultFound['OUTSIDE_REMARKS'],
-                        "EMP_IMAGE" => $objResultFound['USER_IMAGE']
+                        "ID"                => $objResultFound['ID'],
+                        "RML_ID"            => $objResultFound['RML_ID'],
+                        "EMP_NAME"          => $objResultFound['EMP_NAME'],
+                        "ATTN_DATE"         => $objResultFound['ATTN_DATE'],
+                        "LAT"               => $objResultFound['LAT'],
+                        "LANG"              => $objResultFound['LANG'],
+                        "OUTSIDE_REMARKS"   => $objResultFound['OUTSIDE_REMARKS'],
+                        "EMP_IMAGE"         => $objResultFound['USER_IMAGE']
                     ];
                 }
 
