@@ -2,6 +2,43 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
+// InputValidator Class
+class InputValidator {
+    private $data;
+    private $missingFields = [];
+
+    public function __construct($data) {
+        $this->data = $data;
+    }
+
+    public function sanitize($input) {
+        return htmlspecialchars(strip_tags(trim($input)));
+    }
+
+    public function validateRequired($fields) {
+        $this->missingFields = []; // Reset missing fields before each validation
+        foreach ($fields as $field) {
+            if (!isset($this->data[$field]) || empty($this->data[$field])) {
+                $this->missingFields[] = $field; // Add missing field to the list
+            }
+        }
+        return empty($this->missingFields); // Return true if no fields are missing, false otherwise
+    }
+
+    public function getMissingFields() {
+        return $this->missingFields; // Return the list of missing fields
+    }
+
+    public function sanitizeInputs() {
+        foreach ($this->data as $key => $value) {
+            $this->data[$key] = $this->sanitize($value);
+        }
+    }
+
+    public function get($field) {
+        return $this->data[$field] ?? '';
+    }
+}
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
@@ -18,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             }
             //** ORACLE DATA CONNECTION***//
 
-            require_once('InputValidator.php');  // Include InputValidator class
+            // require_once('InputValidator.php');  // Include InputValidator class
             $requiredFields = ['DATAID', 'REMARKS', 'ACCEPTED_STATUS'];  // Define required fields
 
             // Initialize input validator with POST data **//
@@ -26,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             if (!$validator->validateRequired($requiredFields)) {
                 // Set the HTTP status code to 400 Bad Request
                 http_response_code(400);
-                $jsonData = ["status" => false, "message" => "Missing Required Parameters."];
+                $jsonData = ["status" => false, "message" => $validator->getMissingFields()];
                 echo json_encode($jsonData);
                 die();
             }
