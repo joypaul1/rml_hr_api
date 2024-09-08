@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             }
             //** ORACLE DATA CONNECTION***//
 
-            require_once('InputValidator.php');  // Include InputValidator class
+            require_once('InputValidator2.php');  // Include InputValidator class
             $requiredFields = ['DATAID', 'REMARKS', 'ACCEPTED_STATUS'];  // Define required fields
 
             // Initialize input validator with POST data **//
@@ -26,7 +26,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             if (!$validator->validateRequired($requiredFields)) {
                 // Set the HTTP status code to 400 Bad Request
                 http_response_code(400);
-                $jsonData = ["status" => false, "message" => "Missing Required Parameters."];
+                // $jsonData = ["status" => false, "message" => "Missing Required Parameters."];
+                $jsonData = ["status" => false, "message" => json_decode($validator->getMissingFields(), true)];
                 echo json_encode($jsonData);
                 die();
             }
