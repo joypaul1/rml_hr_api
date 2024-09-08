@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             if (!$validator->validateRequired($requiredFields)) {
                 // Set the HTTP status code to 400 Bad Request
                 http_response_code(400);
-                $jsonData = ["status" => false, "message" => $validator->getMissingFields()];
+                $jsonData = ["status" => false, "message" => json_encode($validator->getMissingFields())];
                 echo json_encode($jsonData);
                 die();
             }
