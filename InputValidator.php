@@ -11,13 +11,12 @@ class InputValidator {
     }
 
     public function validateRequired($fields) {
-        $missingFields = [];
         foreach ($fields as $field) {
             if (!isset($this->data[$field]) || empty($this->data[$field])) {
-                $missingFields[] = $field; // Add missing field to the array
+                return false;
             }
         }
-        return $missingFields; // Return the array of missing fields
+        return true;
     }
 
     public function sanitizeInputs() {
