@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         WHERE A.RML_ID=B.RML_ID
                         and a.LINE_MANAGER_ID='$RML_ID'
                         AND a.LINE_MANAGER_APPROVAL_STATUS IS NULL
-                        order by START_DATE";
+                        ORDER BY START_DATE DESC";
                 $SQL .= " OFFSET $START_ROW ROWS FETCH NEXT $LIMIT_ROW ROWS ONLY";
 
 

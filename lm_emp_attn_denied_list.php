@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         AND trunc(ATTN.ATTN_DATE) BETWEEN  trunc(SYSDATE)-( select KEY_VALUE FROM HR_GLOBAL_CONFIGARATION
                         WHERE KEY_TYPE='ATTN_OUTDOOR_APPROVAL') AND  trunc(SYSDATE)
                         AND attn.LINE_MANAGER_APPROVAL = 0
-                        ORDER BY ATTN_DATE desc";
+                        ORDER BY ATTN_DATE DESC";
                 $SQL .= " OFFSET $START_ROW ROWS FETCH NEXT $LIMIT_ROW ROWS ONLY";
                 // AND attn.IS_ALL_APPROVED= 1
                 $strSQL = @oci_parse($objConnect, $SQL);

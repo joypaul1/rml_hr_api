@@ -40,22 +40,22 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //**Start Query & Return Data Response **//
             try {
                 $SQL = "SELECT ATTN_DATE,IN_TIME,OUT_TIME,STATUS ATTN_STATUS,DAY_NAME
-                from RML_HR_ATTN_DAILY_PROC
-                where RML_ID='$RML_ID'
-                and trunc(ATTN_DATE) between to_date('$START_DATE','dd/mm/yyyy')
-                and to_date('$END_DATE','dd/mm/yyyy')
-                order by ATTN_DATE desc";
+                FROM RML_HR_ATTN_DAILY_PROC
+                WHERE RML_ID='$RML_ID'
+                AND trunc(ATTN_DATE) between to_date('$START_DATE','dd/mm/yyyy')
+                AND to_date('$END_DATE','dd/mm/yyyy')
+                ORDER BY ATTN_DATE DESC";
 
                 $strSQL = @oci_parse($objConnect, $SQL);
                 @oci_execute($strSQL);
                 $responseData = [];
                 while ($objResultFound = @oci_fetch_assoc($strSQL)) {
                     $responseData[] = [
-                        "ATTN_DATE" => $objResultFound['ATTN_DATE'],
-                        "IN_TIME" => $objResultFound['IN_TIME'],
-                        "OUT_TIME" => $objResultFound['OUT_TIME'],
-                        "ATTN_STATUS" => $objResultFound['ATTN_STATUS'],
-                        "DAY_NAME" => $objResultFound['DAY_NAME']
+                        "ATTN_DATE"     => $objResultFound['ATTN_DATE'],
+                        "IN_TIME"       => $objResultFound['IN_TIME'],
+                        "OUT_TIME"      => $objResultFound['OUT_TIME'],
+                        "ATTN_STATUS"   => $objResultFound['ATTN_STATUS'],
+                        "DAY_NAME"      => $objResultFound['DAY_NAME']
                     ];
                 }
 

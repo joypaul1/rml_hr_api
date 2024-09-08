@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     WHERE A.RML_ID=B.RML_ID
                     AND trunc(START_DATE)> TO_DATE('01/01/2022','DD/MM/YYYY')
                     AND  b.LINE_MANAGER_RML_ID='$RML_ID'
-                    AND A.IS_APPROVED = 0";
+                    AND A.IS_APPROVED = 0 ORDER BY a.START_DATE DESC";
                 $SQL .= " OFFSET $START_ROW ROWS FETCH NEXT $LIMIT_ROW ROWS ONLY";
 
                 $strSQL = @oci_parse($objConnect, $SQL);

@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         WHERE KEY_TYPE='ATTN_OUTDOOR_APPROVAL') AND  trunc(SYSDATE)
                         AND attn.LINE_MANAGER_APPROVAL = 1
                         AND attn.IS_ALL_APPROVED= 1
-                        ORDER BY ATTN_DATE desc";
+                        ORDER BY ATTN_DATE DESC";
                 $SQL .= " OFFSET $START_ROW ROWS FETCH NEXT $LIMIT_ROW ROWS ONLY";
 
                 $strSQL = @oci_parse($objConnect, $SQL);
