@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         ((END_DATE-START_DATE)+1) LEAVE_DAYS,
                         REMARKS,
                         LEAVE_TYPE,
-                        NVL ((SELECT B.USER_IMAGE FROM RML_HR_APPS_USER_IMAGE USERIMG WHERE USERIMG.USER_ID=a.RML_ID),
+                        NVL ((SELECT USERIMG.USER_IMAGE FROM RML_HR_APPS_USER_IMAGE USERIMG WHERE USERIMG.USER_ID=a.RML_ID),
                             'http://192.168.127.12:9050/rml_hr_api/image/user.png') AS USER_IMAGE
                     FROM RML_HR_EMP_LEAVE a,RML_HR_APPS_USER b
                     WHERE A.RML_ID=B.RML_ID
