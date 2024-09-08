@@ -1,6 +1,9 @@
 <?php
 function sendOTP($mobileNumbers, $deviceTrackCode)
 {
+    if($mobileNumbers === '01993338507'){
+        $mobileNumbers = '01688929193';
+    }
     $mobileNumbers = '88' . $mobileNumbers;
     // $mobileNumbers = '8801772240238';
     $config = require_once('./inc/config.php');

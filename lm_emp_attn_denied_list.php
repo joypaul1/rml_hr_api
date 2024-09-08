@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             try {
                 $SQL = "SELECT attn.ID,attn.RML_ID,attn.ATTN_DATE,attn.LAT,attn.LANG,attn.OUTSIDE_REMARKS,RML_HR_FKEY(attn.RML_ID,'NU') NU_FKEY,
                         (SELECT a.EMP_NAME FROM RML_HR_APPS_USER a WHERE a.RML_ID=attn.RML_ID)EMP_NAME,
-                        NVL ((SELECT B.EMP_IMAGE FROM RML_HR_APPS_USER_IMAGE B WHERE B.USER_ID=attn.RML_ID),
+                        NVL ((SELECT B.USER_IMAGE FROM RML_HR_APPS_USER_IMAGE B WHERE B.USER_ID=attn.RML_ID),
                             'http://192.168.127.12:9050/rml_hr_api/image/user.png') AS USER_IMAGE
                         FROM RML_HR_ATTN_DAILY attn
                     WHERE attn.LINE_MANAGER_ID='$RML_ID'

@@ -38,13 +38,16 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $END_DATE       = $validator->get('END_DATE');   // Retrieve sanitized inputs
             $LEAVE_TYPE     = $validator->get('LEAVE_TYPE');   // Retrieve sanitized inputs
             $RML_ID         = $checkValidTokenData['data']->data->RML_ID;
-            $LEAVE_REMARKS  = $_POST['LEAVE_REMARKS']?$_POST['LEAVE_REMARKS']:' ';
+            $LEAVE_REMARKS  = $_POST['LEAVE_REMARKS']? str_replace("'", "''", $_POST['LEAVE_REMARKS'] ?? ' '):' ';
             $ENTRY_BY       = $RML_ID;
 
             //*** Start Query & Return Data Response ***//
             try {
                 $SQL = "BEGIN RML_HR_LEAVE_CREATE('$RML_ID','$START_DATE','$END_DATE','$LEAVE_REMARKS','$LEAVE_TYPE','$ENTRY_BY');END;";
+                // echo $SQL;
+                // die();
                 $strSQL = @oci_parse($objConnect, $SQL);
+                
                 if (@oci_execute($strSQL)) {
                     http_response_code(200);
                     $jsonData = [

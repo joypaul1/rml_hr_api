@@ -110,17 +110,17 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 @oci_execute($SESSTION_SQL);
                 // session for login log create
                 $responseData = [
-                    "RML_ID" => $objResultFound["RML_ID"],
-                    "EMP_NAME" => $objResultFound["EMP_NAME"],
-                    "MOBILE_NO" => $objResultFound["MOBILE_NO"],
-                    "DESIGNATION" => $objResultFound["DESIGNATION"],
-                    "USER_ROLE" => $objResultFound["USER_ROLE"],
-                    "CONCERN" => $objResultFound["R_CONCERN"],
-                    "LINE_MANAGER_RML_ID" => $objResultFound["LINE_MANAGER_RML_ID"],
-                    "LINE_MANAGER_MOBILE" => $objResultFound["LINE_MANAGER_MOBILE"],
-                    "DEPT_HEAD_RML_ID" => $objResultFound["DEPT_HEAD_RML_ID"],
-                    "DEPT_HEAD_MOBILE_NO" => $objResultFound["DEPT_HEAD_MOBILE_NO"],
-                    "USER_IMAGE" => $objResultFound["USER_IMAGE"],
+                    "RML_ID"                => $objResultFound["RML_ID"],
+                    "EMP_NAME"              => $objResultFound["EMP_NAME"],
+                    "MOBILE_NO"             => $objResultFound["MOBILE_NO"],
+                    "DESIGNATION"           => $objResultFound["DESIGNATION"],
+                    "USER_ROLE"             => $objResultFound["USER_ROLE"],
+                    "CONCERN"               => $objResultFound["R_CONCERN"],
+                    "LINE_MANAGER_RML_ID"   => $objResultFound["LINE_MANAGER_RML_ID"],
+                    "LINE_MANAGER_MOBILE"   => $objResultFound["LINE_MANAGER_MOBILE"],
+                    "DEPT_HEAD_RML_ID"      => $objResultFound["DEPT_HEAD_RML_ID"],
+                    "DEPT_HEAD_MOBILE_NO"   => $objResultFound["DEPT_HEAD_MOBILE_NO"],
+                    "USER_IMAGE"            => $objResultFound["USER_IMAGE"],
                 ];
                 //incldue jwt token
                 include_once('./tokenGen/createToken.php');
