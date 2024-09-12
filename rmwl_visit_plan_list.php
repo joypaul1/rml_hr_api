@@ -65,20 +65,20 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $responseData = [];
                 while ($objResultFound = @oci_fetch_assoc($strSQL)) {
                     $responseData[] = [
-                    "ID"                            => $responseData['ID'],
-					"VISIT_DATE"                    => $responseData['VISIT_DATE'],
-					"BRAND_NAME"                    => $responseData['BRAND_NAME'],
-					"USER_REMARKS"                  => $responseData['USER_REMARKS'],
-					"VISIT_STATUS"                  => $responseData['VISIT_STATUS'],
-					"SALES_AMOUNT_COLLECTED"        => $responseData['SALES_AMOUNT_COLLECTED'],
-					"COLLECTION_AMOUNT_COLLECTED"   => $responseData['COLLECTION_AMOUNT_COLLECTED'],
-					"AFTER_VISIT_REMARKS"           => $responseData['AFTER_VISIT_REMARKS'],
-					"USER_NAME"                     => $responseData['USER_NAME'],
-					"USER_MOBILE"                   => $responseData['USER_MOBILE'],
-					"RML_IDENTITY_ID"               => $responseData['RML_IDENTITY_ID'],
-					"LAT"                           => $responseData['VISIT_LAT'],
-					"LANG"                          => $responseData['VISIT_LANG'],
-					"DISTRICT"                      => $responseData['DISTRICT']
+                    "ID"                            => $objResultFound['ID'],
+					"VISIT_DATE"                    => $objResultFound['VISIT_DATE'],
+					"BRAND_NAME"                    => $objResultFound['BRAND_NAME'],
+					"USER_REMARKS"                  => $objResultFound['USER_REMARKS'],
+					"VISIT_STATUS"                  => $objResultFound['VISIT_STATUS'],
+					"SALES_AMOUNT_COLLECTED"        => $objResultFound['SALES_AMOUNT_COLLECTED'],
+					"COLLECTION_AMOUNT_COLLECTED"   => $objResultFound['COLLECTION_AMOUNT_COLLECTED'],
+					"AFTER_VISIT_REMARKS"           => $objResultFound['AFTER_VISIT_REMARKS'],
+					"USER_NAME"                     => $objResultFound['USER_NAME'],
+					"USER_MOBILE"                   => $objResultFound['USER_MOBILE'],
+					"RML_IDENTITY_ID"               => $objResultFound['RML_IDENTITY_ID'],
+					"LAT"                           => $objResultFound['VISIT_LAT'],
+					"LANG"                          => $objResultFound['VISIT_LANG'],
+					"DISTRICT"                      => $objResultFound['DISTRICT']
                     ];
                 }
 
