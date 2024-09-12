@@ -34,25 +34,30 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             // **Initialize input validator with POST Data**//
 
             $validator->sanitizeInputs();   // Sanitize Inputs
-            $RETAILER_ID    = $validator->get('RETAILER_ID');   // Retrieve sanitized inputs
-            $VISIT_DATE     = $validator->get('VISIT_DATE');   // Retrieve sanitized inputs
-            $REMARKS        = $validator->get('REMARKS');   // Retrieve sanitized inputs
+            $SALE_AMOUNT            = $validator->get('SALE_AMOUNT');   // Retrieve sanitized inputs
+            $COLLECTION_AMOUNT      = $validator->get('COLLECTION_AMOUNT');   // Retrieve sanitized inputs
+            $REMARKS                = $validator->get('REMARKS');   // Retrieve sanitized inputs
+            $LAT                    = $validator->get('LAT');   // Retrieve sanitized inputs
+            $LANG                   = $validator->get('LANG');   // Retrieve sanitized inputs
+            $DISTANCE               = $validator->get('DISTANCE');   // Retrieve sanitized inputs
+            $FAKE_LOCATION          = $validator->get('FAKE_LOCATION');   // Retrieve sanitized inputs
+            $VISIT_ASSIGN_ID        = $validator->get('VISIT_ASSIGN_ID');   // Retrieve sanitized inputs
             //$RML_ID         = $checkValidTokenData['data']->data->RML_ID;
             //$ENTRY_BY       = $RML_ID;
 
             //*** Start Query & Return Data Response ***//
             try {
                 $SQL = "UPDATE WSHOP.VISIT_ASSIGN SET
-                            SALES_AMOUNT_COLLECTED      = $P_SALE_AMOUNT,
-                            COLLECTION_AMOUNT_COLLECTED = $P_COLLECTION_AMOUNT,
-                            AFTER_VISIT_REMARKS         = '$P_VISIT_REMARKS',
+                            SALES_AMOUNT_COLLECTED      = $SALE_AMOUNT,
+                            COLLECTION_AMOUNT_COLLECTED = $COLLECTION_AMOUNT,
+                            AFTER_VISIT_REMARKS         = '$REMARKS',
                             VISIT_STATUS                =  1,
-                            VISIT_LAT                   = '$P_VISIT_LAT',
-                            VISIT_LANG                  = '$P_VISIT_LANG',
-                            DISTANCE                    = $P_VISIT_DISTANCE,
-                            FAKE_LOCATION               = '$P_FAKE_LOCATION',
+                            VISIT_LAT                   = '$LAT',
+                            VISIT_LANG                  = '$LANG',
+                            DISTANCE                    = $DISTANCE,
+                            FAKE_LOCATION               ='$FAKE_LOCATION',
                             LOCATION_VISITED_DATE       = SYSDATE
-                        WHERE  ID = $P_VISIT_ASSIGN_ID";
+                        WHERE  ID = $VISIT_ASSIGN_ID";
                 $strSQL = @oci_parse($objConnect, $SQL);
                 if (@oci_execute($strSQL)) {
                     http_response_code(200);

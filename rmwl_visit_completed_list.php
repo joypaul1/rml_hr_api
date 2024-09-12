@@ -68,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 					"VISIT_DATE"                    => $responseData['VISIT_DATE'],
 					"BRAND_NAME"                    => $responseData['BRAND_NAME'],
 					"USER_REMARKS"                  => $responseData['USER_REMARKS'],
-					"VISIT_STATUS"                  => $responseData['VISIT_STATUS'],
+				 	"VISIT_STATUS"                  => $responseData['VISIT_STATUS'],
 					"SALES_AMOUNT_COLLECTED"        => $responseData['SALES_AMOUNT_COLLECTED'],
 					"COLLECTION_AMOUNT_COLLECTED"   => $responseData['COLLECTION_AMOUNT_COLLECTED'],
 					"AFTER_VISIT_REMARKS"           => $responseData['AFTER_VISIT_REMARKS'],
