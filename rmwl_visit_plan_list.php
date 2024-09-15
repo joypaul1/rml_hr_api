@@ -59,6 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 						AND A.USER_ID=(select ID from WSHOP.USER_PROFILE
                         WHERE RML_IDENTITY_ID='$RML_ID')";
                 $SQL .= " OFFSET $START_ROW ROWS FETCH NEXT $LIMIT_ROW ROWS ONLY";
+               
 
                 $strSQL = @oci_parse($objConnect, $SQL);
                 @oci_execute($strSQL);
@@ -76,8 +77,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 					"USER_NAME"                     => $objResultFound['USER_NAME'],
 					"USER_MOBILE"                   => $objResultFound['USER_MOBILE'],
 					"RML_IDENTITY_ID"               => $objResultFound['RML_IDENTITY_ID'],
-					"LAT"                           => $objResultFound['VISIT_LAT'],
-					"LANG"                          => $objResultFound['VISIT_LANG'],
+					"LAT"                           => $objResultFound['LAT'],
+					"LANG"                          => $objResultFound['LANG'],
 					"DISTRICT"                      => $objResultFound['DISTRICT']
                     ];
                 }
