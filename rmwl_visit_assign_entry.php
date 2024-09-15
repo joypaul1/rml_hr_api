@@ -38,22 +38,22 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $VISIT_DATE     = $validator->get('VISIT_DATE');   // Retrieve sanitized inputs
             $REMARKS        = $validator->get('REMARKS');   // Retrieve sanitized inputs
             $RML_ID         = $checkValidTokenData['data']->data->RML_ID;
-            $ENTRY_BY       = $RML_ID;
-
+            //$ENTRY_BY       = $RML_ID;
             //*** Start Query & Return Data Response ***//
             try {
                 $SQL = "BEGIN WSHOP.VISIT_ASSIGN_CREATE('$RML_ID','$RETAILER_ID','$VISIT_DATE','$REMARKS',1); END;";
+               
                 $strSQL = @oci_parse($objConnect, $SQL);
                 if (@oci_execute($strSQL)) {
                     http_response_code(200);
                     $jsonData = ["status" => true,  "message" =>'Visit assign entry successfully done.'];
                     echo json_encode($jsonData);
                 } else {
-                    http_response_code(403);
+                    http_response_code(502 );
                     @$lastError = error_get_last();
                     @$error = $lastError ? "" . $lastError["message"] . "" : "";
                     @$str_arr_error = preg_split("/\,/", $error);
-                    $jsonData = ["status" => false,  "message" => @$str_arr_error ];
+                    $jsonData = ["status" => false,  "message" => @$str_arr_error, 'sql'=> $SQL ];
                     echo json_encode($jsonData);
                 }
             } catch (Exception $e) {

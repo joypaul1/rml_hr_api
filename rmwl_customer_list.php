@@ -60,6 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                 WHERE PARENT_USER_ID = (select ID from WSHOP.USER_PROFILE
                         WHERE RML_IDENTITY_ID='$RML_ID'))) B
                         WHERE A.ID=B.USER_ID";
+                        
                 $SQL .= " OFFSET $START_ROW ROWS FETCH NEXT $LIMIT_ROW ROWS ONLY";
 
                 $strSQL = @oci_parse($objConnect, $SQL);
