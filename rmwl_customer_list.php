@@ -49,16 +49,16 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         FROM WSHOP.USER_PROFILE A,
                         (SELECT USER_ID
                             FROM WSHOP.USER_MANPOWER_SETUP
-                            WHERE PARENT_USER_ID = (select ID frFom WSHOP.USER_PROFILE
+                            WHERE PARENT_USER_ID = (select ID From WSHOP.USER_PROFILE
                             WHERE RML_IDENTITY_ID='$RML_ID')
                         UNION ALL
                         SELECT USER_ID
                         FROM WSHOP.USER_MANPOWER_SETUP
-                        WHERE PARENT_USER_ID INss
+                        WHERE PARENT_USER_ID IN
                         (SELECT USER_ID
                                 FROM WSHOP.USER_MANPOWER_SETUP
                                 WHERE PARENT_USER_ID = (select ID from WSHOP.USER_PROFILE
-                        WHEREss RML_IDENTITY_ID='$RML_ID'))) B
+                        WHERE RML_IDENTITY_ID='$RML_ID'))) B
                         WHERE A.ID=B.USER_ID";
                 $SQL .= " OFFSET $START_ROW ROWS FETCH NEXT $LIMIT_ROW ROWS ONLY";
 
@@ -67,13 +67,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $responseData = [];
                 while ($objResultFound = @oci_fetch_assoc($strSQL)) {
                     $responseData[] = [
-                        "USER_ID"           => $responseData['USER_ID'],
-                        "USER_NAME"         => $responseData['USER_NAME'],
-                        "USER_TYPE"         => $responseData['USER_TYPE'],
-                        "USER_MOBILE"       => $responseData['USER_MOBILE'],
-                        "LAT"               => $responseData['LAT'],
-                        "LANG"              => $responseData['LANG'],
-                        "LOCATION_REMARKS"  => $responseData['LOCATION_REMARKS']
+                        "USER_ID"           => $objResultFound['USER_ID'],
+                        "USER_NAME"         => $objResultFound['USER_NAME'],
+                        "USER_TYPE"         => $objResultFound['USER_TYPE'],
+                        "USER_MOBILE"       => $objResultFound['USER_MOBILE'],
+                        "LAT"               => $objResultFound['LAT'],
+                        "LANG"              => $objResultFound['LANG'],
+                        "LOCATION_REMARKS"  => $objResultFound['LOCATION_REMARKS']
                     ];
                 }
 
