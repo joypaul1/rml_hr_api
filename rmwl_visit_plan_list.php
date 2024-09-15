@@ -76,8 +76,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 					"USER_NAME"                     => $objResultFound['USER_NAME'],
 					"USER_MOBILE"                   => $objResultFound['USER_MOBILE'],
 					"RML_IDENTITY_ID"               => $objResultFound['RML_IDENTITY_ID'],
-					"LAT"                           => $objResultFound['VISIT_LAT'],
-					"LANG"                          => $objResultFound['VISIT_LANG'],
+					"LAT"                           => $objResultFound['LAT'],
+					"LANG"                          => $objResultFound['LANG'],
 					"DISTRICT"                      => $objResultFound['DISTRICT']
                     ];
                 }
