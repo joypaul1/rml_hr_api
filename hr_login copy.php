@@ -8,7 +8,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     include_once('../rml_hr_api/inc/connoracle.php');
     // $jsonData =[];
     if ($isDatabaseConnected !== 1) {
-        $jsonData = ["status" => false, "message" => "Database Connection Failed."];
+        http_response_code(401);
+                $jsonData = ["status" => false, "message" => "Database Connection Failed."];
         echo json_encode($jsonData);
         die();
     } 
