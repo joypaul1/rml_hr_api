@@ -88,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     $jsonData = ["status" => true, "data" => $responseData, "message" => 'Successfully Data Found.'];
                     echo json_encode($jsonData);
                 } else {
-                    http_response_code(200);
+                    http_response_code(404);
                     $jsonData = ["status" => true, "data" => [], "message" => 'No Data Found.'];
                     echo json_encode($jsonData);
                 }
