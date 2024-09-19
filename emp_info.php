@@ -62,8 +62,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         CASE
                             WHEN EXISTS (SELECT 1
                                         FROM RML_COLL_APPS_USER  APP
-                                        WHERE APP.RML_ID = LPAD(SUBSTR(U.RML_ID, INSTR(U.RML_ID, '-') + 1), 6, '0')
-                                        AND APP.IS_ACTIVE = 1 AND  APP.ACCESS_APP = 'RML_WSHOP' )
+                                        WHERE APP.RML_ID = TO_CHAR(TO_NUMBER(SUBSTR(U.RML_ID, INSTR(U.RML_ID, '-') + 1)))
+                                        AND APP.IS_ACTIVE = 1  AND  APP.ACCESS_APP = 'RML_WSHOP')
                             THEN 'yes'
                             ELSE 'no'
                         END AS wk_status,
