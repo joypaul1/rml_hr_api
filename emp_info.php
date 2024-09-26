@@ -21,7 +21,74 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             //**Start Query & Return Data Response **//
             try {
-                $SQL = "SELECT 
+                if ($RML_ID == 'TEST') {
+                    $SQL = "SELECT 
+                        RML_ID,
+                        R_CONCERN,
+                        DESIGNATION,
+                        BRANCH_NAME,
+                        GENDER,
+                        USER_ROLE,
+                        EMP_NAME,
+                        MAIL,
+                        MOBILE_NO,
+                        BLOOD,
+                        LINE_MANAGER_RML_ID,
+                        LINE_MANAGER_MOBILE,
+                        DEPT_HEAD_RML_ID,
+                        DEPT_HEAD_MOBILE_NO,
+                        (SELECT SUBUSER.EMP_NAME
+                            FROM RML_HR_APPS_USER SUBUSER
+                            WHERE SUBUSER.RML_ID = U.LINE_MANAGER_RML_ID) AS LINE_MANAGER_NAME,
+                        (SELECT SUBUSER.EMP_NAME
+                            FROM RML_HR_APPS_USER SUBUSER
+                            WHERE SUBUSER.RML_ID = U.DEPT_HEAD_RML_ID) AS DEPT_HEAD_NAME,
+                        NVL(IMAGE.USER_IMAGE, 'http://202.40.181.98:9050/rml_hr_api/image/user.png') AS USER_IMAGE
+                    FROM
+                        RML_HR_APPS_USER U
+                    LEFT JOIN
+                        RML_HR_APPS_USER_IMAGE IMAGE ON U.RML_ID = IMAGE.USER_ID
+                    WHERE
+                        RML_ID = '$RML_ID'
+                        AND IS_ACTIVE = 1";
+                    $strSQL = @oci_parse($objConnect, $SQL);
+                    @oci_execute($strSQL);
+                    $objResultFound = @oci_fetch_assoc($strSQL);
+
+                    if ($objResultFound) {
+                        $responseData = [
+                            "RML_ID" => $objResultFound["RML_ID"],
+                            "EMP_NAME" => $objResultFound["EMP_NAME"],
+                            "MOBILE_NO" => $objResultFound["MOBILE_NO"],
+                            "DESIGNATION" => $objResultFound["DESIGNATION"],
+                            "USER_ROLE" => $objResultFound["USER_ROLE"],
+                            "CONCERN" => $objResultFound["R_CONCERN"],
+                            "LINE_MANAGER_RML_ID" => $objResultFound["LINE_MANAGER_RML_ID"],
+                            "LINE_MANAGER_MOBILE" => $objResultFound["LINE_MANAGER_MOBILE"],
+                            "DEPT_HEAD_RML_ID" => $objResultFound["DEPT_HEAD_RML_ID"],
+                            "DEPT_HEAD_MOBILE_NO" => $objResultFound["DEPT_HEAD_MOBILE_NO"],
+                            "USER_IMAGE" => $objResultFound["USER_IMAGE"],
+                            "BLOOD" => $objResultFound["BLOOD"],
+                            "BRANCH_NAME" => $objResultFound["BRANCH_NAME"],
+                            "GENDER" => $objResultFound["GENDER"],
+                            "COL_STATUS" => 'no',
+                            "SAL_STATUS" => 'no',
+                            "WK_STATUS" => 'no',
+                            "COLL_DATA" => 'no',
+                            "SAL_DATA" => 'no',
+                            "WK_DATA" => 'no',
+                        ];
+                        http_response_code(200);
+                        $jsonData = ["status" => true, "data" => $responseData, "message" => 'Successfully Data Found.'];
+                        echo json_encode($jsonData);
+                    } else {
+                        http_response_code(401);
+                        $jsonData = ["status" => false, "message" => "Invalid credentials or user not active."];
+                        echo json_encode($jsonData);
+                    }
+
+                } else {
+                    $SQL = "SELECT 
                         RML_ID,
                         R_CONCERN,
                         DESIGNATION,
@@ -77,42 +144,44 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     WHERE
                         RML_ID = '$RML_ID'
                         AND IS_ACTIVE = 1";
-                // echo $SQL;
-                $strSQL = @oci_parse($objConnect, $SQL);
-                @oci_execute($strSQL);
-                $objResultFound = @oci_fetch_assoc($strSQL);
+                    // echo $SQL;
+                    $strSQL = @oci_parse($objConnect, $SQL);
+                    @oci_execute($strSQL);
+                    $objResultFound = @oci_fetch_assoc($strSQL);
 
-                if ($objResultFound) {
-                    $responseData = [
-                        "RML_ID" => $objResultFound["RML_ID"],
-                        "EMP_NAME" => $objResultFound["EMP_NAME"],
-                        "MOBILE_NO" => $objResultFound["MOBILE_NO"],
-                        "DESIGNATION" => $objResultFound["DESIGNATION"],
-                        "USER_ROLE" => $objResultFound["USER_ROLE"],
-                        "CONCERN" => $objResultFound["R_CONCERN"],
-                        "LINE_MANAGER_RML_ID" => $objResultFound["LINE_MANAGER_RML_ID"],
-                        "LINE_MANAGER_MOBILE" => $objResultFound["LINE_MANAGER_MOBILE"],
-                        "DEPT_HEAD_RML_ID" => $objResultFound["DEPT_HEAD_RML_ID"],
-                        "DEPT_HEAD_MOBILE_NO" => $objResultFound["DEPT_HEAD_MOBILE_NO"],
-                        "USER_IMAGE" => $objResultFound["USER_IMAGE"],
-                        "BLOOD" => $objResultFound["BLOOD"],
-                        "BRANCH_NAME" => $objResultFound["BRANCH_NAME"],
-                        "GENDER" => $objResultFound["GENDER"],
-                        "COL_STATUS" => $objResultFound["COL_STATUS"],
-                        "SAL_STATUS" => $objResultFound["SAL_STATUS"],
-                        "WK_STATUS" => $objResultFound["WK_STATUS"],
-                        "COLL_DATA" => $objResultFound["COLL_DATA"],
-                        "SAL_DATA" => $objResultFound["SAL_DATA"],
-                        "WK_DATA" => $objResultFound["WK_DATA"],
-                    ];
-                    http_response_code(200);
-                    $jsonData = ["status" => true, "data" => $responseData, "message" => 'Successfully Data Found.'];
-                    echo json_encode($jsonData);
-                } else {
-                    http_response_code(401);
-                    $jsonData = ["status" => false, "message" => "Invalid credentials or user not active."];
-                    echo json_encode($jsonData);
+                    if ($objResultFound) {
+                        $responseData = [
+                            "RML_ID" => $objResultFound["RML_ID"],
+                            "EMP_NAME" => $objResultFound["EMP_NAME"],
+                            "MOBILE_NO" => $objResultFound["MOBILE_NO"],
+                            "DESIGNATION" => $objResultFound["DESIGNATION"],
+                            "USER_ROLE" => $objResultFound["USER_ROLE"],
+                            "CONCERN" => $objResultFound["R_CONCERN"],
+                            "LINE_MANAGER_RML_ID" => $objResultFound["LINE_MANAGER_RML_ID"],
+                            "LINE_MANAGER_MOBILE" => $objResultFound["LINE_MANAGER_MOBILE"],
+                            "DEPT_HEAD_RML_ID" => $objResultFound["DEPT_HEAD_RML_ID"],
+                            "DEPT_HEAD_MOBILE_NO" => $objResultFound["DEPT_HEAD_MOBILE_NO"],
+                            "USER_IMAGE" => $objResultFound["USER_IMAGE"],
+                            "BLOOD" => $objResultFound["BLOOD"],
+                            "BRANCH_NAME" => $objResultFound["BRANCH_NAME"],
+                            "GENDER" => $objResultFound["GENDER"],
+                            "COL_STATUS" => $objResultFound["COL_STATUS"],
+                            "SAL_STATUS" => $objResultFound["SAL_STATUS"],
+                            "WK_STATUS" => $objResultFound["WK_STATUS"],
+                            "COLL_DATA" => $objResultFound["COLL_DATA"],
+                            "SAL_DATA" => $objResultFound["SAL_DATA"],
+                            "WK_DATA" => $objResultFound["WK_DATA"],
+                        ];
+                        http_response_code(200);
+                        $jsonData = ["status" => true, "data" => $responseData, "message" => 'Successfully Data Found.'];
+                        echo json_encode($jsonData);
+                    } else {
+                        http_response_code(401);
+                        $jsonData = ["status" => false, "message" => "Invalid credentials or user not active."];
+                        echo json_encode($jsonData);
+                    }
                 }
+
             } catch (Exception $e) {
                 http_response_code(500);
                 $jsonData = ["status" => false, "message" => $e->getMessage()];
