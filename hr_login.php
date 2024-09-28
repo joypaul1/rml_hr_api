@@ -123,7 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     "DEPT_HEAD_RML_ID"      => $objResultFound["DEPT_HEAD_RML_ID"],
                     "DEPT_HEAD_MOBILE_NO"   => $objResultFound["DEPT_HEAD_MOBILE_NO"],
                     "USER_IMAGE"            => $objResultFound["USER_IMAGE"],
-                    "DEPT_NAME"             => $objResultFound["DEPT_NAME"],
+                    // "DEPT_NAME"             => $objResultFound["DEPT_NAME"],
                 ];
                 //incldue jwt token
                 include_once('./tokenGen/createToken.php');
