@@ -2,14 +2,15 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
+
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
-    $checkValidTokenData    =   require_once("checkValidTokenData.php");
+    $checkValidTokenData = require_once ("checkValidTokenData.php");
     if ($checkValidTokenData['status']) {
         if ($checkValidTokenData['data']->data->RML_ID) {
             $RML_ID = $checkValidTokenData['data']->data->RML_ID; // set RML Variable Data
             //**Start data base connection  & status check **//
-            include_once('../rml_hr_api/inc/connoracle.php');
+            include_once ('../rml_hr_api/inc/connoracle.php');
             if ($isDatabaseConnected !== 1) {
                 http_response_code(401);
                 $jsonData = ["status" => false, "message" => "Database Connection Failed."];
@@ -17,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 die();
             }
             //**End data base connection  & status check **//
+
             require_once ('InputValidator.php');  // Include InputValidator class
             $requiredFields = ['START_ROW', 'LIMIT_ROW'];  // Define required fields
 
@@ -37,45 +39,43 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             //**Start Query & Return Data Response **//
             try {
-                $SQL = "SELECT a.ID,b.EMP_NAME,
-                            a.RML_ID,
-                            a.ENTRY_DATE,
-                            a.START_DATE,
-                            a.END_DATE,
-                            a.REMARKS,
-                            a.ENTRY_BY,
-                            a.LINE_MANAGER_ID,
-                            a.LINE_MANAGER_APPROVAL_STATUS,
-                            a.APPROVAL_DATE,
-                            a.APPROVAL_REMARKS,
-                            NVL ((SELECT USERIMG.USER_IMAGE FROM RML_HR_APPS_USER_IMAGE USERIMG WHERE USERIMG.USER_ID=a.RML_ID),
-                            'http://192.168.127.12:9050/rml_hr_api/image/user.png') AS USER_IMAGE
-                        FROM RML_HR_EMP_TOUR a, RML_HR_APPS_USER b
-                        WHERE A.RML_ID=B.RML_ID
-                        and a.LINE_MANAGER_ID='$RML_ID'
-                        AND a.LINE_MANAGER_APPROVAL_STATUS = 1
-                        ORDER BY START_DATE DESC";
+                $SQL = "SELECT A.ID USER_ID,
+                        A.USER_NAME,
+                        A.USER_MOBILE,
+                        A.LAT,A.LANG,A.LOCATION_REMARKS,
+                        (SELECT TITLE
+                            FROM WSHOP.USER_TYPE
+                            WHERE ID = A.USER_TYPE_ID)
+                            AS USER_TYPE
+                        FROM WSHOP.USER_PROFILE A,
+                        (SELECT USER_ID
+                            FROM WSHOP.USER_MANPOWER_SETUP
+                            WHERE PARENT_USER_ID = (select ID From WSHOP.USER_PROFILE
+                            WHERE RML_IDENTITY_ID='$RML_ID')
+                        UNION ALL
+                        SELECT USER_ID
+                        FROM WSHOP.USER_MANPOWER_SETUP
+                        WHERE PARENT_USER_ID IN
+                        (SELECT USER_ID
+                                FROM WSHOP.USER_MANPOWER_SETUP
+                                WHERE PARENT_USER_ID = (select ID from WSHOP.USER_PROFILE
+                        WHERE RML_IDENTITY_ID='$RML_ID'))) B
+                        WHERE A.ID=B.USER_ID";
+                        
                 $SQL .= " OFFSET $START_ROW ROWS FETCH NEXT $LIMIT_ROW ROWS ONLY";
-
 
                 $strSQL = @oci_parse($objConnect, $SQL);
                 @oci_execute($strSQL);
                 $responseData = [];
                 while ($objResultFound = @oci_fetch_assoc($strSQL)) {
                     $responseData[] = [
-                        "ID"                            => $objResultFound['ID'],
-                        "RML_ID"                        => $objResultFound['RML_ID'],
-                        "ENTRY_DATE"                    => $objResultFound['ENTRY_DATE'],
-                        "START_DATE"                    => $objResultFound['START_DATE'],
-                        "END_DATE"                      => $objResultFound['END_DATE'],
-                        "REMARKS"                       => $objResultFound['REMARKS'],
-                        "ENTRY_BY"                      => $objResultFound['ENTRY_BY'],
-                        "LINE_MANAGER_ID"               => $objResultFound['LINE_MANAGER_ID'],
-                        "LINE_MANAGER_APPROVAL_STATUS"  => $objResultFound['LINE_MANAGER_APPROVAL_STATUS'],
-                        "APPROVAL_DATE"                 =>  $objResultFound['APPROVAL_DATE'],
-                        "APPROVAL_REMARKS"              =>  $objResultFound['APPROVAL_REMARKS'],
-                        "EMP_NAME"                      => $objResultFound['EMP_NAME'],
-                        "EMP_IMAGE"                     => $objResultFound['USER_IMAGE']
+                        "USER_ID"           => $objResultFound['USER_ID'],
+                        "USER_NAME"         => $objResultFound['USER_NAME'],
+                        "USER_TYPE"         => $objResultFound['USER_TYPE'],
+                        "USER_MOBILE"       => $objResultFound['USER_MOBILE'],
+                        "LAT"               => $objResultFound['LAT'],
+                        "LANG"              => $objResultFound['LANG'],
+                        "LOCATION_REMARKS"  => $objResultFound['LOCATION_REMARKS']
                     ];
                 }
 

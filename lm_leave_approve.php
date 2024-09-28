@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //** ORACLE DATA CONNECTION***//
             include_once('../rml_hr_api/inc/connoracle.php');
             if ($isDatabaseConnected !== 1) {
+                http_response_code(401);
                 $jsonData = ["status" => false, "message" => "Database Connection Failed."];
                 echo json_encode($jsonData);
                 die();
@@ -19,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //** ORACLE DATA CONNECTION***//
 
             require_once('InputValidator.php');  // Include InputValidator class
-            $requiredFields = ['DATAID', 'REMAKRS', 'ACCEPTED_STATUS'];  // Define required fields
+            $requiredFields = ['DATAID', 'REMARKS', 'ACCEPTED_STATUS'];  // Define required fields
 
             // Initialize input validator with POST data **//
             $validator = new InputValidator($_POST);
@@ -34,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             $validator->sanitizeInputs();   // Sanitize Inputs
             $DATAID = $validator->get('DATAID');   // Retrieve sanitized inputs
-            $REMAKRS = $validator->get('REMAKRS');   // Retrieve sanitized inputs
+            $REMARKS = $validator->get('REMARKS');   // Retrieve sanitized inputs
             $ACCEPTED_STATUS = $validator->get('ACCEPTED_STATUS');   // Retrieve sanitized inputs
             // $RML_ID = $checkValidTokenData['data']->data->RML_ID;
             // $LINE_MANAGER_RML_ID = $checkValidTokenData['data']->data->LINE_MANAGER_RML_ID;
@@ -45,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $SQL = "UPDATE RML_HR_EMP_LEAVE SET
                         IS_APPROVED='$ACCEPTED_STATUS',
                         LINE_MNGR_APVL_STS='$ACCEPTED_STATUS',
-                        LINE_MNGR_APVL_RKMS='$REMAKRS',
+                        LINE_MNGR_APVL_RKMS='$REMARKS',
                         LINE_MNGR_APVL_DATE=SYSDATE
                         WHERE ID='$DATAID'";
                 $strSQL = @oci_parse($objConnect, $SQL);

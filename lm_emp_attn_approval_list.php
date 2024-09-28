@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //**Start data base connection  & status check **//
             include_once('../rml_hr_api/inc/connoracle.php');
             if ($isDatabaseConnected !== 1) {
+                http_response_code(401);
                 $jsonData = ["status" => false, "message" => "Database Connection Failed."];
                 echo json_encode($jsonData);
                 die();
@@ -51,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         WHERE KEY_TYPE='ATTN_OUTDOOR_APPROVAL') AND  trunc(SYSDATE)
                         AND attn.LINE_MANAGER_APPROVAL = 1
                         AND attn.IS_ALL_APPROVED= 1
-                        ORDER BY ATTN_DATE desc";
+                        ORDER BY ATTN_DATE DESC";
                 $SQL .= " OFFSET $START_ROW ROWS FETCH NEXT $LIMIT_ROW ROWS ONLY";
 
                 $strSQL = @oci_parse($objConnect, $SQL);
@@ -62,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         "ID"                => $objResultFound['ID'],
                         "RML_ID"            => $objResultFound['RML_ID'],
                         "EMP_NAME"          => $objResultFound['EMP_NAME'],
-                        "ATTN_DATE"         =>$objResultFound['ATTN_DATE'],
+                        "ATTN_DATE"         => $objResultFound['ATTN_DATE'],
                         "LAT"               => $objResultFound['LAT'],
                         "LANG"              => $objResultFound['LANG'],
                         "OUTSIDE_REMARKS"   => $objResultFound['OUTSIDE_REMARKS'],

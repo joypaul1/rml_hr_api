@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //**Start data base connection  & status check **//
             include_once ('../rml_hr_api/inc/connoracle.php');
             if ($isDatabaseConnected !== 1) {
+                http_response_code(401);
                 $jsonData = ["status" => false, "message" => "Database Connection Failed."];
                 echo json_encode($jsonData);
                 die();
@@ -46,13 +47,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         ((END_DATE-START_DATE)+1) LEAVE_DAYS,
                         REMARKS,
                         LEAVE_TYPE,
-                        NVL ((SELECT B.EMP_IMAGE FROM RML_HR_APPS_USER_IMAGE USERIMG WHERE USERIMG.USER_ID=a.RML_ID),
+                        NVL ((SELECT USERIMG.USER_IMAGE FROM RML_HR_APPS_USER_IMAGE USERIMG WHERE USERIMG.USER_ID=a.RML_ID),
                             'http://192.168.127.12:9050/rml_hr_api/image/user.png') AS USER_IMAGE
                     FROM RML_HR_EMP_LEAVE a,RML_HR_APPS_USER b
                     WHERE A.RML_ID=B.RML_ID
                     AND trunc(START_DATE)> TO_DATE('01/01/2022','DD/MM/YYYY')
                     AND  b.LINE_MANAGER_RML_ID='$RML_ID'
-                    AND A.IS_APPROVED IS NULL";
+                    AND A.IS_APPROVED IS NULL ORDER BY a.START_DATE DESC";
                 $SQL .= " OFFSET $START_ROW ROWS FETCH NEXT $LIMIT_ROW ROWS ONLY";
 
                 $strSQL = @oci_parse($objConnect, $SQL);
@@ -60,14 +61,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 $responseData = [];
                 while ($objResultFound = @oci_fetch_assoc($strSQL)) {
                     $responseData[] = [
-                        "ID" => $objResultFound['ID'],
-                        "RML_ID" => $objResultFound['RML_ID'],
-                        "START_DATE" => $objResultFound['START_DATE'],
-                        "END_DATE" => $objResultFound['END_DATE'],
-                        "REMARKS" => $objResultFound['REMARKS'],
-                        "LEAVE_DAYS" => $objResultFound['LEAVE_DAYS'],
-                        "LEAVE_TYPE" => $objResultFound['LEAVE_TYPE'],
-                        "EMP_IMAGE" => $objResultFound['USER_IMAGE']
+                        "ID"            => $objResultFound['ID'],
+                        "EMP_NAME"      => $objResultFound['EMP_NAME'],
+                        "RML_ID"        => $objResultFound['RML_ID'],
+                        "START_DATE"    => $objResultFound['START_DATE'],
+                        "END_DATE"      => $objResultFound['END_DATE'],
+                        "REMARKS"       => $objResultFound['REMARKS'],
+                        "LEAVE_DAYS"    => $objResultFound['LEAVE_DAYS'],
+                        "LEAVE_TYPE"    => $objResultFound['LEAVE_TYPE'],
+                        "EMP_IMAGE"     => $objResultFound['USER_IMAGE']
                     ];
                 }
 

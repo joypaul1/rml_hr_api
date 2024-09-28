@@ -13,6 +13,7 @@ function generate_jwt_token($data)
     $issued_at = time();
     // $expiration_time = $issued_at + (60 * 60); // valid for 1 hour
     $expiration_time = $issued_at + (24 * 60 * 60); // valid for 1 day
+    // $expiration_time = $issued_at + (2 * 60); // valid for 1 day
 
     $payload = array(
         'iss' => 'rangsmotors',

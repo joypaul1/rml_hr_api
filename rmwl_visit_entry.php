@@ -5,7 +5,7 @@ header("Content-Type: application/json; charset=UTF-8");
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
-    $checkValidTokenData = require_once("checkValidTokenData.php");
+    $checkValidTokenData    =   require_once("checkValidTokenData.php");
     if ($checkValidTokenData['status']) {
         if ($checkValidTokenData['data']->data->RML_ID) {
 
@@ -19,8 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             }
             //** ORACLE DATA CONNECTION***//
 
+
             require_once('InputValidator.php');  // Include InputValidator class
-            $requiredFields = ['DATAID', 'REMARKS', 'ACCEPTED_STATUS'];  // Define required fields
+            $requiredFields = ['SALE_AMOUNT', 'COLLECTION_AMOUNT', 'REMARKS', 'LAT', 'LANG', 'DISTANCE', 'FAKE_LOCATION','VISIT_ASSIGN_ID'];  // Define required fields
 
             // Initialize input validator with POST data **//
             $validator = new InputValidator($_POST);
@@ -34,48 +35,46 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             // **Initialize input validator with POST Data**//
 
             $validator->sanitizeInputs();   // Sanitize Inputs
-            $DATAID = $validator->get('DATAID');   // Retrieve sanitized inputs
-            $REMARKS = $validator->get('REMARKS');   // Retrieve sanitized inputs
-            $ACCEPTED_STATUS = $validator->get('ACCEPTED_STATUS');   // Retrieve sanitized inputs
-            // $RML_ID = $checkValidTokenData['data']->data->RML_ID;
-            // $LINE_MANAGER_RML_ID = $checkValidTokenData['data']->data->LINE_MANAGER_RML_ID;
-            // $ENTRY_BY = $RML_ID;
+            $SALE_AMOUNT            = $validator->get('SALE_AMOUNT');   // Retrieve sanitized inputs
+            $COLLECTION_AMOUNT      = $validator->get('COLLECTION_AMOUNT');   // Retrieve sanitized inputs
+            $REMARKS                = $validator->get('REMARKS');   // Retrieve sanitized inputs
+            $LAT                    = $validator->get('LAT');   // Retrieve sanitized inputs
+            $LANG                   = $validator->get('LANG');   // Retrieve sanitized inputs
+            $DISTANCE               = $validator->get('DISTANCE');   // Retrieve sanitized inputs
+            $FAKE_LOCATION          = $validator->get('FAKE_LOCATION');   // Retrieve sanitized inputs
+            $VISIT_ASSIGN_ID        = $validator->get('VISIT_ASSIGN_ID');   // Retrieve sanitized inputs
+            //$RML_ID         = $checkValidTokenData['data']->data->RML_ID;
+            //$ENTRY_BY       = $RML_ID;
 
             //*** Start Query & Return Data Response ***//
             try {
-                $SQL = "UPDATE RML_HR_EMP_TOUR SET
-                        LINE_MANAGER_APPROVAL_STATUS='$ACCEPTED_STATUS',
-                        --IS_ALL_APPROVED='$ACCEPTED_STATUS',
-                        APPROVAL_REMARKS='$REMARKS',
-                        APPROVAL_DATE=SYSDATE
-                        WHERE ID='$DATAID'";
+                $SQL = "UPDATE WSHOP.VISIT_ASSIGN SET
+                            SALES_AMOUNT_COLLECTED      = $SALE_AMOUNT,
+                            COLLECTION_AMOUNT_COLLECTED = $COLLECTION_AMOUNT,
+                            AFTER_VISIT_REMARKS         = '$REMARKS',
+                            VISIT_STATUS                =  1,
+                            VISIT_LAT                   = '$LAT',
+                            VISIT_LANG                  = '$LANG',
+                            DISTANCE                    = $DISTANCE,
+                            FAKE_LOCATION               ='$FAKE_LOCATION',
+                            LOCATION_VISITED_DATE       = SYSDATE
+                        WHERE  ID = $VISIT_ASSIGN_ID";
                 $strSQL = @oci_parse($objConnect, $SQL);
-
                 if (@oci_execute($strSQL)) {
-                    $attnSQL = oci_parse($objConnect, "DECLARE V_START_DATE VARCHAR2(100);V_END_DATE VARCHAR2(100);V_RML_ID VARCHAR2(100);
-                    BEGIN SELECT TO_CHAR(START_DATE,'dd/mm/yyyy'), TO_CHAR(END_DATE,'dd/mm/yyyy'), RML_ID  INTO V_START_DATE,V_END_DATE,V_RML_ID FROM RML_HR_EMP_TOUR  WHERE ID='$DATAID';
-                    RML_HR_ATTN_PROC(V_RML_ID,TO_DATE(V_START_DATE,'dd/mm/yyyy'),TO_DATE(V_END_DATE,'dd/mm/yyyy'));end;");
-                    @oci_execute($attnSQL);
-
                     http_response_code(200);
-                    $jsonData = array(
-                        "status" => true,
-                        "message" => "Tour Approval/Denied Successfully Completed.",
-                        "push_message" => 'Dear, Your tour entry is approved by your line manager.',
-                        'push_id' => '',
-                    );
+                    $jsonData = ["status" => true,  "message" =>'Visit entry successfully updated!'];
                     echo json_encode($jsonData);
                 } else {
                     http_response_code(403);
                     @$lastError = error_get_last();
                     @$error = $lastError ? "" . $lastError["message"] . "" : "";
                     @$str_arr_error = preg_split("/\,/", $error);
-                    $jsonData = ["status" => false, "message" => @$str_arr_error];
+                    $jsonData = ["status" => false,  "message" => @$str_arr_error ];
                     echo json_encode($jsonData);
                 }
             } catch (Exception $e) {
                 http_response_code(500);
-                $jsonData = ["status" => false, "message" => $e->getMessage()];
+            $jsonData = ["status" => false, "message" => $e->getMessage()];
                 echo json_encode($jsonData);
             } finally {
                 oci_close($objConnect);

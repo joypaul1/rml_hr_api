@@ -1,7 +1,7 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
-
+$RML_ID = $START_DATE   =   $END_DATE = null;
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //** ORACLE DATA CONNECTION***//
             include_once('../rml_hr_api/inc/connoracle.php');
             if ($isDatabaseConnected !== 1) {
+                http_response_code(401);
                 $jsonData = ["status" => false, "message" => "Database Connection Failed."];
                 echo json_encode($jsonData);
                 die();
@@ -38,12 +39,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $END_DATE       = $validator->get('END_DATE');   // Retrieve sanitized inputs
             $LEAVE_TYPE     = $validator->get('LEAVE_TYPE');   // Retrieve sanitized inputs
             $RML_ID         = $checkValidTokenData['data']->data->RML_ID;
-            $LEAVE_REMARKS  = $_POST['LEAVE_REMARKS']?$_POST['LEAVE_REMARKS']:' ';
+            $LEAVE_REMARKS  = $_POST['LEAVE_REMARKS']? str_replace("'", "''", $_POST['LEAVE_REMARKS'] ?? ' '):' ';
             $ENTRY_BY       = $RML_ID;
 
             //*** Start Query & Return Data Response ***//
             try {
                 $SQL = "BEGIN RML_HR_LEAVE_CREATE('$RML_ID','$START_DATE','$END_DATE','$LEAVE_REMARKS','$LEAVE_TYPE','$ENTRY_BY');END;";
+
                 $strSQL = @oci_parse($objConnect, $SQL);
                 if (@oci_execute($strSQL)) {
                     http_response_code(200);
@@ -80,4 +82,26 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $jsonData = ["status" => false, "message" => "Request method not accepted"];
     echo json_encode($jsonData);
 }
+
+// START NOTIFICATION CONFIGURATION
+
+include_once('./firebase_noti/lm_noti.php'); // INCLUDE FIREBASE NOTI FILE
+
+// SQL QUERY //
+$SQL = "SELECT A.RML_ID,A.EMP_NAME, A.MOBILE_NO ,
+(SELECT MOBILE_NO FROM RML_HR_APPS_USER WHERE  RML_ID = A.LINE_MANAGER_RML_ID) AS LM_MOBILE_NO
+(SELECT FIRE_BASE_ID FROM RML_HR_APPS_USER WHERE  RML_ID = A.LINE_MANAGER_RML_ID) AS LM_FKEY
+FROM RML_HR_APPS_USER A
+WHERE A.RML_ID ='$RML_ID'
+AND A.IS_ACTIVE = 1";
+// SQL QUERY  //
+
+$objResultFound=[];
+$strSQL = @oci_parse($objConnect, $SQL);
+if (@oci_execute($strSQL)) {
+    $objResultFound = @oci_fetch_assoc($strSQL);
+    sendNotification($RML_ID, $objResultFound['EMP_NAME'], $objResultFound['LM_FKEY'], 'leave', $START_DATE, $END_DATE);
+}
+// END NOTIFICATION CONFIGURATION
+
 die();

@@ -11,6 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //**Start data base connection  & status check **//
             include_once('../rml_hr_api/inc/connoracle.php');
             if ($isDatabaseConnected !== 1) {
+                http_response_code(401);
                 $jsonData = ["status" => false, "message" => "Database Connection Failed."];
                 echo json_encode($jsonData);
                 die();
@@ -36,8 +37,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             //**Start Query & Return Data Response **//
             try {
-                $SQL = "SELECT a.ID,b.EMP_NAME,
-                            RML_ID,
+                $SQL = "SELECT a.ID,
+                            b.EMP_NAME,
+                            a.RML_ID,
                             a.ENTRY_DATE,
                             a.START_DATE,
                             a.END_DATE,
@@ -47,13 +49,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                             a.LINE_MANAGER_APPROVAL_STATUS,
                             a.APPROVAL_DATE,
                             a.APPROVAL_REMARKS,
-                            NVL ((SELECT B.EMP_IMAGE FROM RML_HR_APPS_USER_IMAGE USERIMG WHERE USERIMG.USER_ID=a.RML_ID),
+                            NVL ((SELECT USERIMG.USER_IMAGE FROM RML_HR_APPS_USER_IMAGE USERIMG WHERE USERIMG.USER_ID=a.RML_ID),
                             'http://192.168.127.12:9050/rml_hr_api/image/user.png') AS USER_IMAGE
                         FROM RML_HR_EMP_TOUR a, RML_HR_APPS_USER b
                         WHERE A.RML_ID=B.RML_ID
                         and a.LINE_MANAGER_ID='$RML_ID'
                         AND a.LINE_MANAGER_APPROVAL_STATUS IS NULL
-                        order by START_DATE";
+                        ORDER BY START_DATE DESC";
                 $SQL .= " OFFSET $START_ROW ROWS FETCH NEXT $LIMIT_ROW ROWS ONLY";
 
 

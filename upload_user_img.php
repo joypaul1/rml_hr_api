@@ -15,6 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //** ORACLE DATA CONNECTION***//
             include_once ('../rml_hr_api/inc/connoracle.php');
             if ($isDatabaseConnected !== 1) {
+                http_response_code(401);
                 $jsonData = ["status" => false, "message" => "Database Connection Failed."];
                 echo json_encode($jsonData);
                 die();

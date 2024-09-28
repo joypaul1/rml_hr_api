@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //**Start data base connection  & status check **//
             include_once('../rml_hr_api/inc/connoracle.php');
             if ($isDatabaseConnected !== 1) {
+                http_response_code(401);
                 $jsonData = ["status" => false, "message" => "Database Connection Failed."];
                 echo json_encode($jsonData);
                 die();
@@ -20,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             //**Start Query & Return Data Response **//
             try {
-                $SQL = "SELECT 
+                $SQL = "SELECT
                 RML_ID, R_CONCERN, DESIGNATION, USER_ROLE,  EMP_NAME,
                 RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'P') PRESENT_TOTAL,
                 RML_HR_ATTN_STATUS_COUNT(RML_ID, TO_DATE(TO_CHAR(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 'dd/mm/yyyy'), 'dd/mm/yyyy'), TO_DATE(TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE) - (TO_NUMBER(TO_CHAR(SYSDATE, 'DD')) - 1), 1) - 1, 'dd/mm/yyyy'), 'dd/mm/yyyy'), 'L') LATE_TOTAL,
@@ -56,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     $jsonData = ["status" => true,  "data" => $responseData, "message" =>'Successfully Data Found.'];
                     echo json_encode($jsonData);
                 } else {
-                    http_response_code(401);
+                    http_response_code(200);
                     $jsonData = ["status" => true, "data" => [], "message" => 'No Data Found.'];
                     echo json_encode($jsonData);
                 }
