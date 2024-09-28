@@ -69,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         echo json_encode($jsonData);
                     }
                 } else {
-                    http_response_code(401);
+                    http_response_code(response_code: 400);
                     $jsonData = [
                         "status" => false,
                         "message" => 'Old password is not match!'
