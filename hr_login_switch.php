@@ -5,6 +5,26 @@ header("Content-Type: application/json; charset=UTF-8");
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
+    $checkValidTokenData    =   require_once("checkValidTokenData.php");
+    if ($checkValidTokenData['status']) {
+        if ($checkValidTokenData['data']->data->RML_ID) {
+            $DEPT_NAME = $checkValidTokenData['data']->data->DEPT_NAME;
+            if($DEPT_NAME != 'IT & ERP'){
+                http_response_code(400);
+                $jsonData = ["status" => false, "message" => "You are not permitted this operation!"];
+                echo json_encode($jsonData);
+                die();
+            }
+        }else {
+            // Set the HTTP status code to 400 Bad Request
+            http_response_code(400);
+            $jsonData = ["status" => false, "message" => "Missing Token Required Parameters."];
+            echo json_encode($jsonData);
+            die();
+        }
+    }
+
+
     include_once('../rml_hr_api/inc/connoracle.php');
 
     if ($isDatabaseConnected !== 1) {
@@ -48,6 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         LINE_MANAGER_MOBILE,
                         DEPT_HEAD_RML_ID,
                         DEPT_HEAD_MOBILE_NO,
+                        DEPT_NAME,
                         NVL ((IMAGE.USER_IMAGE),
                             'http://202.40.181.98:9050/rml_hr_api/image/user.png')
                             AS USER_IMAGE
@@ -62,24 +83,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $objResultFound = @oci_fetch_assoc($strSQL);
 
             if ($objResultFound) {
-                // Additional logic can be placed here
-                // IEMI_NO update or create
-                //$DatabaseiemiNo = $objResultFound["IEMI_NO"];
-                // if ($DatabaseiemiNo != $iemiNumber) {
-                //     $SQL = "UPDATE RML_HR_APPS_USER SET IEMI_NO = '$iemiNumber' WHERE RML_ID = '$rml_id'";
-                //     $strSQLFkeyUpdate = @oci_parse($objConnect, $SQL);
-                //     @oci_execute($strSQLFkeyUpdate);
-                // }
-                // firebase update or create
-                $Fdatabasekey = $objResultFound["FIRE_BASE_ID"];
-                if (strlen($firebaseKey) > 0 && $firebaseKey != $Fdatabasekey) {
-                    $strSQLFkeyUpdate = @oci_parse($objConnect, "UPDATE RML_HR_APPS_USER SET FIRE_BASE_ID = '$firebaseKey', FKEY_UPDATED_DATE = SYSDATE WHERE RML_ID = '$rml_id'");
-                    @oci_execute($strSQLFkeyUpdate);
-                }
-                // session for login log create
-                $SESSTION_SQL = @oci_parse($objConnect, "BEGIN HR_APPS_USER_SESSION_CREATE('$rml_id'); END;");
-                @oci_execute($SESSTION_SQL);
-                // session for login log create
                 $responseData = [
                     "RML_ID"                => $objResultFound["RML_ID"],
                     "EMP_NAME"              => $objResultFound["EMP_NAME"],
@@ -92,6 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     "DEPT_HEAD_RML_ID"      => $objResultFound["DEPT_HEAD_RML_ID"],
                     "DEPT_HEAD_MOBILE_NO"   => $objResultFound["DEPT_HEAD_MOBILE_NO"],
                     "USER_IMAGE"            => $objResultFound["USER_IMAGE"],
+                    "DEPT_NAME"             => $objResultFound["DEPT_NAME"],
                 ];
                 //incldue jwt token
                 include_once('./tokenGen/createToken.php');

@@ -51,6 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         LINE_MANAGER_MOBILE,
                         DEPT_HEAD_RML_ID,
                         DEPT_HEAD_MOBILE_NO,
+                        DEPT_NAME,
                         NVL ((IMAGE.USER_IMAGE),
                             'http://202.40.181.98:9050/rml_hr_api/image/user.png')
                             AS USER_IMAGE
@@ -122,6 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     "DEPT_HEAD_RML_ID"      => $objResultFound["DEPT_HEAD_RML_ID"],
                     "DEPT_HEAD_MOBILE_NO"   => $objResultFound["DEPT_HEAD_MOBILE_NO"],
                     "USER_IMAGE"            => $objResultFound["USER_IMAGE"],
+                    "DEPT_NAME"             => $objResultFound["DEPT_NAME"],
                 ];
                 //incldue jwt token
                 include_once('./tokenGen/createToken.php');
